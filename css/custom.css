@@ -159,3 +159,16 @@ nav#pagination.pagination-post {
 .relatedPosts>.relatedPosts-list>div {
   border-radius: 25px;
 }
+
+/* 哔哔主页相关 */
+#bbTimeList {
+  width: 100%;          /* 框不全 */
+  border: 2px solid #9c9;
+  align-items: center; /* 图标不居中 */ /* 其它方法#bbTimeList加一个声明justify-content: space-between; */
+}
+#bbtalk {
+  width: 100%;     /* 内容与图标不局中 */
+}
+#bber > section > ul > div > li > div .datacont{
+  color: #6667AB !important
+}
