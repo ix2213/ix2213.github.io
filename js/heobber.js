@@ -81,7 +81,7 @@ function urlToLink(str) {
 var re =/\bhttps?:\/\/(?!\S+(?:jpe?g|png|bmp|gif|webp|gif))\S+/g;
 var re_forpic =/\bhttps?:[^:<>"]*\/([^:<>"]*)(\.(jpeg)|(png)|(jpg)|(webp))(!blogimg)?/g;
 str =str.replace(re_forpic,function (imgurl) {
-  return '<a href="' + imgurl + '"><img src="' + imgurl + '" width="100%"/></a>';
+  return '<a href="' + imgurl + '"><img src="' + imgurl + '" width="50%"/></a>';
 });
 str =str.replace(re,function (website) {
   return " <a href='" + website + "'rel='noopener' target='_blank'>↘链接↙</a> ";
