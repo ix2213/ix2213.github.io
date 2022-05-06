@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Noto+Sans+SC&family=Zhi+Mang+Xing&display=swap');
 
 @import "//at.alicdn.com/t/font_3287177_uhbahhe2wc.css";
+
 /* 底部 */
 #footer {
     background: var(--mj-card-bg);
@@ -102,6 +103,8 @@ div#footer_deal a:hover{
 #footer-banner .footer-banner-tips{
     font-weight: 700;
 }
+
+
 
 /* 主页分类圆角 */
 #aside-content .card-categories ul.card-category-list>.card-category-list-item a:hover {
