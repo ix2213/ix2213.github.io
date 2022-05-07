@@ -1,4 +1,4 @@
-// if (document.querySelector('#bber-loading')) {
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>// if (document.querySelector('#bber-loading')) {
 //   var loading_pic = document.getElementById('bber-loading');
 //   loading_pic.innerHTML = '<span id="moments_loading"><i class="fa fa-spinner fa-spin"></i></span>';
 // }
