@@ -179,3 +179,15 @@ nav#pagination.pagination-post {
 }
 
 
+@font-face {
+    font-family: 'Liu Jian Mao Cao';
+    /* 字体名自定义即可 */
+    src: url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');
+    /* 字体文件路径 */
+    font-display: swap;
+}
+
+body,
+.gitcalendar {
+    font-family: tzy !important;
+}
