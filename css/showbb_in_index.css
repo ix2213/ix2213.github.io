@@ -20,12 +20,6 @@
   color: #49b1f5;
 }
 
-#bber-talk ul,li{
-  list-style:none;
-  display:block;
-  margin: 0;
-  padding: 0;
-}
 
 #bbTimeList{
   background: var(--card-bg);
