@@ -2,6 +2,10 @@
 
 @import "//at.alicdn.com/t/font_3287177_uhbahhe2wc.css";
 
+body {
+  font-family: "HarmonyOS_Regular" !important;
+}
+
 /* 底部 */
 #footer {
     background: var(--mj-card-bg);
@@ -179,6 +183,4 @@ nav#pagination.pagination-post {
 }
 
 
-body {
-  font-family: "HarmonyOS_Regular" !important;
-}
+
