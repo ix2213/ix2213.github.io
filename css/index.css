@@ -1462,10 +1462,6 @@ table td {
   border: 1px solid var(--light-grey);
   vertical-align: middle;
 }
-*::selection {
-  background: #00c4b6;
-  color: #f7f7f7;
-}
 button {
   padding: 0;
   outline: 0;
