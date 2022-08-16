@@ -1,7 +1,8 @@
 body,
 html{
-	height:50%;
+	height:100%;
 	background-color:#fff;
+	background-position: center;
 }
 body{
 	margin:0;
