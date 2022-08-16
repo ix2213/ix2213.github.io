@@ -6,12 +6,6 @@ body {
   font-family: "HarmonyOS_Regular" !important;
 }
 
-.layout,
-#page-header #post-info,
-#nav #nav-group,
-#footer #footer-wrap #footer-container {
-    max-width: 1500px;
-}
 
 .layout.hide-aside {
   max-width: 1300px
@@ -21,6 +15,8 @@ body {
   padding-top: 1rem;
   max-width: 1500px
 }
+
+
 
 /* 底部 */
 #footer {
