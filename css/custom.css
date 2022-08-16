@@ -184,7 +184,7 @@ nav#pagination.pagination-post {
 /* 哔哔主页相关 */
 #bbTimeList {
   width: 100%;          /* 框不全 */
-  border: 2px solid #9c9;
+  border: 1px solid #12121226;
   align-items: center; /* 图标不居中 */ /* 其它方法#bbTimeList加一个声明justify-content: space-between; */
 }
 #bbtalk {
