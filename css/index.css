@@ -3581,7 +3581,7 @@ h1.page-title + .tag-cloud-list {
   position: relative;
   padding-bottom: 6px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-  font-size: 0.78em;
+  font-size: 0.9em;
   cursor: pointer;
 }
 #nav .site-page:not(.child):after {
