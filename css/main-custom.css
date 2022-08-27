@@ -229,11 +229,17 @@ nav#pagination.pagination-post {
   overflow-x: score;
   border-radius: 12px;
 }
+
 .homeTopGroup::-webkit-scrollbar {
   display: none;
 }
-.homeTopGroup #banner_group {display: flex;}
-div#banners {display: none;}
+
+.homeTopGroup #banner_group {
+  display: flex;}
+  
+div#banners {
+  display: none;}
+
 @media screen and (min-width: 1300px){
 .homeTopGroup #banner_group {
   width: calc(100% - 600px - 1.5rem);
@@ -241,6 +247,7 @@ div#banners {display: none;}
   flex-direction: column;
   justify-content: space-between;
 }
+
 div#banners {
   display: flex;
   width: 100%;
@@ -895,4 +902,5 @@ a.category_button:after {
     a.category-list-link::before {
     content: "🎭";
   }
+
 
