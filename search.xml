@@ -44,19 +44,6 @@
     
     
     <entry>
-      <title>bioinfo</title>
-      <link href="/2022/08/31/bioinfo/"/>
-      <url>/2022/08/31/bioinfo/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>CTAB法提取叶片基因组DNA</title>
       <link href="/2022/08/31/ctab/"/>
       <url>/2022/08/31/ctab/</url>
@@ -414,9 +401,9 @@
       
         <tags>
             
-            <tag> Selenium </tag>
-            
             <tag> Python </tag>
+            
+            <tag> Selenium </tag>
             
             <tag> 元素定位 </tag>
             
@@ -464,9 +451,9 @@
       
         <tags>
             
-            <tag> Selenium </tag>
-            
             <tag> Python </tag>
+            
+            <tag> Selenium </tag>
             
             <tag> 自动化 </tag>
             
