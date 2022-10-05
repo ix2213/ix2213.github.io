@@ -3128,34 +3128,81 @@ h1.page-title + .tag-cloud-list {
   display: none;
 }
 #footer {
-  position: relative;
-  background: #49b1f5;
-  background-attachment: scroll;
-  background-position: bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  margin-top: 1rem;
 }
-#footer-wrap {
+#fotter-copyright {
   position: relative;
-  padding: 40px 20px;
-  color: var(--light-grey);
+  padding: 0 20px;
+  margin-bottom: 2rem;
+  color: var(--font-color);
   text-align: center;
 }
-#footer-wrap a {
-  color: var(--light-grey);
+#fotter-copyright a {
+  color: var(--font-color);
 }
-#footer-wrap a:hover {
+#fotter-copyright a:hover {
+  color: #49b1f5;
   text-decoration: underline;
 }
-#footer-wrap .footer-separator {
+#fotter-copyright .footer-separator {
   margin: 0 4px;
 }
-#footer-wrap .icp-icon {
-  padding: 0 4px;
-  max-height: 1.4em;
-  width: auto;
-  vertical-align: text-bottom;
+#ah-footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  margin: 1rem auto;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+#ah-footer .footer-group {
+  min-width: 100px;
+  text-align: center;
+}
+#ah-footer .footer-group .footer-links {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+#ah-footer .footer-group .footer-links a.footer-item {
+  color: var(--font-color);
+  line-height: 1rem;
+  margin: 0.38rem 0;
+}
+#ah-footer .footer-group .footer-links a.footer-item:hover {
+  color: var(--btn-hover-color);
 }
 #page-header {
   position: relative;
