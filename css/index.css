@@ -1394,6 +1394,19 @@ body {
 input::placeholder {
   color: var(--font-color);
 }
+#web_bg {
+  position: fixed;
+  z-index: -999;
+  width: 100%;
+  height: 100%;
+  background: https://bu.dusays.com/2022/10/06/633e3137abe44.jpg;
+  background-attachment: local;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 h1,
 h2,
 h3,
@@ -3245,7 +3258,7 @@ h1.page-title + .tag-cloud-list {
 }
 #page-header #site-title {
   margin: 0;
-  color: var(--white);
+  color: #000;
   font-size: 1.85em;
 }
 @media screen and (min-width: 768px) {
@@ -3254,7 +3267,7 @@ h1.page-title + .tag-cloud-list {
   }
 }
 #page-header #site-subtitle {
-  color: var(--light-grey);
+  color: #000;
   font-size: 1.15em;
 }
 @media screen and (min-width: 768px) {
@@ -3288,7 +3301,7 @@ h1.page-title + .tag-cloud-list {
 #page-header #scroll-down .scroll-down-effects {
   position: relative;
   width: 100%;
-  color: var(--light-grey);
+  color: #000;
   font-size: 30px;
 }
 #page-header.not-home-page {
@@ -3370,7 +3383,7 @@ h1.page-title + .tag-cloud-list {
 #page-header.nav-fixed #nav a,
 #page-header.nav-fixed #nav #site-name,
 #page-header.nav-fixed #nav #toggle-menu {
-  color: var(--font-color);
+  color: #000;
   text-shadow: none;
 }
 #page-header.nav-fixed #nav a:hover,
@@ -3528,7 +3541,7 @@ h1.page-title + .tag-cloud-list {
   color: var(--white);
 }
 #nav a {
-  color: var(--light-grey);
+  color: #000;
 }
 #nav a:hover {
   color: var(--white);
