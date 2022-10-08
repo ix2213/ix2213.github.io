@@ -1,1 +1,215 @@
-"use strict"; function _toConsumableArray(e) { return _arrayWithoutHoles(e) || _iterableToArray(e) || _unsupportedIterableToArray(e) || _nonIterableSpread() } function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.") } function _unsupportedIterableToArray(e, r) { if (e) { if ("string" == typeof e) return _arrayLikeToArray(e, r); var t = Object.prototype.toString.call(e).slice(8, -1); return "Object" === t && e.constructor && (t = e.constructor.name), "Map" === t || "Set" === t ? Array.from(e) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(e, r) : void 0 } } function _iterableToArray(e) { if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e) } function _arrayWithoutHoles(e) { if (Array.isArray(e)) return _arrayLikeToArray(e) } function _arrayLikeToArray(e, r) { (null == r || r > e.length) && (r = e.length); for (var t = 0, a = new Array(r); t < r; t++)a[t] = e[t]; return a } function _classCallCheck(e, r) { if (!(e instanceof r)) throw new TypeError("Cannot call a class as a function") } function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var a = r[t]; a.enumerable = a.enumerable || !1, a.configurable = !0, "value" in a && (a.writable = !0), Object.defineProperty(e, a.key, a) } } function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), e } var config = { src: "https://unpkg.com/guli-heo/others/open-peeps-sheet.png", rows: 15, cols: 7 }, randomRange = function (e, r) { return e + Math.random() * (r - e) }, randomIndex = function (e) { return 0 | randomRange(0, e.length) }, removeFromArray = function (e, r) { return e.splice(r, 1)[0] }, removeItemFromArray = function (e, r) { return removeFromArray(e, e.indexOf(r)) }, removeRandomFromArray = function (e) { return removeFromArray(e, randomIndex(e)) }, getRandomFromArray = function (e) { return e[0 | randomIndex(e)] }, resetPeep = function (e) { var r, t, a = e.stage, n = e.peep, o = .5 < Math.random() ? 1 : -1, i = 100 - 250 * gsap.parseEase("power2.in")(Math.random()), s = a.height - n.height + i; return 1 == o ? (r = -n.width, t = a.width, n.scaleX = 1) : (r = a.width + n.width, t = 0, n.scaleX = -1), n.x = r, n.y = s, { startX: r, startY: n.anchorY = s, endX: t } }, normalWalk = function (e) { var r = e.peep, t = e.props, a = (t.startX, t.startY), n = t.endX, o = gsap.timeline(); return o.timeScale(randomRange(.5, 1.5)), o.to(r, { duration: 10, x: n, ease: "none" }, 0), o.to(r, { duration: .25, repeat: 40, yoyo: !0, y: a - 10 }, 0), o }, walks = [normalWalk], Peep = function () { function a(e) { var r = e.image, t = e.rect; _classCallCheck(this, a), this.image = r, this.setRect(t), this.x = 0, this.y = 0, this.anchorY = 0, this.scaleX = 1, this.walk = null } return _createClass(a, [{ key: "setRect", value: function (e) { this.rect = e, this.width = e[2], this.height = e[3], this.drawArgs = [this.image].concat(_toConsumableArray(e), [0, 0, this.width, this.height]) } }, { key: "render", value: function (e) { e.save(), e.translate(this.x, this.y), e.scale(this.scaleX, 1), e.drawImage.apply(e, _toConsumableArray(this.drawArgs)), e.restore() } }]), a }(), img = document.createElement("img"); img.onload = init, img.src = config.src; var canvas = document.querySelector("#canvas"), ctx = canvas.getContext("2d"), stage = { width: 0, height: 0 }, allPeeps = [], availablePeeps = [], crowd = []; function init() { createPeeps(), resize(), gsap.ticker.add(render), window.addEventListener("resize", resize) } function createPeeps() { for (var e = config.rows, r = config.cols, t = e * r, a = img.naturalWidth / e, n = img.naturalHeight / r, o = 0; o < t; o++)allPeeps.push(new Peep({ image: img, rect: [o % e * a, (o / e | 0) * n, a, n] })) } function resize() { stage.width = canvas.clientWidth, stage.height = canvas.clientHeight, canvas.width = stage.width * devicePixelRatio, canvas.height = stage.height * devicePixelRatio, crowd.forEach(function (e) { e.walk.kill() }), crowd.length = 0, availablePeeps.length = 0, availablePeeps.push.apply(availablePeeps, allPeeps), initCrowd() } function initCrowd() { for (; availablePeeps.length;)addPeepToCrowd().walk.progress(Math.random()) } function addPeepToCrowd() { var e = removeRandomFromArray(availablePeeps), r = getRandomFromArray(walks)({ peep: e, props: resetPeep({ peep: e, stage: stage }) }).eventCallback("onComplete", function () { removePeepFromCrowd(e), addPeepToCrowd() }); return e.walk = r, crowd.push(e), crowd.sort(function (e, r) { return e.anchorY - r.anchorY }), e } function removePeepFromCrowd(e) { removeItemFromArray(crowd, e), availablePeeps.push(e) } function render() { canvas.width = canvas.width, ctx.save(), ctx.scale(devicePixelRatio, devicePixelRatio), crowd.forEach(function (e) { e.render(ctx) }), ctx.restore() }
+let renderer,
+scene,
+camera,
+sphereBg,
+nucleus,
+stars,
+controls,
+container = document.getElementById("canvas_container"),
+timeout_Debounce,
+noise = new SimplexNoise(),
+cameraSpeed = 0,
+blobScale = 3;
+
+
+init();
+animate();
+
+
+function init() {
+    scene = new THREE.Scene();
+
+    camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.01, 1000)
+    camera.position.set(0,0,230);
+
+    const directionalLight = new THREE.DirectionalLight("#fff", 2);
+    directionalLight.position.set(0, 50, -20);
+    scene.add(directionalLight);
+
+    let ambientLight = new THREE.AmbientLight("#ffffff", 1);
+    ambientLight.position.set(0, 20, 20);
+    scene.add(ambientLight);
+
+    renderer = new THREE.WebGLRenderer({
+        antialias: true,
+        alpha: true
+    });
+    renderer.setSize(container.clientWidth, container.clientHeight);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    container.appendChild(renderer.domElement);
+
+    //OrbitControl
+    controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.autoRotate = true;
+    controls.autoRotateSpeed = 4;
+    controls.maxDistance = 350;
+    controls.minDistance = 150;
+    controls.enablePan = false;
+
+    const loader = new THREE.TextureLoader();
+    const textureSphereBg = loader.load('https://i.ibb.co/4gHcRZD/bg3-je3ddz.jpg');
+    const texturenucleus = loader.load('https://i.ibb.co/hcN2qXk/star-nc8wkw.jpg');
+    const textureStar = loader.load("https://i.ibb.co/ZKsdYSz/p1-g3zb2a.png");
+    const texture1 = loader.load("https://i.ibb.co/F8by6wW/p2-b3gnym.png");  
+    const texture2 = loader.load("https://i.ibb.co/yYS2yx5/p3-ttfn70.png");
+    const texture4 = loader.load("https://i.ibb.co/yWfKkHh/p4-avirap.png");
+
+
+    /*  Nucleus  */   
+    texturenucleus.anisotropy = 16;
+    let icosahedronGeometry = new THREE.IcosahedronGeometry(30, 10);
+    let lambertMaterial = new THREE.MeshPhongMaterial({ map: texturenucleus });
+    nucleus = new THREE.Mesh(icosahedronGeometry, lambertMaterial);
+    scene.add(nucleus);
+
+
+    /*    Sphere  Background   */
+    textureSphereBg.anisotropy = 16;
+    let geometrySphereBg = new THREE.SphereBufferGeometry(150, 40, 40);
+    let materialSphereBg = new THREE.MeshBasicMaterial({
+        side: THREE.BackSide,
+        map: textureSphereBg,
+    });
+    sphereBg = new THREE.Mesh(geometrySphereBg, materialSphereBg);
+    scene.add(sphereBg);
+
+
+    /*    Moving Stars   */
+    let starsGeometry = new THREE.Geometry();
+
+    for (let i = 0; i < 50; i++) {
+        let particleStar = randomPointSphere(150); 
+
+        particleStar.velocity = THREE.MathUtils.randInt(50, 200);
+
+        particleStar.startX = particleStar.x;
+        particleStar.startY = particleStar.y;
+        particleStar.startZ = particleStar.z;
+
+        starsGeometry.vertices.push(particleStar);
+    }
+    let starsMaterial = new THREE.PointsMaterial({
+        size: 5,
+        color: "#ffffff",
+        transparent: true,
+        opacity: 0.8,
+        map: textureStar,
+        blending: THREE.AdditiveBlending,
+    });
+    starsMaterial.depthWrite = false;  
+    stars = new THREE.Points(starsGeometry, starsMaterial);
+    scene.add(stars);
+
+
+    /*    Fixed Stars   */
+    function createStars(texture, size, total) {
+        let pointGeometry = new THREE.Geometry();
+        let pointMaterial = new THREE.PointsMaterial({
+            size: size,
+            map: texture,
+            blending: THREE.AdditiveBlending,                      
+        });
+
+        for (let i = 0; i < total; i++) {
+            let radius = THREE.MathUtils.randInt(149, 70); 
+            let particles = randomPointSphere(radius);
+            pointGeometry.vertices.push(particles);
+        }
+        return new THREE.Points(pointGeometry, pointMaterial);
+    }
+    scene.add(createStars(texture1, 15, 20));   
+    scene.add(createStars(texture2, 5, 5));
+    scene.add(createStars(texture4, 7, 5));
+
+
+    function randomPointSphere (radius) {
+        let theta = 2 * Math.PI * Math.random();
+        let phi = Math.acos(2 * Math.random() - 1);
+        let dx = 0 + (radius * Math.sin(phi) * Math.cos(theta));
+        let dy = 0 + (radius * Math.sin(phi) * Math.sin(theta));
+        let dz = 0 + (radius * Math.cos(phi));
+        return new THREE.Vector3(dx, dy, dz);
+    }
+}
+
+
+function animate() {
+
+    //Stars  Animation
+    stars.geometry.vertices.forEach(function (v) {
+        v.x += (0 - v.x) / v.velocity;
+        v.y += (0 - v.y) / v.velocity;
+        v.z += (0 - v.z) / v.velocity;
+
+        v.velocity -= 0.3;
+
+        if (v.x <= 5 && v.x >= -5 && v.z <= 5 && v.z >= -5) {
+            v.x = v.startX;
+            v.y = v.startY;
+            v.z = v.startZ;
+            v.velocity = THREE.MathUtils.randInt(50, 300);
+        }
+    });
+
+
+    //Nucleus Animation
+    nucleus.geometry.vertices.forEach(function (v) {
+        let time = Date.now();
+        v.normalize();
+        let distance = nucleus.geometry.parameters.radius + noise.noise3D(
+            v.x + time * 0.0005,
+            v.y + time * 0.0003,
+            v.z + time * 0.0008
+        ) * blobScale;
+        v.multiplyScalar(distance);
+    })
+    nucleus.geometry.verticesNeedUpdate = true;
+    nucleus.geometry.normalsNeedUpdate = true;
+    nucleus.geometry.computeVertexNormals();
+    nucleus.geometry.computeFaceNormals();
+    nucleus.rotation.y += 0.002;
+
+
+    //Sphere Beckground Animation
+    sphereBg.rotation.x += 0.002;
+    sphereBg.rotation.y += 0.002;
+    sphereBg.rotation.z += 0.002;
+
+    
+    controls.update();
+    stars.geometry.verticesNeedUpdate = true;
+    renderer.render(scene, camera);
+    requestAnimationFrame(animate);
+}
+
+
+
+/*     Resize     */
+window.addEventListener("resize", () => {
+    clearTimeout(timeout_Debounce);
+    timeout_Debounce = setTimeout(onWindowResize, 80);
+});
+function onWindowResize() {
+    camera.aspect = container.clientWidth / container.clientHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(container.clientWidth, container.clientHeight);
+}
+
+
+
+/*     Fullscreen btn     */
+// let fullscreen;
+// let fsEnter = document.getElementById('fullscr');
+// fsEnter.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     if (!fullscreen) {
+//         fullscreen = true;
+//         document.documentElement.requestFullscreen();
+//         fsEnter.innerHTML = "Exit Fullscreen";
+//     }
+//     else {
+//         fullscreen = false;
+//         document.exitFullscreen();
+//         fsEnter.innerHTML = "Go Fullscreen";
+//     }
+// });
