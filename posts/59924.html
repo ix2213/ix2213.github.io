@@ -1,0 +1,287 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>欧李GH3基因家族的鉴定及表达分析 | 西瓜撞地球</title><meta name="keywords" content="欧李,分子植物育种,基因家族,生物信息学分析"><meta name="author" content="地球叛逃者."><meta name="copyright" content="地球叛逃者."><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="摘要本研究基于欧李全基因组和转录组数据对GH3基因进行生物信息学和表达分析，研究结果表明：欧李GH3基因共鉴定出10个家族成员，理化性质分析结果显示，ChGH3基因编码的氨基酸分子量为64.51~69.86kD，蛋白质不稳定系数在39.13~48.17之间，等电点范围为5.56~6.59，多为亲水蛋白。基因结构与保守基序分析结果表明，ChGH3基因都含有2-4段CDS编码区，且除了ChGH3-9外">
+<meta property="og:type" content="article">
+<meta property="og:title" content="欧李GH3基因家族的鉴定及表达分析">
+<meta property="og:url" content="https://bio-w.cn/posts/59924.html">
+<meta property="og:site_name" content="西瓜撞地球">
+<meta property="og:description" content="摘要本研究基于欧李全基因组和转录组数据对GH3基因进行生物信息学和表达分析，研究结果表明：欧李GH3基因共鉴定出10个家族成员，理化性质分析结果显示，ChGH3基因编码的氨基酸分子量为64.51~69.86kD，蛋白质不稳定系数在39.13~48.17之间，等电点范围为5.56~6.59，多为亲水蛋白。基因结构与保守基序分析结果表明，ChGH3基因都含有2-4段CDS编码区，且除了ChGH3-9外">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bio-w.cn/img/gene_family.png">
+<meta property="article:published_time" content="2022-04-13T03:26:59.000Z">
+<meta property="article:modified_time" content="2022-08-31T09:09:34.844Z">
+<meta property="article:author" content="地球叛逃者.">
+<meta property="article:tag" content="欧李">
+<meta property="article:tag" content="分子植物育种">
+<meta property="article:tag" content="基因家族">
+<meta property="article:tag" content="生物信息学分析">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bio-w.cn/img/gene_family.png"><link rel="shortcut icon" href="/img/tubiao.png"><link rel="canonical" href="https://bio-w.cn/posts/59924"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '欧李GH3基因家族的鉴定及表达分析',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-08-31 17:09:34'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="//at.alicdn.com/t/font_3287177_oljgabiyr7n.css"><link rel="stylesheet" href="/css/main-custom.css"><link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/static-butterfly/dist/css/index.min.css"><link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="/css/showbb_in_index.css"><link rel="preconnect" href="https://s1.hdslb.com/" /><link rel="stylesheet" href="//s1.hdslb.com/bfs/static/jinkela/long/font/regular.css" media="all" onload="this.media='all'" /><link rel="stylesheet" href="//s1.hdslb.com/bfs/static/jinkela/long/font/medium.css" media="all" onload="this.media='all'" /><link rel="stylesheet" href="/css/kuanping.css"><link rel="stylesheet" href="/css/custom/menu_center.css"><script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avater.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas"></i><span> 文库</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas iconfont icon-fenlei"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas iconfont icon-biaoqian"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas iconfont icon-zhongyaowenjianjia"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas"></i><span> 科研</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child" href="/bio/"><i class="fa-fw fas iconfont icon-jiyinchaxun"></i><span> 生信工具</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas iconfont icon-jiyinchaxun"></i><span> 植物学实验</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas"></i><span> 导航</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child" href="/messageboard/"><i class="fa-fw fas iconfont icon-lanse_liuyanban"></i><span> 留言板</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas iconfont icon-lianjie"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fas iconfont icon-lianjie"></i><span> 朋友圈</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas"></i><span> 我的</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas iconfont icon-tuku"></i><span> 图库</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas iconfont icon-xin"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/gene_family.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">西瓜撞地球</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas"></i><span> 文库</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas iconfont icon-fenlei"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas iconfont icon-biaoqian"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas iconfont icon-zhongyaowenjianjia"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas"></i><span> 科研</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child" href="/bio/"><i class="fa-fw fas iconfont icon-jiyinchaxun"></i><span> 生信工具</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas iconfont icon-jiyinchaxun"></i><span> 植物学实验</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas"></i><span> 导航</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child" href="/messageboard/"><i class="fa-fw fas iconfont icon-lanse_liuyanban"></i><span> 留言板</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas iconfont icon-lianjie"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fas iconfont icon-lianjie"></i><span> 朋友圈</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas"></i><span> 我的</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas iconfont icon-tuku"></i><span> 图库</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas iconfont icon-xin"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">欧李GH3基因家族的鉴定及表达分析</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-04-13T03:26:59.000Z" title="发表于 2022-04-13 11:26:59">2022-04-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-08-31T09:09:34.844Z" title="更新于 2022-08-31 17:09:34">2022-08-31</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/">发表论文</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">6.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>23分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="欧李GH3基因家族的鉴定及表达分析"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p style="text-indent:2em"/>本研究基于欧李全基因组和转录组数据对GH3基因进行生物信息学和表达分析，研究结果表明：欧李GH3基因共鉴定出10个家族成员，理化性质分析结果显示，ChGH3基因编码的氨基酸分子量为64.51~69.86kD，蛋白质不稳定系数在39.13~48.17之间，等电点范围为5.56~6.59，多为亲水蛋白。基因结构与保守基序分析结果表明，ChGH3基因都含有2-4段CDS编码区，且除了ChGH3-9外，都含有10个motif。启动子分析结果表明，ChGH3基因主要参与光响应和激素响应，其中，脱落酸和茉莉酸相关顺式作用元件数量最多。在对ChGH3进行表达分析后，发现除ChGH3-4和ChGH3-5在叶片中的表达量较高外，其余基因在叶片中的表达量都较低；ChGH3-9和ChGH3-10在欧李果实不同发育时期的表达量都较高。聚类分析结果可将GH3基因分为Clade1~3组，根据前人对拟南芥GH3基因功能的研究，结合进化树结果，ChGH3-4和At4G03400.1AtGH3-10、ChGH3-5和At2G46370.4AtGH3-11、ChGH3-10和At2G14960.1AtGH3-1的进化关系最近。综合分析，10个ChGH3基因在不同组织及果实不同发育时期中的表达量差异较大，表明这些基因可能在欧李不同的发育阶段及不同部位起到不同的作用。另外，推测ChGH3-5能够特异性的响应JA途径的调控，抵抗非生物胁迫；ChGH3-6通过调节生长素的活性影响根系的发育。本文为进一步研究ChGH3基因的生物学功能提供参考。
+
+<h1 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h1><p style="text-indent:2em"/>生长素是植物重要的内源激素，参与植物生长发育的调控，生长素在植物体内的存在形式主要有自由态和束缚态钱因红等，2020，自由态和束缚态在植物体内是可以相互转化的，并通过自由态和束缚态的比例来调节植物体内源激素的动态平衡。束缚态可以经过水解变成自由态曾文芳等，2015，而当自由态在植物体内含量过高时，可以通过与其他分子的结合，以非生物活性的形式进行降解或储存，降低自由态的含量，从而实现植物体内生长素水平的自我调节庞少萍等，2015。因此，研究生长素的作用机制对于深入了解植物生长发育的各种生理过程具有重要意义。
+生长素早期反应基因包括Aux/IAAs、GH3s和SAURs三类，在植物遭受不良环境的胁迫时，生长素可以快速的调控三个基因家族中大部分基因的响应，从而提高对于不良环境的抵抗能力Xu et al,2021。GH3基因通过在激素和应激相关信号通路中结合过量的吲哚-3-乙酸、水杨酸和茉莉酸来维持激素稳态，并能够调节茉莉酸、吲哚乙酸和水杨酸之间的动态协同作用，从而参与调控植物的多个生理过程，主要包括植物的顶端优势、信号传输、根系的形成、繁殖以及对各种生物和非生物刺激做出响应等过程Jiang et al,2020。 由于GH3基因参与维持生长素稳态以及植物生长发育的诸多生理过程，因此有必要更深入的了解其在植物生长发育过程中发挥的作用。
+欧李(Cerasus humilis)是我国特有的小灌木树种, 在我国北方和西北地区有大面积种植，欧李植株矮小，根系较发达，具有防风固沙抗旱等优点汪泽文等，2020, 具有重要的生态意义。ChGH3基因能够参与JA途径的激素调控，并且能够协同IAA、SAURs基因抵御不良的环境条件，且对植物的生长发育具有重要的调控作用。目前对于欧李抗逆性相关激素信号通路的研究较少, 本研究能够通过生物信息学的方法对ChGH3基因家族做一个比较全面的分析，为下一步研究GH3基因的具体功能奠定基础。
+
+<h1 id="1-结果与分析"><a href="#1-结果与分析" class="headerlink" title="1.结果与分析"></a>1.结果与分析</h1><h2 id="1-1-欧李GH3家族成员鉴定与理化性质分析"><a href="#1-1-欧李GH3家族成员鉴定与理化性质分析" class="headerlink" title="1.1 欧李GH3家族成员鉴定与理化性质分析"></a>1.1 欧李GH3家族成员鉴定与理化性质分析</h2><p style="text-indent:2em"/>将Pfam数据库和转录组数据中筛选的GH3基因进行比对，去除冗余序列后，最终鉴定得到10条欧李GH3家族的基因序列，并根据欧李拉丁名Cerasus humilis的缩写，将其分别编号为ChGH3-1~ChGH3-10。利用NCBI网站，根据ChGH3的氨基酸序列blast得到跟欧李进化关系较近的桃或其他蔷薇科物种的相应序列。并利用MEGA7.0的Alignment功能进行序列比对，得到完整的氨基酸及蛋白质序列。
+<p style="text-indent:2em"/>利用在线网站Expasy对ChGH3的蛋白质特性进行分析，结果如表1所示，ChGH3基因家族的编码氨基酸长度平均为597，其中ChGH3-3最长，含有614个氨基酸；ChGH3-9最短，含有574个氨基酸。ChGH3-1分子量最大，约为69.86 KDa；ChGH3-9分子量最小，约为64.51 KDa。ChGH3的等电点基本在5.56~6.59之间，所有蛋白的等电点都小于7，偏酸性。ChGH3的不稳定系数范围在39.13~48.17，其中ChGH3-5、ChGH3-6、ChGH3-7、ChGH3-8的不稳定系数小于40，为稳定蛋白。其余蛋白的不稳定系数均大于40，为不稳定蛋白。ChGH3的所有蛋白的亲水性系数均为负值，表明所有蛋白均为亲水性蛋白，且存在不同梯度的亲水性，但不同梯度之间差异较小。
+<p style="text-indent:2em"/>利用PSORT II Prediction在线网站，对ChGH3基因家族进行亚细胞定位预测。结果显示，除ChGH3-2分布在细胞质外，其余蛋白均分布在细胞核中，表明ChGH3所编码的蛋白大多存在于细胞质中并与基因的启动子结合，起着调控相关基因表达的作用。
+<p style="text-indent:2em"/>为进一步研究ChGH3蛋白空间结构上的相似性, 对ChGH3蛋白进行二级结构预测。ChGH3蛋白α螺旋比例为38.4%~43.05%，β折叠比例为3.97%~5.84%，延伸链比例为14.33%~15.38%，无规则卷曲的比例在37.86%~43.49%之间。欧李GH3基因家族的理化性质及二级结构见表1。对ChGH3蛋白三级结构进行分析, 发现各蛋白三级结构相似。对空间结构的分析发现ChGH3蛋白为多链折叠蛋白, 无规则卷曲和α螺旋占比最高，β折叠的比例最低图1。 
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/GH3-1.jpg" alt="ChGH3蛋白的三级结构"></p>
+<h2 id="1-2-欧李GH3家族基因结构与保守基序分析"><a href="#1-2-欧李GH3家族基因结构与保守基序分析" class="headerlink" title="1.2 欧李GH3家族基因结构与保守基序分析"></a>1.2 欧李GH3家族基因结构与保守基序分析</h2><p style="text-indent:2em"/>利用在线软件MEME分析ChGH3基因的保守基序，同时根据基因注释结果，利用Tbtools绘制基因结构图图2，比较其内含子-外显子组成，发现同一分类的基因结构较为一致。通过对10个ChGH3基因家族进行保守基序的分析，发现motif2、4、8、1、6、3存在于所有ChGH3成员中，除了ChGH3-9不含motif10、9、5、7外，其余9个ChGH3成员均含有10个motif。ChGH3外显子-内含子结构特征也体现了基因的多样化。总的来说，ChGH3家族含有的外显子数量较少。不同系统发育分枝的基因结构不同，表明基因进化成不同的外显子-内含子结构，从而完成不同的功能。
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/GH3-2.jpg" alt="ChGH3蛋白的保守基序与基因结构"></p>
+<h2 id="1-3-欧李GH3家族系统进化树分析"><a href="#1-3-欧李GH3家族系统进化树分析" class="headerlink" title="1.3 欧李GH3家族系统进化树分析"></a>1.3 欧李GH3家族系统进化树分析</h2><p style="text-indent:2em"/>为了研究ChGH3蛋白的进化关系，利用MEGA7软件构建欧李和拟南芥GH3基因家族的系统进化树图3，根据拟南芥GH3的分类标准，将10个欧李GH3基因家族分为3大类并命名为Clade1~3，分别包含4、3、3个家族成员。欧李和拟南芥GH3基因家族的进化树如图所示。
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/GH3-3.jpg" alt="ChGH3蛋白与AtGH3蛋白的进化关系"></p>
+<h2 id="1-4-欧李GH3家族共线性与染色体定位分析"><a href="#1-4-欧李GH3家族共线性与染色体定位分析" class="headerlink" title="1.4 欧李GH3家族共线性与染色体定位分析"></a>1.4 欧李GH3家族共线性与染色体定位分析</h2><p style="text-indent:2em"/>物种间共线性的分析主要是根据几个物种之间的所有同源基因的位置，比较其基因结构和基因顺序的差异，从而确定几个物种之间的进化关系。一般来讲，物种之间的共线性基因越少，表明他们的进化关系越远方璐，2012。通过欧李与桃中GH3基因的共线性分析图4，发现10个ChGH3成员均与桃存在同源基因，表明欧李与桃存在共同起源，亲缘关系较近。
+<p style="text-indent:2em"/>为了解ChGH3基因在染色体中的分布情况，根据基因注释信息, 利用TBtools软件将欧李所有ChGH3基因定位到染色体上，结果表明，除了第6和第8条染色体，其余染色体上均分布有ChGH3家族成员，其中，ChGH3-6、ChGH3-7、ChGH3-8 、ChGH3-9、ChGH3-10分布在第7条染色体上，其余染色体均分布有一个ChGH3成员图5。
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/GH3-4.jpg" alt="欧李与桃的GH3基因的共线性"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/GH3-5.jpg" alt="ChGH3基因的染色体定位"></p>
+<h2 id="1-5欧李GH3家族基因启动子顺式作用元件"><a href="#1-5欧李GH3家族基因启动子顺式作用元件" class="headerlink" title="1.5欧李GH3家族基因启动子顺式作用元件"></a>1.5欧李GH3家族基因启动子顺式作用元件</h2><p style="text-indent:2em"/>该研究利用Tbtools提取ChGH3基因家族成员启动子上游的2000bp作为启动子序列，并利用PlantCARE网站做顺式作用元件分析图6。分析结果显示，10个ChGH3家族成员均含有多个启动子核心元件TATA盒和增强子元件CAAT盒，表明ChGH3基因家族能够正常进行转录活动。同时，ChGH3基因家族含有类型丰富的启动子元件，我们发现大多数ChGH3基因的启动子中存在39%的光响应元件，包括GT1-motif、ACE、I-box、AE-box等。共40%的元件属于植物激素反应类，其中脱落酸相关元件ABRE存在于每一个GH3基因启动子中，除了ChGH3-10外，其余ChGH3成员均含有赤霉素相关启动子GARE-motif、TATC-box、P-box，除ChGH3-1外，其余ChGH3基因均含有茉莉酸反应的顺式作用元件CGTCA-motif和TGACG-motif。部分ChGH3基因的启动子中含有16%的胁迫响应元件，如LTR、MBS、ARE、TC-rich等，以及5%的生长发育相关顺式元件，如CAT-box、AACA-motif、O2-site等。综上所述，我们认为ChGH3基因参与光响应、激素响应、胁迫响应和植物的生长发育图7。
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/GH3-6.jpg" alt="ChGH3基因的启动子分析 
+&lt;/br&gt;
+注：光响应元件包括：ACE、G-Box、GT1-motif、Sp1、AAAC-motif等31个作用元件。GA响应元件包括：GARE-motif、P-box和TATC-box。IAA响应元件包括：AuxRR-core、TGA-element、AuxRE和TGA-box。SA响应元件包括：TCA-element。ABA响应元件包括：ABRE。MeJA响应元件包括：CGTCA-motif和TGACG-motif。"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/GH3-7.jpg" alt="ChGH3基因顺式作用元件的分布"></p>
+<h2 id="1-6-欧李GH3基因家族的表达模式分析"><a href="#1-6-欧李GH3基因家族的表达模式分析" class="headerlink" title="1.6 欧李GH3基因家族的表达模式分析"></a>1.6 欧李GH3基因家族的表达模式分析</h2><p style="text-indent:2em"/>基因的表达模式分析可以为研究基因功能提供重要的信息，根据欧李各组织的转录组数据，分析鉴定得到的10个ChGH3基因家族成员在欧李不同品种的发育时期图8和不同组织图9的表达情况。结果表明，欧李GH3基因在不同组织间呈现出不同的表达模式，其中，Clade2和Clade3亚家族的基因在欧李整个生长发育时期的表达水平相对较好。Clade1亚家族的基因在欧李生长发育过程中存在不表达或表达量极低的情况。在Clade2亚家族中，ChGH3-9在3个品种果实发育时期中的表达量都相对较高；ChGH3-4和ChGH3-5在‘农大4号’品种果实发育时期中几乎不表达。在Clade3亚家族中，ChGH3-10在整个发育时期的表达量都较高，ChGH3-2在果实发育后期被特异性诱导，表达量逐渐增加。此外我们还发现，在‘农大4号’不同组织的表达量热图中图9，部分基因只在特定部位呈现高表达的情况。例如，ChGH3-4和ChGH3-5在叶片中的表达量以及ChGH3-10在果实、种仁和根状茎中的表达量明显高于该基因在其他组织中的表达量，说明这些基因在特定的部位响应生长素的调控。
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/GH3-8.jpg" alt="‘农大3号’、‘农大4号’、‘农大5号’不同品种果实发育期的表达量热图"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/GH3-9.jpg" alt="‘农大4号’不同组织的表达量热图"></p>
+<h1 id="2-讨论"><a href="#2-讨论" class="headerlink" title="2 讨论"></a>2 讨论</h1><p style="text-indent:2em"/>生长素酰胺合成酶GH3是一类主要的生长素响应基因，主要发挥维持生长素稳态的重要作用，或作为生长素信号通路的重要组成部分，通常与ARF和AUX/IAA基因共同发挥作用，调控植物的生长发育。通过研究GH3基因的功能和表达模式，有助于揭示在植物生长发育过程中GH3的响应机制和对不良环境条件的抵抗机制。本研究基于欧李全基因组和转录组数据，利用生物信息学的系统分析方法，从欧李中鉴定出10个GH3基因，在前人的研究中，自1987年第一个GH3基因从大豆中分离出来后Hagen and Guilfoyle，1984，相继在模式植物拟南芥中鉴定出20个GH3基因Hagen and Guilfoyle,2002，水稻中鉴定出13个(Jain et al,2006)，葡萄中9个(Christine et al,2011)，番茄17个(Kumar et al,2012)，茶20个钱因红等，2020,苹果15个(Yuan et al,2013)。同属蔷薇科的桃中鉴定出8个GH3基因(史梦雅等，2014)，这表明GH3基因同ARF和AUX/IAA一样，在大多数植物物种中是保守的。同时也表明，GH3基因在不同的植物中都有不同程度的扩张或缩减，且GH3基因的数量与物种基因组的大小没有正相关性Kong et al,2019。
+<p style="text-indent:2em"/>为了研究生长素早期响应蛋白在欧李中的系统发育关系，利用拟南芥与欧李的蛋白序列构建了系统发育树，拟南芥中共含有20个GH3基因(Staswick et al,2002)，根据蛋白序列的相似性和底物的特异性(Terol et al,2006)，把欧李和拟南芥的GH3基因进行聚类分析，将GH3基因分为三组Clade1~3，根据进化关系，ChGH3-4与At4G03400.1、 ChGH3-5与At2G46370.4、ChGH3-10与At2G14960.1的亲缘关系最近。有研究表明，AtGH3.11At2G46370.4在JA的响应途径中具有重要作用，其突变体被命名为Jar1，AtGH3.11通常作为茉莉酸酯反应的前受体，其突变体能够阻止茉莉酰基-异亮氨酸的形成并阻断JA介导的应答(张超，2020)。Jar1还能够对非致病细菌产生一定的抗性，从而减少O3对拟南芥的影响。另外，其突变体Jar1能够在参与光形态建成中同时调控光信号和茉莉酸信号途径王慧敏，2015；AtGH3.9At2G47750.1能够通过调节生长素的活性，影响植物主根的发育。据此，可以推断ChGH3的相应基因也具有类似的功能。此外，Clade1中有16个成员组成，而欧李中只有两个，且ChGH3-6、ChGH3-7和ChGH3-8具有相同的蛋白序列，表明在欧李和拟南芥分化后，该组基因成员在欧李中逐渐消退或在拟南芥中扩展。值得一提的是，ChGH3-9与其他GH3蛋白具有远缘同源关系Feng et al,2019，该成员在欧李中可能具有特定的功能。
+<p style="text-indent:2em"/>启动子是RNA聚合酶识别、结合和开始转录的一段DNA序列，对基因的转录起始具有重要作用，启动子序列中含有一系列基本作用元件，它们能够反映基因的潜在功能，由此可以推断出该基因的作用。它含有RNA聚合酶特异性结合和转录起始所需的保守序列，多数位于结构基因转录起始点的上游，启动子本身不被转录。启动子的特性最初是通过能增加或降低基因转录速率的突变而鉴定的。启动子一般位于转录起始位点的上游几百至几千bp不等。基因的表达或转录都是由上游的启动子区完成的(Daoqian et al,2018)。不同的调控核心组合赋予启动子强度、时空特异性和对刺激的反应特征。因此，分析启动子的调控元件可以帮助我们预测其在各种刺激或激素下的表达情况。通过对ChGH3基因家族的启动子分析发现，几乎所有ChGH3基因都含有ABRE、ARE和MeJA启动子元件，这说明ChGH3基因参与激素和胁迫的响应，主要是对脱落酸、茉莉酸甲酯及无氧环境下的响应。但并不是所有ChGH3基因都含有生长素反应调控元件AuxRR和TGA-element, 有研究表明，AuxRR的存在和缺失与大多数GH3基因的诱导或缺失有关(Xu et al,2021)。大多数GH3基因启动子包含一个赤霉素响应元件GARE-motif、P-box和TATC-box，这表明它们可能对赤霉素产生反应，进而影响植物的生长发育。就赤霉素而言，某些GH3基因受赤霉素信号通路调控的分子机制尚不清楚，但ChGH3基因启动子中的赤霉素响应元件可能会对赤霉素分泌、运输或功能产生影响(Kumar et al,2012)。MeJa反应元件(CGTCA-motif和TGACG-motif)也可以在大多数ChGH3基因家族启动子中观察到，这与在棉花和水稻中的发现一致(Staswick et al,2002)。大多数ChGH3启动子中存在大量与激素相关的调控元件，表明它们在许多激素信号通路中扮演着重要的核心调控因子的角色。GH3基因除了能够特异性的响应生长素调控外，还受到胁迫相关激素的转录调控，主要包括脱落酸、水杨酸、茉莉酸甲酯以及生长促进激素赤霉素。除此之外，还受非生物刺激，如光照、缺氧、干旱、低温的调控，这与前人的研究结果一致(Vikash et al,2015)。
+<p style="text-indent:2em"/>本研究主要基于欧李转录组数据中的基因表达情况，研究了10个ChGH3基因在不同部位，不同发育时期中的表达水平。与其他植物物种类似，ChGH3基因在组织、阶段和细胞特异性的方式上存在差异转录。例如，所有玉米和大部分苜蓿在叶片中的表达水平低于其他器官。许多番茄GH3基因在叶片中的表达水平也较低。在欧李中，我们发现，除ChGH3-3和ChGH3-4外，10个ChGH3基因中有8个在叶片中低表达，这与前人的研究结果基本一致(Yang et al,2015)。各ChGH3基因的组织特异性表达模式表明，GH3基因的不同成员在欧李不同组织中发挥作用。这些结果为全面了解欧李GH3基因家族提供了依据，为探索其功能差异和基因操作奠定了基础。
+
+<h1 id="3-材料与方法"><a href="#3-材料与方法" class="headerlink" title="3 材料与方法"></a>3 材料与方法</h1><h2 id="3-1-欧李GH3基因家族的鉴定"><a href="#3-1-欧李GH3基因家族的鉴定" class="headerlink" title="3.1 欧李GH3基因家族的鉴定"></a>3.1 欧李GH3基因家族的鉴定</h2><p style="text-indent:2em"/>从<a target="_blank" rel="noopener" href="http://pfam.xfam.org/">Pfam数据库</a>下载隐马尔可夫模型PF03321，并使用HMMER(v3.0)软件中的hmmsearch工具检索本地欧李蛋白质序列数据库，鉴定欧李中GH3基因家族。为进一步验证欧李GH3 基因家族鉴定的准确性，利用NCBI 的CDD工具分析候选蛋白的保守结构域。根据农大4号欧李果实及叶片的转录组注释结果，以‘GH3’为关键词检索转录组中注释有GH3的基因序列，并通过NCBI预测其保守结构域，最终得到10个欧李GH3基因家族成员。
+
+<h2 id="3-2-欧李GH3蛋白的生物信息学分析"><a href="#3-2-欧李GH3蛋白的生物信息学分析" class="headerlink" title="3.2 欧李GH3蛋白的生物信息学分析"></a>3.2 欧李GH3蛋白的生物信息学分析</h2><p style="text-indent:2em"/>利用在线网站<a target="_blank" rel="noopener" href="https://web.expasy.org/protparam/">ExPASy-ProParam</a>分析ChGH3基因家族成员蛋白质的分子量、等电点等理化性质；利用在线网站<a target="_blank" rel="noopener" href="https://psort.hgc.jp/form2.html">PSORT II Prediction</a>对ChGH3蛋白进行亚细胞定位，通过<a target="_blank" rel="noopener" href="http://www.cbs.dtu.dk/services/SignalP-4.1/">SignalP 4.1网站</a>预测ChGH3的信号肽；以在线工具<a target="_blank" rel="noopener" href="https://prabi.ibcp.fr/htm/site/web/home">SOPMA</a>预测ChGH3蛋白的二级结构。
+
+<h2 id="3-3-欧李GH3基因结构和进化关系分析"><a href="#3-3-欧李GH3基因结构和进化关系分析" class="headerlink" title="3.3 欧李GH3基因结构和进化关系分析"></a>3.3 欧李GH3基因结构和进化关系分析</h2><p style="text-indent:2em"/>利用<a target="_blank" rel="noopener" href="https://meme-suite.org/meme/">MEME 5.3.3</a>在线软件预测ChGH3蛋白序列保守基序，将基序数量参数设定为10个，其余参数均为默认，并利用Tbtools软件进行作图；根据欧李基因组注释结果的GFF文件，使用Tbtools绘制ChGH3基因结构分布图。采用ClustalW比对所下载的<a target="_blank" rel="noopener" href="https://www.arabidopsis.org/">拟南芥GH3蛋白序列</a>，使用MEGA7.0的邻接法构建系统进化树，Bootstrap重复设置为1000，其它参数为系统默认值。
+
+<h2 id="3-4-欧李GH3基因启动子分析"><a href="#3-4-欧李GH3基因启动子分析" class="headerlink" title="3.4 欧李GH3基因启动子分析"></a>3.4 欧李GH3基因启动子分析</h2><p style="text-indent:2em"/>从欧李全基因组数据库中筛选并使用Tbtools提取ChGH3基因翻译起始密码子ATG上游的2000bp序列进行启动子顺式作用元件分析，利用在线网站<a target="_blank" rel="noopener" href="http://bioinformatics.psb.ugent.be/webtools/plantcare/html/">PlantCARE</a>预测ChGH3基因启动子的顺式作用元件，并进行可视化绘图。
+
+<h2 id="3-5-欧李GH3基因表达分析"><a href="#3-5-欧李GH3基因表达分析" class="headerlink" title="3.5 欧李GH3基因表达分析"></a>3.5 欧李GH3基因表达分析</h2><p style="text-indent:2em"/>利用Tbtools软件根据‘农大4号’欧李果实、根、茎、叶、种仁及‘农大5号’欧李果实的转录组数据绘制ChGH3基因家族的表达量热图。
+
+<h1 id="作者贡献"><a href="#作者贡献" class="headerlink" title="作者贡献"></a>作者贡献</h1><p style="text-indent:2em"/>郭夕雯是本研究的实验设计者和实验研究的执行人，完成数据分析及论文初稿的写作；付鸿博、张建英参与实验设计，试验结果分析；杜俊杰是本项目的指导人，完成实验设计和论文修改，穆霄鹏和王鹏飞指导实验设计、数据分析，张建成为本实验提供了部分方法。全体作者都阅读并同意最终的文本。
+
+<h1 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h1><p style="text-indent:2em"/>本研究由山西省重点研发计划重点项目201703D211001-04-04，山西省“1331工程”标志性成果奖补项目：三个国审欧李品种和山西农业大学学术恢复科研专项2020xshf22，2020xshf23资助。
+
+<h1 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h1><p style="text-indent:2em"/>[1]Christine Böttcher, Boss P K , Davies C . Acyl substrate preferences of an IAA-amido synthetase account for variations in grape (Vitis vinifera L.) berry ripening caused by different auxinic compounds indicating the importance of auxin conjugation in plant development[J]. Journal of Experimental Botany, 2011, 62(12).
+<p style="text-indent:2em"/>[2]Daoqian, Ghulam, Qanmber, et al. Genome-wide analysis of cotton GH3 subfamily II reveals functional divergence in fiber development, hormone response and plant architecture.[J]. BMC Plant Biology, 2018.
+<p style="text-indent:2em"/>[3]Fang L.,2012, Analysis and Application of Colinearity Relationship in Genome of Cruciferous Plants, Thesis for M.S.,Chinese Academy of Agricultural Sciences. Supervisor:Wang X.W.,Wu J.,(方璐,2012,十字花科植物基因组共线性关系的研究及应用.硕士学位论文,中国农业科学院,导师:王晓武,武剑.)
+<p style="text-indent:2em"/>[4]Feng L , Li G , He Z , et al. The ARF, GH3, and Aux/IAA gene families in castor bean (Ricinus communis L.): Genome-wide identification and expression profiles in high-stalk and dwarf strains[J]. Industrial Crops and Products, 2019, 141:111804-.
+<p style="text-indent:2em"/>[5]Hagen G , Guilfoyle K T . Auxin-regulated gene expression in intact soybean hypocotyl and excised hypocotyl sections[J]. Planta, 1984, 162(2):147-153.
+<p style="text-indent:2em"/>[6]Hagen G , Guilfoyle T . Auxin-responsive gene expression: genes, promoters and regulatory factors[J]. Plant Molecular Biology, 2002, 49(3-4):373-385.
+<p style="text-indent:2em"/>[7]Jinfeng Xu,Haihua Zhang,Weibo Jin. Genome-wide identification, characterization, and expression profiles of auxin responsive GH3 gene family in Salvia miltiorrhiza involved in MeJA treatment[J]. Journal of Plant Biochemistry and Biotechnology,2021(prepublish).
+<p style="text-indent:2em"/>[8]Jain M , Kaur N , Tyagi A K , et al. The auxin-responsive GH3 gene family in rice (Oryza sativa)[J]. Functional and Integrative Genomics, 2006, 6(1):36-46.
+<p style="text-indent:2em"/>[9]Kumar R , Agarwal P , Tyagi A K , et al. Genome-wide investigation and expression analysis suggest diverse roles of auxin-responsive GH3 genes during development and response to different stimuli in tomato (Solanum lycopersicum)[J]. Molecular Genetics & Genomics, 2012, 287(3):221-235.
+<p style="text-indent:2em"/>[10]Kong, Weilong, Zhong, et al. Evolutionary Analysis of GH3 Genes in Six Oryza Species/Subspecies and Their Expression under Salinity Stress in Oryza sativa ssp. japonica[J]. Plants, 2019.
+<p style="text-indent:2em"/>[11]P, E, Staswick. Jasmonate Response Locus JAR1 and Several Related Arabidopsis Genes Encode Enzymes of the Firefly Luciferase Superfamily That Show Activity on Jasmonic, Salicylic, and Indole-3-Acetic Acids in an Assay for Adenylation[J]. Plant Cell Online, 2002.
+<p style="text-indent:2em"/>[12]Pang S.P.,Xie R.J.,Ma Y.Y.,Qian C.,He S.L.,Yi S.L.,Lv Q.,Zheng Y.Q.,Deng L., Bioinformatics and Expression Analysis of CjGH3.4 and CjGH3.7 Genes Citrus, Acta Horticulturae Sinica,2015, 42(12):2362-2372.( 庞少萍,谢让金,马岩岩,钱春,何绍兰,易时来,吕强,郑永强,邓烈.柑橘CjGH3.4和CjGH3.7基因的生物信息学分析及表达分析.园艺学报,2015,42(12):2362-2372.)
+<p style="text-indent:2em"/>[13]Qian Y.H., Zhang Y.Z., Bai P.X., Wang L.Y., Cheng H., Wei K., 2020, Identification and Expression Analysis of GH3 Family Gene in Camellia sinensis, Journal of Tea Communication,47(03):382-392.(钱因红,张亚真,白培贤,王丽鸳,成浩,韦康,2020,茶树GH3基因家族的鉴定及表达分析.茶叶通讯,47(03):382-392.)
+<p style="text-indent:2em"/>[14]Shi M.Y.,Zhang W.,Yu J., Cloning and Expression Analysis of ARF and Aux/IAA Gene Family Memb in Peach, Acta Horticulturae Sinica, 2014, 41(3):536-544.( 史梦雅, 张巍, 余佳,等. 桃生长素反应因子和生长素/吲哚乙酸蛋白家族基因的克隆及表达分析. 园艺学报, 2014, 41(3):536-544.)
+<p style="text-indent:2em"/>[15]Terol J , Domingo C , Manuel Talón. The GH3 family in plants: Genome wide analysis in rice and evolutionary history based on EST analysis[J]. Gene, 2006, 371(2):279-290.
+<p style="text-indent:2em"/>[16]Vikash, K, Singh, et al. Genome-wide analysis and expression profiling suggest diverse roles of GH3 genes during development and abiotic stress responses in legumes[J]. Frontiers in Plant Science, 2015, 5:789.
+<p style="text-indent:2em"/>[17]Wenqiang Jiang,Junliang Yin,Haotian Zhang,Yiqin He,Simin Shuai,Shuhui Chen,Sunlin Cao,Wei Li,Dongfang Ma,Huaigu Chen. Genome-wide identification, characterization analysis and expression profiling of auxin-responsive GH3 family genes in wheat ( Triticum aestivum L.)[J]. Molecular Biology Reports: An International Journal on Molecular and Cellular Biology,2020,47(15).
+<p style="text-indent:2em"/>[18]Wang Z.W.,Mu X.P.,Wang P.F., Cloning and Bioinformatics Analysis of CBF1 Gene in Cerasus humilis, Molecular Plant Breeding,2020,v.18(08):82-88.( 汪泽文, 穆霄鹏, 王鹏飞,等. 欧李ChCBF1基因的克隆及生物信息学分析. 分子植物育种, 2020, v.18(08):82-88.)
+<p style="text-indent:2em"/>[19]Wang H.M.,2015, Characterization of the experssion patterns of tomato SLGH3.2 and it's potential functions in rice plants, Thesis for M.S.,Nanjing Agricultural University, Supervisor:Chen A.Q.( 王慧敏.2015,番茄SlGH3.2的表达特征及在水稻中的功能研究分析.硕士学位论文,南京农业大学,导师:陈爱群.)
+<p style="text-indent:2em"/>[20]Yuan H , Zhao K , Lei H , et al. Genome-wide analysis of the GH3 family in apple (Malus × domestica)[J]. BMC Genomics, 2013, 14(1):297.
+<p style="text-indent:2em"/>[21]Yang Y , Yue R , Sun T , et al. Genome-wide identification, expression analysis of GH3 family genes in Medicago truncatula under stress-related hormones and Sinorhizobium meliloti infection[J]. Applied Microbiology & Biotechnology, 2015, 99(2):841-854.
+<p style="text-indent:2em"/>[22]Zeng W.F., Pan L.,Niu L.,Lu Z.H.,Cui G.C.,Wang Z.Q., Bioinformatics Analysis and Expression of the Nectarine Indole-3-acetica amido Synthase(GH3)Gene Family During Fruit Developmen, 2015, Acta Horticulturae Sinica, 42(05):833-842.( 曾文芳,潘磊,牛良,鲁振华,崔国朝,王志强.桃GH3基因家族的生物信息学分析及其在果实发育中的表达[J].园艺学报,2015,42(05):833-842.)
+<p style="text-indent:2em"/>[23]Zhang C.,2020,Functional verification of StGH3.1 and StGH3.5 genes and the response to wounding and disease resistance of potato, Dissertation for Ph.D.,Northwest A&F University, Supervisor:Chen Q.( 张超,2020,StGH3.1和StGH3.5基因功能验证及对马铃薯抗机械损伤和抗病性响应.博士学位论文,西北农林科技大学,导师:陈勤.)
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">地球叛逃者.</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://bio-w.cn/posts/59924.html">https://bio-w.cn/posts/59924.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://bio-w.cn" target="_blank">西瓜撞地球</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%AC%A7%E6%9D%8E/">欧李</a><a class="post-meta__tags" href="/tags/%E5%88%86%E5%AD%90%E6%A4%8D%E7%89%A9%E8%82%B2%E7%A7%8D/">分子植物育种</a><a class="post-meta__tags" href="/tags/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F/">基因家族</a><a class="post-meta__tags" href="/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%88%86%E6%9E%90/">生物信息学分析</a></div><div class="post_share"><div class="social-share" data-image="/img/gene_family.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/reward-weixin.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/reward-weixin.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/reward-zhifubao.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/reward-zhifubao.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/61125.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/pcr.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">🧬湿实验之PCR实验要点</div></div></a></div><div class="next-post pull-right"><a href="/posts/46859.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/transparent" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">欧李自交不亲和试验之文章结构</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/46859.html" title="欧李自交不亲和试验之文章结构"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/transparent" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-12</div><div class="title">欧李自交不亲和试验之文章结构</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avater.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">地球叛逃者.</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/ix2213"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/ix2213" target="_blank" title="Github"><i class="fab iconfont icon-github1"></i></a><a class="social-icon" href="mailto:gxw1606@163.com" target="_blank" title="Email"><i class="fas iconfont icon-youxiang"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><div class="twopeople">一念之差</br>满盘皆输</br><div class="container" style="height:200px;"><canvas class="illo" width="800" height="800" style="max-width:200px;max-height:200px;touch-action:none;width:640px;height:640px;"></canvas></div><script src="https://gcore.jsdelivr.net/gh/Justlovesmile/CDN/js/twopeople1.js"></script><script src="https://gcore.jsdelivr.net/gh/Justlovesmile/CDN/js/zdog.dist.js"></script><script id="rendered-js" src="https://gcore.jsdelivr.net/gh/Justlovesmile/CDN/js/twopeople.js"></script><style>.twopeople{margin:0;align-items:center;justify-content:center;text-align:center;}canvas{display:block;margin:0 auto;cursor:move;}</style></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%91%98%E8%A6%81"><span class="toc-number">1.</span> <span class="toc-text">摘要</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%BC%E8%BF%B0"><span class="toc-number">2.</span> <span class="toc-text">综述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E7%BB%93%E6%9E%9C%E4%B8%8E%E5%88%86%E6%9E%90"><span class="toc-number">3.</span> <span class="toc-text">1.结果与分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-%E6%AC%A7%E6%9D%8EGH3%E5%AE%B6%E6%97%8F%E6%88%90%E5%91%98%E9%89%B4%E5%AE%9A%E4%B8%8E%E7%90%86%E5%8C%96%E6%80%A7%E8%B4%A8%E5%88%86%E6%9E%90"><span class="toc-number">3.1.</span> <span class="toc-text">1.1 欧李GH3家族成员鉴定与理化性质分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-%E6%AC%A7%E6%9D%8EGH3%E5%AE%B6%E6%97%8F%E5%9F%BA%E5%9B%A0%E7%BB%93%E6%9E%84%E4%B8%8E%E4%BF%9D%E5%AE%88%E5%9F%BA%E5%BA%8F%E5%88%86%E6%9E%90"><span class="toc-number">3.2.</span> <span class="toc-text">1.2 欧李GH3家族基因结构与保守基序分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-%E6%AC%A7%E6%9D%8EGH3%E5%AE%B6%E6%97%8F%E7%B3%BB%E7%BB%9F%E8%BF%9B%E5%8C%96%E6%A0%91%E5%88%86%E6%9E%90"><span class="toc-number">3.3.</span> <span class="toc-text">1.3 欧李GH3家族系统进化树分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-4-%E6%AC%A7%E6%9D%8EGH3%E5%AE%B6%E6%97%8F%E5%85%B1%E7%BA%BF%E6%80%A7%E4%B8%8E%E6%9F%93%E8%89%B2%E4%BD%93%E5%AE%9A%E4%BD%8D%E5%88%86%E6%9E%90"><span class="toc-number">3.4.</span> <span class="toc-text">1.4 欧李GH3家族共线性与染色体定位分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-5%E6%AC%A7%E6%9D%8EGH3%E5%AE%B6%E6%97%8F%E5%9F%BA%E5%9B%A0%E5%90%AF%E5%8A%A8%E5%AD%90%E9%A1%BA%E5%BC%8F%E4%BD%9C%E7%94%A8%E5%85%83%E4%BB%B6"><span class="toc-number">3.5.</span> <span class="toc-text">1.5欧李GH3家族基因启动子顺式作用元件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-6-%E6%AC%A7%E6%9D%8EGH3%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E7%9A%84%E8%A1%A8%E8%BE%BE%E6%A8%A1%E5%BC%8F%E5%88%86%E6%9E%90"><span class="toc-number">3.6.</span> <span class="toc-text">1.6 欧李GH3基因家族的表达模式分析</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E8%AE%A8%E8%AE%BA"><span class="toc-number">4.</span> <span class="toc-text">2 讨论</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E6%9D%90%E6%96%99%E4%B8%8E%E6%96%B9%E6%B3%95"><span class="toc-number">5.</span> <span class="toc-text">3 材料与方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-%E6%AC%A7%E6%9D%8EGH3%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F%E7%9A%84%E9%89%B4%E5%AE%9A"><span class="toc-number">5.1.</span> <span class="toc-text">3.1 欧李GH3基因家族的鉴定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E6%AC%A7%E6%9D%8EGH3%E8%9B%8B%E7%99%BD%E7%9A%84%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%88%86%E6%9E%90"><span class="toc-number">5.2.</span> <span class="toc-text">3.2 欧李GH3蛋白的生物信息学分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-%E6%AC%A7%E6%9D%8EGH3%E5%9F%BA%E5%9B%A0%E7%BB%93%E6%9E%84%E5%92%8C%E8%BF%9B%E5%8C%96%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90"><span class="toc-number">5.3.</span> <span class="toc-text">3.3 欧李GH3基因结构和进化关系分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-%E6%AC%A7%E6%9D%8EGH3%E5%9F%BA%E5%9B%A0%E5%90%AF%E5%8A%A8%E5%AD%90%E5%88%86%E6%9E%90"><span class="toc-number">5.4.</span> <span class="toc-text">3.4 欧李GH3基因启动子分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5-%E6%AC%A7%E6%9D%8EGH3%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E5%88%86%E6%9E%90"><span class="toc-number">5.5.</span> <span class="toc-text">3.5 欧李GH3基因表达分析</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%9C%E8%80%85%E8%B4%A1%E7%8C%AE"><span class="toc-number">6.</span> <span class="toc-text">作者贡献</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%87%B4%E8%B0%A2"><span class="toc-number">7.</span> <span class="toc-text">致谢</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%EF%BC%9A"><span class="toc-number">8.</span> <span class="toc-text">参考文献：</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/28628.html" title="毕业、国奖"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/10/06/633e46e90b832.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="毕业、国奖"/></a><div class="content"><a class="title" href="/posts/28628.html" title="毕业、国奖">毕业、国奖</a><time datetime="2022-10-10T02:11:12.000Z" title="发表于 2022-10-10 10:11:12">2022-10-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/22425.html" title="六年"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/10/07/633fdfc1d4936.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="六年"/></a><div class="content"><a class="title" href="/posts/22425.html" title="六年">六年</a><time datetime="2022-10-07T08:16:23.000Z" title="发表于 2022-10-07 16:16:23">2022-10-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/60696.html" title="梦"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/10/07/633fdfc2c722b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="梦"/></a><div class="content"><a class="title" href="/posts/60696.html" title="梦">梦</a><time datetime="2022-10-07T08:16:15.000Z" title="发表于 2022-10-07 16:16:15">2022-10-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/5664.html" title="黑名单"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/10/07/633fdfc1d3fb4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="黑名单"/></a><div class="content"><a class="title" href="/posts/5664.html" title="黑名单">黑名单</a><time datetime="2022-10-07T08:16:06.000Z" title="发表于 2022-10-07 16:16:06">2022-10-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/59313.html" title="我与我"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/10/06/633ed59127114.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我与我"/></a><div class="content"><a class="title" href="/posts/59313.html" title="我与我">我与我</a><time datetime="2022-10-06T13:19:08.000Z" title="发表于 2022-10-06 21:19:08">2022-10-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="ah-footer"><div class="footer-group"><h3 class="footer-title">文章</h3><div class="footer-links"><a class="footer-item" href="/archives/" data-pjax-state="">全部文章</a><a class="footer-item" href="/tags/" data-pjax-state="">文章标签</a><a class="footer-item" href="/categories/" data-pjax-state="">文章分类</a></div></div><div class="footer-group"><h3 class="footer-title">科研</h3><div class="footer-links"><a class="footer-item" href="/bio/" data-pjax-state="">生信工具</a><a class="footer-item" href="/categories/Python/" data-pjax-state="">生物信息</a><a class="footer-item" href="/categories/植物学试验/" data-pjax-state="">植物学试验</a></div></div><div class="footer-group"><h3 class="footer-title">网站</h3><div class="footer-links"><a class="footer-item" href="/messageboard/" data-pjax-state="">留言信箱</a><a class="footer-item" href="/charts/" data-pjax-state="">博客统计</a><a class="footer-item" href="/update/" data-pjax-state="">更新日志</a></div></div><div class="footer-group"><h3 class="footer-title">导航</h3><div class="footer-links"><a class="footer-item" href="/bb/" data-pjax-state="">自言自语</a><a class="footer-item" href="/link/" data-pjax-state="">友情链接</a><a class="footer-item" href="/fcircle/" data-pjax-state="">友链订阅</a></div></div><div class="footer-group"><h3 class="footer-title">协议</h3><div class="footer-links"><a class="footer-item" href="/privacy/" data-pjax-state="">隐私协议</a><a class="footer-item" href="/cc/" data-pjax-state="">版权协议</a><a class="footer-item" href="/cookies/" data-pjax-state="">Cookies政策</a><a class="footer-item" onclick="btf.scrollToDest(0, 500)"></a></div></div></div><div id="fotter-copyright" style="font-size:90%"><div class="copyrights"><span>Copyright © 2022 地球叛逃者. </span><span> All rights reserved.</span></div><div class="framework-info"><span>Powered by </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">&</span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo-api-xi.vercel.app',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.vemoji)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo-api-xi.vercel.app',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      document.getElementById('twikoo-count').innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script src="/js/custom.js"></script><script src="https://blog.zhheo.com/zhheo/random.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法制,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

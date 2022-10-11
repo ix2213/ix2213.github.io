@@ -1,0 +1,451 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>🧬湿实验之实时荧光定量PCR | 西瓜撞地球</title><meta name="keywords" content="植物学试验,湿实验,PCR"><meta name="author" content="地球叛逃者."><meta name="copyright" content="地球叛逃者."><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="一、基本资料实时荧光定量PCR （Quantitative Real-time PCR）是一种在DNA扩增反应中，以荧光化学物质测每次聚合酶链式反应（PCR）循环后产物总量的方法。Real-timePCR是在PCR扩增过程中，通过荧光信号，对PCR进程进行实时检测。  二、原理实时荧光定量PCR是将标记有荧光素的Taqman探针与模板DNA混合后，完成高温变性，低温复性，适温延伸的热循环，并遵守聚">
+<meta property="og:type" content="article">
+<meta property="og:title" content="🧬湿实验之实时荧光定量PCR">
+<meta property="og:url" content="https://bio-w.cn/posts/28868.html">
+<meta property="og:site_name" content="西瓜撞地球">
+<meta property="og:description" content="一、基本资料实时荧光定量PCR （Quantitative Real-time PCR）是一种在DNA扩增反应中，以荧光化学物质测每次聚合酶链式反应（PCR）循环后产物总量的方法。Real-timePCR是在PCR扩增过程中，通过荧光信号，对PCR进程进行实时检测。  二、原理实时荧光定量PCR是将标记有荧光素的Taqman探针与模板DNA混合后，完成高温变性，低温复性，适温延伸的热循环，并遵守聚">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bio-w.cn/img/pcr.webp">
+<meta property="article:published_time" content="2022-04-27T09:27:27.000Z">
+<meta property="article:modified_time" content="2022-08-31T09:09:34.844Z">
+<meta property="article:author" content="地球叛逃者.">
+<meta property="article:tag" content="植物学试验">
+<meta property="article:tag" content="湿实验">
+<meta property="article:tag" content="PCR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bio-w.cn/img/pcr.webp"><link rel="shortcut icon" href="/img/tubiao.png"><link rel="canonical" href="https://bio-w.cn/posts/28868"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '🧬湿实验之实时荧光定量PCR',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-08-31 17:09:34'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="//at.alicdn.com/t/font_3287177_oljgabiyr7n.css"><link rel="stylesheet" href="/css/main-custom.css"><link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/static-butterfly/dist/css/index.min.css"><link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="/css/showbb_in_index.css"><link rel="preconnect" href="https://s1.hdslb.com/" /><link rel="stylesheet" href="//s1.hdslb.com/bfs/static/jinkela/long/font/regular.css" media="all" onload="this.media='all'" /><link rel="stylesheet" href="//s1.hdslb.com/bfs/static/jinkela/long/font/medium.css" media="all" onload="this.media='all'" /><link rel="stylesheet" href="/css/kuanping.css"><link rel="stylesheet" href="/css/custom/menu_center.css"><script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avater.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas"></i><span> 文库</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas iconfont icon-fenlei"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas iconfont icon-biaoqian"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas iconfont icon-zhongyaowenjianjia"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas"></i><span> 科研</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child" href="/bio/"><i class="fa-fw fas iconfont icon-jiyinchaxun"></i><span> 生信工具</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas iconfont icon-jiyinchaxun"></i><span> 植物学实验</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas"></i><span> 导航</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child" href="/messageboard/"><i class="fa-fw fas iconfont icon-lanse_liuyanban"></i><span> 留言板</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas iconfont icon-lianjie"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fas iconfont icon-lianjie"></i><span> 朋友圈</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas"></i><span> 我的</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas iconfont icon-tuku"></i><span> 图库</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas iconfont icon-xin"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/pcr.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">西瓜撞地球</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas"></i><span> 文库</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas iconfont icon-fenlei"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas iconfont icon-biaoqian"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas iconfont icon-zhongyaowenjianjia"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas"></i><span> 科研</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child" href="/bio/"><i class="fa-fw fas iconfont icon-jiyinchaxun"></i><span> 生信工具</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas iconfont icon-jiyinchaxun"></i><span> 植物学实验</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas"></i><span> 导航</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child" href="/messageboard/"><i class="fa-fw fas iconfont icon-lanse_liuyanban"></i><span> 留言板</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas iconfont icon-lianjie"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fas iconfont icon-lianjie"></i><span> 朋友圈</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas"></i><span> 我的</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas iconfont icon-tuku"></i><span> 图库</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas iconfont icon-xin"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">🧬湿实验之实时荧光定量PCR</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-04-27T09:27:27.000Z" title="发表于 2022-04-27 17:27:27">2022-04-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-08-31T09:09:34.844Z" title="更新于 2022-08-31 17:09:34">2022-08-31</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/">植物学试验</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">5.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>18分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="🧬湿实验之实时荧光定量PCR"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="一、基本资料"><a href="#一、基本资料" class="headerlink" title="一、基本资料"></a>一、基本资料</h1><p style="text-indent:2em"/>实时荧光定量PCR （Quantitative Real-time PCR）是一种在DNA扩增反应中，以荧光化学物质测每次聚合酶链式反应（PCR）循环后产物总量的方法。Real-timePCR是在PCR扩增过程中，通过荧光信号，对PCR进程进行实时检测。
+
+<h1 id="二、原理"><a href="#二、原理" class="headerlink" title="二、原理"></a>二、原理</h1><p style="text-indent:2em"/>实时荧光定量PCR是将标记有荧光素的Taqman探针与模板DNA混合后，完成高温变性，低温复性，适温延伸的热循环，并遵守聚合酶链反应规律，与模板DNA互补配对的Taqman探针被切断，荧光素游离于反应体系中，在特定光激发下发出荧光，随着循环次数的增加，被扩增的目的基因片段呈指数规律增长，通过实时检测与之对应的随扩增而变化的荧光信号强度，求得Ct值，同时利用数个已知模板浓度的标准品作对照，即可得出待测标本目的基因的拷贝数。所谓实时荧光定量PCR技术，是指在PCR反应体系中加入荧光基团，利用荧光信号积累实时监测整个PCR进程，最后通过标准曲线对未知模板进行定量分析的方法。
+
+
+<h1 id="三、主要步骤"><a href="#三、主要步骤" class="headerlink" title="三、主要步骤"></a>三、主要步骤</h1><h2 id="RNA提取（样本量标准化）"><a href="#RNA提取（样本量标准化）" class="headerlink" title="RNA提取（样本量标准化）"></a>RNA提取（样本量标准化）</h2><ol>
+<li>处死动物后立即储存收获的组织。</li>
+</ol>
+<ol start="2">
+<li>在制备样品进行均质化时，使用不含RNA酶的试管和刮刀。建议使用相同数量的细胞和器官进行RNA提取（最多200 mg动物组织），并用手持式转子定子均质器在含1％2-巯基乙醇的裂解缓冲液中均质化（350 -500μl），并置于冰上20-40秒。在室温下以2000-3000×g离心 00:05:00  ，将上清液吸移到新管中。向组织匀浆中加入相同体积的70％无RNA酶乙醇，并涡旋几秒钟。</li>
+</ol>
+<ol start="3">
+<li>将样品转移到离心管中，以 12000 xG  离心 00:00:15  。</li>
+</ol>
+<ol start="4">
+<li>在纯化过程中使用柱上DNA酶处理。</li>
+</ol>
+<ol start="5">
+<li>向离心管中加入 700 μl  洗涤缓冲液I，以 12000 xG  离心 00:00:15  。</li>
+</ol>
+<ol start="6">
+<li>向离心管中加入 500 μl  洗涤缓冲液II，以 12000 xG  离心 00:00:15  （重复该步骤）。</li>
+</ol>
+<ol start="7">
+<li><p>使用不含RNA酶的水（30-100 μl）洗脱RNA。</p>
+</li>
+<li><p>将纯化的RNA保存在冰上。对于长期储存，将纯化的RNA储存在 -80 ℃  。</p>
+</li>
+</ol>
+<h2 id="RNA质量检查"><a href="#RNA质量检查" class="headerlink" title="RNA质量检查"></a>RNA质量检查</h2><ol>
+<li><p>在甲醛缓冲液（20 mM MOPS、5 mM乙酸钠、1 mM EDTA，用NaOH中pH至7.0）中制备1.2％甲醛琼脂糖凝胶。</p>
+</li>
+<li><p>加热混合物使琼脂糖熔化，冷却至 60 ℃  水浴，加入 1.8 ml   37％（12.3M）甲醛和 1 μl   10 mg/ml溴化乙锭，充分混合并倒在凝胶支持物上。</p>
+</li>
+<li><p>每4体积RNA样品加入1倍体积的5倍上样缓冲液制备RNA样品。在 65 ℃  孵育 00:05:00  ，在冰上冷却，并加载到甲醛琼脂糖凝胶上。</p>
+</li>
+<li><p>在1×甲醛琼脂糖凝胶电泳缓冲液中以5-7V/cm运行凝胶，直到主要的溴酚蓝染料前沿迁移约为凝胶长度的四分之三。通过紫外线照射可视化RNA。</p>
+</li>
+</ol>
+<h2 id="逆转录、cDNA合成"><a href="#逆转录、cDNA合成" class="headerlink" title="逆转录、cDNA合成"></a>逆转录、cDNA合成</h2><ol>
+<li><p>准备主混合物，计算每个基因一个或两个附加反应。</p>
+</li>
+<li><p>在 10 μl  不含RNase的水中制备1 μg总RNA，将其加热至 65 ℃    00:05:00  ，并在冰上冷却。在cDNA之前应该有相同数量的优质RNA。</p>
+</li>
+<li><p>短暂离心RNA，并与 10 μl  主混合物轻轻混合，进行cDNA合成。</p>
+</li>
+<li><p>在 25 ℃  孵育 00:10:00  （以使随机六聚体退火）。</p>
+</li>
+<li><p>在 42 ℃  孵育 00:90:00  。</p>
+</li>
+<li><p>通过在 70 ℃  加热 00:15:00  使反应失活。</p>
+</li>
+</ol>
+<h2 id="实时定量PCR"><a href="#实时定量PCR" class="headerlink" title="实时定量PCR"></a>实时定量PCR</h2><ol>
+<li><p>合成的cDNA现在可以用作PCR扩增的模板。每个PCR反应（通常为 20 μl  ）含有： 10 μl   2×SYBR Green试剂和Taq聚合酶， 0.6 μl  正向引物（10 μM原液）， 0.6 μl  反向引物（10μM原液）， 0.2 μl  cDNA和 8.6 μl  分子生物学等级水。 SYBR Green Dye检测系统可用于扩增。每个扩增步骤包括起始阶段 95 ℃  ，退火阶段 60 ℃  和扩增阶段 72 ℃  并重复45次。应包括由ddH2O（无模板对照）和无逆转录酶合成的样品组成的对照，以排除非特异性或背景信号。每个引物组的每个平板上都不应包含模板控制（NTC）以检查污染。</p>
+</li>
+<li><p>这些孔，包括引物和主混合物，但没有模板，应该显示很少或没有扩增。应进行非RT反应以检查基因组DNA污染。扩增产物应在紫外光下在琼脂糖凝胶上显现。管家基因（HKG）应该用于控制逆转录反应效率的变异性。管家基因是其表达水平在所研究的条件下不发生变化的基因。通过测试各种来确定cDNA质量。</p>
+</li>
+<li><p>管家基因（HKG）应该用于控制逆转录反应效率的变异性。管家基因是其表达水平在所研究的条件下不发生变化的基因。通过在决定之前测试各种管家基因来确定cDNA质量，这是基因谱分析的最可靠的内部对照基因。用α-微管蛋白、β-肌动蛋白、GAPDH / G3PDH、磷脂酶A2、β-2-微球蛋白或核糖体单位18S、7S等进行附加的标准化，可以估计单个样品的质量差异并选择合适的内部对照基因。</p>
+</li>
+</ol>
+<h2 id="引物设计"><a href="#引物设计" class="headerlink" title="引物设计"></a>引物设计</h2><ol>
+<li><p>设计的引物应该提供短产品（扩增子）。对于SYBR Green 200-300碱基对产品是理想的选择。应避免具有二级结构或相同核苷酸长程的模板区以及引物上的3’末端胸苷。</p>
+</li>
+<li><p>引物应具有相似的熔化温度。</p>
+</li>
+<li><p>保持CG含量为50-60％。</p>
+</li>
+<li><p>引物应具有低自身互补性或无自身互补性（以避免引物二聚体）。</p>
+</li>
+<li><p>引物应跨越外显子 - 外显子边界。以这种方式，仅扩增来自mRNA基因转录物的cDNA，而不是基因的基因组拷贝。重要的是要意识到这些引物可以仅检测一些剪接变体而不能检测另一个。</p>
+</li>
+<li><p>执行计算机特异性筛选，通过针对整个生物体DNA数据库进行引物的相似性搜索，来对引物序列进行BLAST以确定引物是否可以与其他靶标退火。</p>
+</li>
+</ol>
+<h2 id="PCR效率"><a href="#PCR效率" class="headerlink" title="PCR效率"></a>PCR效率</h2><ol>
+<li>进行十倍连续稀释的cDNA并进行RT-PCR反应。</li>
+</ol>
+<p style="text-indent:2em"/>绘制Ct / Cp（y轴）对log cDNA稀释度（x轴）并确定线的斜率。理想情况下，稀释系列将产生相同间距的扩增曲线，在每个扩增循环中产生双倍的产物。曲线的间距将由等式2 n = 10（稀释因子）确定。因此，n = 3.32，并且Ct / Cp值应该分开3.32个循环。
+
+ 
+
+<h2 id="量化方法"><a href="#量化方法" class="headerlink" title="量化方法"></a>量化方法</h2><ol>
+<li><p>假设靶基因和参考基因均以接近100％的效率扩增。必须验证靶标和参照基因的扩增效率，并确保效率接近100％。如果目标基因和参考基因具有相同的扩增效率。</p>
+</li>
+<li><p>使用每个样本的参考和目标Ct / Cp值之间的差异。必须将表达值除以所选校准物的表达值以获得倍数诱导。</p>
+</li>
+<li><p>如果靶标和参照基因不具有相似的扩增效率，则必须使用Pfaffl方法。</p>
+</li>
+</ol>
+<h1 id="四、实验解疑"><a href="#四、实验解疑" class="headerlink" title="四、实验解疑"></a>四、实验解疑</h1><h2 id="1-无Ct值出现"><a href="#1-无Ct值出现" class="headerlink" title="1. 无Ct值出现"></a>1. 无Ct值出现</h2><p>1）检测荧光信号的步骤有误: 一般SG 法采用72℃延伸时采集，Taqman法则一般在退火结束时或延伸结束采集信号</p>
+<p>2）引物或探针降解: 可通过PAGE 电泳检测其完整性</p>
+<p>3）模板量不足: 对未知浓度的样品应从系列稀释样本的最高浓度做起</p>
+<p>4）模板降解: 避免样品制备中杂质的引入及反复冻融的情况</p>
+<h2 id="2-Ct值出现过晚（Ct-gt-38）"><a href="#2-Ct值出现过晚（Ct-gt-38）" class="headerlink" title="2. Ct值出现过晚（Ct&gt;38）"></a>2. Ct值出现过晚（Ct&gt;38）</h2><p>1）扩增效率低: 反应条件不够优化。设计更好的引物或探针；改用三步法进行反应；适当降低退火温度；增加镁离子浓度等</p>
+<p>2）PCR各种反应成分的降解或加样量的不足</p>
+<p>3）PCR产物太长: 一般采用80-150bp 的产物长度</p>
+<h2 id="3-标准曲线线性关系不佳"><a href="#3-标准曲线线性关系不佳" class="headerlink" title="3. 标准曲线线性关系不佳"></a>3. 标准曲线线性关系不佳</h2><p>1）加样存在误差: 使得标准品不呈梯度。</p>
+<p>2）标准品出现降解: 应避免标准品反复冻融，或重新制备并稀释标准品</p>
+<p>3）引物或探针不佳: 重新设计更好的引物和探针</p>
+<p>4）模板中存在抑制物，或模板浓度过高</p>
+<h2 id="4-负对照有信号"><a href="#4-负对照有信号" class="headerlink" title="4. 负对照有信号"></a>4. 负对照有信号</h2><p>1）引物设计不够优化：应避免引物二聚体和发夹结构的出现</p>
+<p>2）引物浓度不佳：适当降低引物的浓度，并注意上下游引物的浓度配比</p>
+<p>3）镁离子浓度过高：适当降低镁离子浓度，或选择更合适的mix 试剂盒</p>
+<p>4）模板有基因组的污染：RNA 提取过程中避免基因组DNA 的引入，或通过引物设计避免非特异扩增。</p>
+<h2 id="5-溶解曲线不止一个主峰"><a href="#5-溶解曲线不止一个主峰" class="headerlink" title="5. 溶解曲线不止一个主峰"></a>5. 溶解曲线不止一个主峰</h2><p>1）引物设计不够优化：应避免引物二聚体和发夹结构的出现</p>
+<p>2）引物浓度不佳：适当降低引物的浓度，并注意上下游引物的浓度配比</p>
+<p>3）镁离子浓度过高：适当降低镁离子浓度，或选择更合适的mix 试剂盒</p>
+<p>4）模板有基因组的污染：RNA 提取过程中避免基因组DNA 的引入，或通过引物设计避免非特异扩增</p>
+<h2 id="6-扩增效率低"><a href="#6-扩增效率低" class="headerlink" title="6. 扩增效率低"></a>6. 扩增效率低</h2><p>1）反应试剂中部分成分特别是荧光染料降解</p>
+<p>2）反应条件不够优化：可适当降低退火温度或改为三步扩增法</p>
+<p>3）反应体系中有PCR 反应抑制物：一般是加入模板时所引入，应先把模板适度稀释，再加入反应体系中，减少抑制物的影响</p>
+<h2 id="7-同一试剂在不同仪器上产生不同的曲线，如何判断？"><a href="#7-同一试剂在不同仪器上产生不同的曲线，如何判断？" class="headerlink" title="7. 同一试剂在不同仪器上产生不同的曲线，如何判断？"></a>7. 同一试剂在不同仪器上产生不同的曲线，如何判断？</h2><p style="text-indent:2em"/>判断标准：扩增效率，灵敏度，特异性。如果扩增效率在90%-110%，都是特异性扩增，都可以把数据用于分析
+
+ 
+
+<h2 id="8-扩增曲线的异常？比如“S”型曲线？"><a href="#8-扩增曲线的异常？比如“S”型曲线？" class="headerlink" title="8. 扩增曲线的异常？比如“S”型曲线？"></a>8. 扩增曲线的异常？比如“S”型曲线？</h2><p>1）参比染料设定不正确(MasterMix 不加参比染料时，选NONE)</p>
+<p>2）模板的浓度太高或者降解</p>
+<p>3）荧光染料的降解</p>
+<h2 id="9-复孔间重复性差"><a href="#9-复孔间重复性差" class="headerlink" title="9. 复孔间重复性差"></a>9. 复孔间重复性差</h2><p>复孔间重复性差一般会有以下两种情况：</p>
+<p>1）Ct值＜30，重复性较差，这种情况与操作有一定关系。</p>
+<p>这种情况可以从以下几个方面分析：加样准确度；移液器吸取液体的准确度；定期校准qPCR仪</p>
+<ul>
+<li>加样准确度</li>
+</ul>
+<p>a. 避免小体积加样，减少加样误差。可以将引物、SYBR Green Mix、ddH2O 配置成混合体系，并且增加模板的稀释梯度，大体积加样。如：原液 cDNA 添加 1 μL，可以更改为原液 cDNA 稀释 5 倍，添加 5 μL，使用 ddH2O 补齐体系至 20 μL 即可。</p>
+<p>b. SYBR Green Mix、配置的混合体系需要混合均匀。从 -20 ℃ 冰箱拿出的试剂需要完全融化并上下颠倒彻底混匀；配置体系时，将混在一起的 Mix 用移液器吹打混匀。</p>
+<ul>
+<li>移液器吸取液体的准确度</li>
+</ul>
+<p>a. 移液器量程定期校准，校准周期为 1 年。</p>
+<p>b. 购买与移液器配套的枪头，若枪头与移液器不匹配，在吸取液体时易出现漏气的现象，导致吸取量程不准确。</p>
+<p>c. 在吸取相同量程的液体体积时，注意观察每次吸取液体在枪头内的液面高度是否一致。</p>
+<ul>
+<li>定期校准PCR仪</li>
+</ul>
+<p>一般每一年都需要对PCR仪校准一次。</p>
+<p>2）Ct值＞30，重复性差。这种情况符合松柏分布，即在有效模板很少的情况下，模板与引物的碰撞存在随机性，直接导致复孔间的Ct值差异较大。在出现这种情况时，我们可以看看溶解曲线是否有杂峰，如果无杂峰，无模板阴性对照同目的基因的△Ct值为3or5以上，那Ct值为准确的，可多设置几个复孔，选择重复性好的Ct值参与计算。</p>
+<h2 id="10-无模板阴性对照（NTC）出现Ct值时，目的基因Ct值是否能用？"><a href="#10-无模板阴性对照（NTC）出现Ct值时，目的基因Ct值是否能用？" class="headerlink" title="10. 无模板阴性对照（NTC）出现Ct值时，目的基因Ct值是否能用？"></a>10. 无模板阴性对照（NTC）出现Ct值时，目的基因Ct值是否能用？</h2><p>当出现这种问题，也能分为两种情况去考虑：</p>
+<p>1）通过观察融解曲线，NTC 与目的基因融解曲线峰形不重叠。一般 NTC 的 Tm 值较目的基因 Tm 值小。这种情况下，NTC 的Ct值是由引物二聚体造成的，并不影响目的基因 Ct 值的采集。</p>
+<p>2）NTC与目的基因融解曲线峰形重叠。NTC的Tm值等于目的基因的Tm值。</p>
+<p>这种情况下，说明体系已被气溶胶污染了。那么，体系被污染，目的基因的 Ct 值还能正常使用吗？需要计算目的基因的 Ct 值与 NTC 的 Ct 值的差值（△CT）来判定。</p>
+<p>若 △Ct ≥ 5，说明气溶胶带来的污染对体系影响非常小，可以忽略不计。如果达不到 △Ct ≥ 5 的程度，△Ct ≥ 3 也可以认为气溶胶的污染程度很低，目的基因的 Ct 值可正常使用。</p>
+<p>若 △Ct ＜ 3，说明污染已经很严重了，目的基因的 Ct 值是不能使用的。</p>
+<h2 id="11-Ct值很大"><a href="#11-Ct值很大" class="headerlink" title="11. Ct值很大"></a>11. Ct值很大</h2><p style="text-indent:2em"/>Ct值偏大的原因，可以分为以下两种情况来进行讨论：
+
+<p>1）相同体系，前期实验 Ct 值正常，本次实验，所有基因扩增 Ct 值皆偏大。</p>
+<p style="text-indent:2em"/>这种情况下，需要排查 RNA 是否存在降解。如何判定 RNA 是否存在降解呢？可通过 1% 的琼脂糖凝胶电泳进行检测。完整度好的 RNA 是有三条带的，以真核生物为例，三条带分别是 28s、18s、5s，且 28s 条带的亮度是 18s 的两倍，5s 最暗（下图左）。
+
+ 
+
+<p style="text-indent:2em"/>如果 RNA 发生降解，会出现三条带的亮度发生变化，甚至不存在完整的三条带。如果 28s 几乎看不到了，整个泳道 Smear 严重，说明 RNA 的降解已经很严重了，此时 RNA 不建议用作后续的逆转录实验。重新提取 RNA 重复实验。
+
+ 
+
+<p>2）该基因第一次扩增，其 Ct 值偏大，而其余基因的 Ct 值正常。</p>
+<p style="text-indent:2em"/>这种情况下就需要判定是因为基因的扩增效率低导致的 Ct 值偏大，还是基因本身的表达量低造成的 Ct 值偏大。
+
+ 
+
+<p style="text-indent:2em"/>如何判定是因为基因的扩增效率低导致的 Ct 值偏大，还是基因本身的表达量低造成的 CT 值偏大呢？首先需要计算引物的扩增效率。
+
+<p style="text-indent:2em"/>可将基因的扩增产物进行梯度稀释（至少三个梯度，且梯度之间的 △Ct 均一，防止因为操作原因导致标准曲线线性关系差，进而影响扩增效率的计算），同时进行 qPCR。将得到的标准曲线进行引物扩增效率的计算。
+
+ 
+
+<h2 id="12-双峰现象"><a href="#12-双峰现象" class="headerlink" title="12. 双峰现象"></a>12. 双峰现象</h2><p>1）双峰，较低峰Tm在80℃之前</p>
+<p style="text-indent:2em"/>这种情况考虑到可能存在引物二聚体,建议降低引物浓度或重新设计引物等方式优化。
+
+ 
+
+<p>2）双峰，双峰Tm在80℃以后</p>
+<ul>
+<li><p>引物特异性过差导致非特异性产物扩增，建议Blast检查引物特异性或重新设计引物。</p>
+</li>
+<li><p>gDNA污染，可通过NRC进行确认。若NRC有Ct值，可重新制备模板。</p>
+</li>
+</ul>
+<h2 id="13-熔解曲线单峰但不尖锐"><a href="#13-熔解曲线单峰但不尖锐" class="headerlink" title="13. 熔解曲线单峰但不尖锐"></a>13. 熔解曲线单峰但不尖锐</h2><p style="text-indent:2em"/>这可能存在大小相近的非特异性产物，可以利用高分辨率琼脂糖电泳确认。
+
+ 
+
+<h2 id="14-熔解曲线单峰但Tm值在80℃以前"><a href="#14-熔解曲线单峰但Tm值在80℃以前" class="headerlink" title="14. 熔解曲线单峰但Tm值在80℃以前"></a>14. 熔解曲线单峰但Tm值在80℃以前</h2><p style="text-indent:2em"/>推测未加模板，仅有引物二聚体的扩增。可利用高分辨率琼脂糖电泳确认或重复实验。
+
+ 
+
+<h2 id="15-有扩增曲线无溶解曲线"><a href="#15-有扩增曲线无溶解曲线" class="headerlink" title="15. 有扩增曲线无溶解曲线"></a>15. 有扩增曲线无溶解曲线</h2><p style="text-indent:2em"/>可能是熔解程序设置错误，未搜集荧光信号，建议重新实验，增加熔解曲线阶段的信号搜集。
+
+ 
+
+<h2 id="16-熔解曲线峰型杂乱"><a href="#16-熔解曲线峰型杂乱" class="headerlink" title="16. 熔解曲线峰型杂乱"></a>16. 熔解曲线峰型杂乱</h2><p>1）反应体系污染，结合NTC和NRC结果确认污染情况，建议从水，引物，酶和环境等逐一排除污染。</p>
+<p>2）试剂暴露在强光或高温下导致试剂失效，建议用新的试剂做对比实验。</p>
+<p>3）仪器长时间未校准，建议定期进行仪器校准保养。</p>
+<p>4）耗材与仪器不匹配，需确认对应仪器对耗材的要求。</p>
+<h2 id="17-两种试剂对比，得到的Tm值不一样"><a href="#17-两种试剂对比，得到的Tm值不一样" class="headerlink" title="17. 两种试剂对比，得到的Tm值不一样"></a>17. 两种试剂对比，得到的Tm值不一样</h2><p style="text-indent:2em"/>可能是不同试剂的促解链成分或含量不一样，导致解链温度Tm值不一样。
+
+
+<h1 id="五、注意事项"><a href="#五、注意事项" class="headerlink" title="五、注意事项"></a>五、注意事项</h1><h2 id="1-引物和探针设计不当"><a href="#1-引物和探针设计不当" class="headerlink" title="1. 引物和探针设计不当"></a>1. 引物和探针设计不当</h2><p style="text-indent:2em"/>为了最高效地设计用于实时荧光定量PCR的引物和探针，我们强烈建议您使用引物设计软件。大多数引物设计程序均包含了可调节的参数以设计最佳的引物和探针。这些参数涉及了引物/探针的Tm值、互补性、二级结构以及扩增子大小等重要因素。另外还建议您限制连续的重复核酸数目。当设计用于真核目标序列的扩增子时，请选择在目标mRNA中至少跨越一个外显子-外显子接合点的PCR引物对，以避免从残留的基因组DNA模板扩增目标片段。
+
+ 
+
+<h2 id="2-使用了低质量的RNA"><a href="#2-使用了低质量的RNA" class="headerlink" title="2. 使用了低质量的RNA"></a>2. 使用了低质量的RNA</h2><p style="text-indent:2em"/>已降解的或低纯度的RNA会抑制反转录效率并降低得率。所用的RNA应当来自于新鲜组织，或者经过RNA稳定试剂处理过的组织，如RNAlater短片段试剂（70–250 bp）等。这样可以避免少部分降解RNA对结果的影响。若无法使用完全完整的RNA，则可以使设计的引物对与感兴趣基因内部区域进行匹配。需要注意的是，对于真正的实时荧光定量PCR，部分降解的RNA可能无法给出基因表达的精确结果。
+
+  
+
+<h2 id="3-未使用“预混液”"><a href="#3-未使用“预混液”" class="headerlink" title="3. 未使用“预混液”"></a>3. 未使用“预混液”</h2><p style="text-indent:2em"/>qRT-PCR是一种分析RNA的高灵敏工具。由于PCR反应会扩增目的基因，所以误差也会被同时扩增出来。因此，无论何时都应当确保变异处于最低水平。“预混液”是反应试剂的混合液，在设置建立多个反应时应当使用它来最小化样品间和反应孔间的差异以提高可重复性。为了进一步减少孔间差异，可以向预混液中加入ROX等参比荧光。
+
+ 
+
+<h2 id="4-引入交叉污染"><a href="#4-引入交叉污染" class="headerlink" title="4. 引入交叉污染"></a>4. 引入交叉污染</h2><p style="text-indent:2em"/>对PCR区域的所有表面均应当使用DNA去污染试剂来进行日常去污染工作以防止交叉污染，推荐使用如DNAzap的试剂，其可以破坏DNA。可以使用“无模板对照“（NTC）来排除试剂和实验桌面的交叉污染。NTC含有除RNA模板外的所有RT-PCR试剂。通常是用无核酸酶水简单地替换掉反应中的RNA。反应后NTC中应当没有合成任何产物；若有产物被合成了，则意味着RT-PCR试剂中的一种或多种被扩增产物污染了。
+
+ 
+
+<h2 id="5-未使用“–-RT”对照"><a href="#5-未使用“–-RT”对照" class="headerlink" title="5. 未使用“– RT”对照"></a>5. 未使用“– RT”对照</h2><p style="text-indent:2em"/>在RNA制备过程中，事实上不可能完全去除基因组DNA。因此，在qRT-PCR实验中有必要加入无逆转录酶对照（“非扩增对照“，还可记为NAC）。通常，NAC是一个模拟的逆转录反应，其中含有除逆转录酶之外的所有RT-PCR试剂。若在NAC中可观察到产物，通常意味着样品中残留有DNA。 
+
+ 
+
+<h2 id="6-使用了不适当的均一化对照"><a href="#6-使用了不适当的均一化对照" class="headerlink" title="6. 使用了不适当的均一化对照"></a>6. 使用了不适当的均一化对照</h2><p style="text-indent:2em"/>任意qRT-PCR实验的可靠性均可以通过在实验中引入一个不变的内参对照得到改善，这样做有助于改善qRT-PCR的样品间差异以及样品定量过程中的误差。一个好的对照，其表达水平应当在所分析的样品中保持不变。通常我们使用18S rRNA作为对照，因为它相比其他传统内参对照如ß-actin或GAPDH等表达水平变化更小。
+
+ 
+
+<h2 id="7-使用SYBR-Green时未进行熔解曲线分析"><a href="#7-使用SYBR-Green时未进行熔解曲线分析" class="headerlink" title="7. 使用SYBR Green时未进行熔解曲线分析"></a>7. 使用SYBR Green时未进行熔解曲线分析</h2><p style="text-indent:2em"/>理想情况下，实验样品在扩增子熔解温度下会产生一个清晰的峰（一阶导数图），而NAC及NTC则不会产生任何明显的荧光信号。这类结果意味着PCR产物是特异性的，且此时SYBR Green I 荧光是对目的产物的累积的直接测量。若熔解曲线显示为一系列的峰，则意味着此时很难分辨出特异性及非特异性反应产物。为了获取有意义的数据，这种情况下必须对qRT-PCR进行优化。
+
+ 
+
+<h2 id="8-没有正确地设置基线和阈值线"><a href="#8-没有正确地设置基线和阈值线" class="headerlink" title="8. 没有正确地设置基线和阈值线"></a>8. 没有正确地设置基线和阈值线</h2><p style="text-indent:2em"/>为了得到精确的Ct值，应当在丰度最高的样品所对应Ct值两个循环之前设置基线。为了使实时荧光定量PCR的数据有意义，应当在指数扩增期设置阈值线。典型情况下，阈值应当设置在基线至少10个标准差范围内。
+
+  
+
+<h2 id="9-扩增效率低"><a href="#9-扩增效率低" class="headerlink" title="9. 扩增效率低"></a>9. 扩增效率低</h2><p style="text-indent:2em"/>扩增效率(Eff)可以通过以下公式进行计算：
+
+<p style="text-indent:2em"/>Eff = 10 (–1/slope) – 1
+
+<p style="text-indent:2em"/>PCR的效率应当在90-110%之间（3.6 > 斜率 > 3.1）。有一系列变量会影响到PCR的效率。举例来说，这些因素包括扩增子的长度、二级结构以及引物设计等。尽管扩增效率落在上述范围之外时，我们也可以得到有效数据，但是仍然应当对qRT-PCR进行进一步优化或改变扩增子设计。
+
+ 
+
+<h2 id="10-使用不正确的范围来制作标准曲线"><a href="#10-使用不正确的范围来制作标准曲线" class="headerlink" title="10. 使用不正确的范围来制作标准曲线"></a>10. 使用不正确的范围来制作标准曲线</h2><p style="text-indent:2em"/>在RNA定量研究（绝对或相对定量）中或验证PCR（delta-delta-Ct）的扩增效率时，对于每个基因都应当制备标准曲线。标准曲线数据点应当覆盖您的目标基因期望丰度。额外的数据点也可以包括在内，例如在极限上下方的最小及最大RNA量等，以帮助区分特异性和非特异性产物。
+
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">地球叛逃者.</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://bio-w.cn/posts/28868.html">https://bio-w.cn/posts/28868.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://bio-w.cn" target="_blank">西瓜撞地球</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/">植物学试验</a><a class="post-meta__tags" href="/tags/%E6%B9%BF%E5%AE%9E%E9%AA%8C/">湿实验</a><a class="post-meta__tags" href="/tags/PCR/">PCR</a></div><div class="post_share"><div class="social-share" data-image="/img/pcr.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/reward-weixin.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/reward-weixin.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/reward-zhifubao.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/reward-zhifubao.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/32928.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/heatmap.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">R语言-pheatmap绘制聚类热图</div></div></a></div><div class="next-post pull-right"><a href="/posts/42687.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/pcr.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">🧬湿实验之降落PCR</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/32181.html" title="🧬湿实验之反转录PCR实验要点"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/pcr.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-25</div><div class="title">🧬湿实验之反转录PCR实验要点</div></div></a></div><div><a href="/posts/42687.html" title="🧬湿实验之降落PCR"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/pcr.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-27</div><div class="title">🧬湿实验之降落PCR</div></div></a></div><div><a href="/posts/61125.html" title="🧬湿实验之PCR实验要点"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/pcr.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-24</div><div class="title">🧬湿实验之PCR实验要点</div></div></a></div><div><a href="/posts/46860.html" title="荧光显微实验总结"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.imgtg.com/2022/10/05/pT4RL.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-05</div><div class="title">荧光显微实验总结</div></div></a></div><div><a href="/posts/60317.html" title="石蜡切片实验步骤整理"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/shilaqiepian.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-06-25</div><div class="title">石蜡切片实验步骤整理</div></div></a></div><div><a href="/posts/46859.html" title="欧李自交不亲和试验之文章结构"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/transparent" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-12</div><div class="title">欧李自交不亲和试验之文章结构</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avater.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">地球叛逃者.</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/ix2213"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/ix2213" target="_blank" title="Github"><i class="fab iconfont icon-github1"></i></a><a class="social-icon" href="mailto:gxw1606@163.com" target="_blank" title="Email"><i class="fas iconfont icon-youxiang"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><div class="twopeople">一念之差</br>满盘皆输</br><div class="container" style="height:200px;"><canvas class="illo" width="800" height="800" style="max-width:200px;max-height:200px;touch-action:none;width:640px;height:640px;"></canvas></div><script src="https://gcore.jsdelivr.net/gh/Justlovesmile/CDN/js/twopeople1.js"></script><script src="https://gcore.jsdelivr.net/gh/Justlovesmile/CDN/js/zdog.dist.js"></script><script id="rendered-js" src="https://gcore.jsdelivr.net/gh/Justlovesmile/CDN/js/twopeople.js"></script><style>.twopeople{margin:0;align-items:center;justify-content:center;text-align:center;}canvas{display:block;margin:0 auto;cursor:move;}</style></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%9F%BA%E6%9C%AC%E8%B5%84%E6%96%99"><span class="toc-number">1.</span> <span class="toc-text">一、基本资料</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%8E%9F%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">二、原理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E4%B8%BB%E8%A6%81%E6%AD%A5%E9%AA%A4"><span class="toc-number">3.</span> <span class="toc-text">三、主要步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#RNA%E6%8F%90%E5%8F%96%EF%BC%88%E6%A0%B7%E6%9C%AC%E9%87%8F%E6%A0%87%E5%87%86%E5%8C%96%EF%BC%89"><span class="toc-number">3.1.</span> <span class="toc-text">RNA提取（样本量标准化）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RNA%E8%B4%A8%E9%87%8F%E6%A3%80%E6%9F%A5"><span class="toc-number">3.2.</span> <span class="toc-text">RNA质量检查</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%86%E8%BD%AC%E5%BD%95%E3%80%81cDNA%E5%90%88%E6%88%90"><span class="toc-number">3.3.</span> <span class="toc-text">逆转录、cDNA合成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E6%97%B6%E5%AE%9A%E9%87%8FPCR"><span class="toc-number">3.4.</span> <span class="toc-text">实时定量PCR</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E7%89%A9%E8%AE%BE%E8%AE%A1"><span class="toc-number">3.5.</span> <span class="toc-text">引物设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PCR%E6%95%88%E7%8E%87"><span class="toc-number">3.6.</span> <span class="toc-text">PCR效率</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8F%E5%8C%96%E6%96%B9%E6%B3%95"><span class="toc-number">3.7.</span> <span class="toc-text">量化方法</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%AE%9E%E9%AA%8C%E8%A7%A3%E7%96%91"><span class="toc-number">4.</span> <span class="toc-text">四、实验解疑</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%97%A0Ct%E5%80%BC%E5%87%BA%E7%8E%B0"><span class="toc-number">4.1.</span> <span class="toc-text">1. 无Ct值出现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Ct%E5%80%BC%E5%87%BA%E7%8E%B0%E8%BF%87%E6%99%9A%EF%BC%88Ct-gt-38%EF%BC%89"><span class="toc-number">4.2.</span> <span class="toc-text">2. Ct值出现过晚（Ct&gt;38）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%A0%87%E5%87%86%E6%9B%B2%E7%BA%BF%E7%BA%BF%E6%80%A7%E5%85%B3%E7%B3%BB%E4%B8%8D%E4%BD%B3"><span class="toc-number">4.3.</span> <span class="toc-text">3. 标准曲线线性关系不佳</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E8%B4%9F%E5%AF%B9%E7%85%A7%E6%9C%89%E4%BF%A1%E5%8F%B7"><span class="toc-number">4.4.</span> <span class="toc-text">4. 负对照有信号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E6%BA%B6%E8%A7%A3%E6%9B%B2%E7%BA%BF%E4%B8%8D%E6%AD%A2%E4%B8%80%E4%B8%AA%E4%B8%BB%E5%B3%B0"><span class="toc-number">4.5.</span> <span class="toc-text">5. 溶解曲线不止一个主峰</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E6%89%A9%E5%A2%9E%E6%95%88%E7%8E%87%E4%BD%8E"><span class="toc-number">4.6.</span> <span class="toc-text">6. 扩增效率低</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E5%90%8C%E4%B8%80%E8%AF%95%E5%89%82%E5%9C%A8%E4%B8%8D%E5%90%8C%E4%BB%AA%E5%99%A8%E4%B8%8A%E4%BA%A7%E7%94%9F%E4%B8%8D%E5%90%8C%E7%9A%84%E6%9B%B2%E7%BA%BF%EF%BC%8C%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%EF%BC%9F"><span class="toc-number">4.7.</span> <span class="toc-text">7. 同一试剂在不同仪器上产生不同的曲线，如何判断？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E6%89%A9%E5%A2%9E%E6%9B%B2%E7%BA%BF%E7%9A%84%E5%BC%82%E5%B8%B8%EF%BC%9F%E6%AF%94%E5%A6%82%E2%80%9CS%E2%80%9D%E5%9E%8B%E6%9B%B2%E7%BA%BF%EF%BC%9F"><span class="toc-number">4.8.</span> <span class="toc-text">8. 扩增曲线的异常？比如“S”型曲线？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E5%A4%8D%E5%AD%94%E9%97%B4%E9%87%8D%E5%A4%8D%E6%80%A7%E5%B7%AE"><span class="toc-number">4.9.</span> <span class="toc-text">9. 复孔间重复性差</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E6%97%A0%E6%A8%A1%E6%9D%BF%E9%98%B4%E6%80%A7%E5%AF%B9%E7%85%A7%EF%BC%88NTC%EF%BC%89%E5%87%BA%E7%8E%B0Ct%E5%80%BC%E6%97%B6%EF%BC%8C%E7%9B%AE%E7%9A%84%E5%9F%BA%E5%9B%A0Ct%E5%80%BC%E6%98%AF%E5%90%A6%E8%83%BD%E7%94%A8%EF%BC%9F"><span class="toc-number">4.10.</span> <span class="toc-text">10. 无模板阴性对照（NTC）出现Ct值时，目的基因Ct值是否能用？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-Ct%E5%80%BC%E5%BE%88%E5%A4%A7"><span class="toc-number">4.11.</span> <span class="toc-text">11. Ct值很大</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-%E5%8F%8C%E5%B3%B0%E7%8E%B0%E8%B1%A1"><span class="toc-number">4.12.</span> <span class="toc-text">12. 双峰现象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-%E7%86%94%E8%A7%A3%E6%9B%B2%E7%BA%BF%E5%8D%95%E5%B3%B0%E4%BD%86%E4%B8%8D%E5%B0%96%E9%94%90"><span class="toc-number">4.13.</span> <span class="toc-text">13. 熔解曲线单峰但不尖锐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-%E7%86%94%E8%A7%A3%E6%9B%B2%E7%BA%BF%E5%8D%95%E5%B3%B0%E4%BD%86Tm%E5%80%BC%E5%9C%A880%E2%84%83%E4%BB%A5%E5%89%8D"><span class="toc-number">4.14.</span> <span class="toc-text">14. 熔解曲线单峰但Tm值在80℃以前</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#15-%E6%9C%89%E6%89%A9%E5%A2%9E%E6%9B%B2%E7%BA%BF%E6%97%A0%E6%BA%B6%E8%A7%A3%E6%9B%B2%E7%BA%BF"><span class="toc-number">4.15.</span> <span class="toc-text">15. 有扩增曲线无溶解曲线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#16-%E7%86%94%E8%A7%A3%E6%9B%B2%E7%BA%BF%E5%B3%B0%E5%9E%8B%E6%9D%82%E4%B9%B1"><span class="toc-number">4.16.</span> <span class="toc-text">16. 熔解曲线峰型杂乱</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#17-%E4%B8%A4%E7%A7%8D%E8%AF%95%E5%89%82%E5%AF%B9%E6%AF%94%EF%BC%8C%E5%BE%97%E5%88%B0%E7%9A%84Tm%E5%80%BC%E4%B8%8D%E4%B8%80%E6%A0%B7"><span class="toc-number">4.17.</span> <span class="toc-text">17. 两种试剂对比，得到的Tm值不一样</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">5.</span> <span class="toc-text">五、注意事项</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%BC%95%E7%89%A9%E5%92%8C%E6%8E%A2%E9%92%88%E8%AE%BE%E8%AE%A1%E4%B8%8D%E5%BD%93"><span class="toc-number">5.1.</span> <span class="toc-text">1. 引物和探针设计不当</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%BD%BF%E7%94%A8%E4%BA%86%E4%BD%8E%E8%B4%A8%E9%87%8F%E7%9A%84RNA"><span class="toc-number">5.2.</span> <span class="toc-text">2. 使用了低质量的RNA</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%9C%AA%E4%BD%BF%E7%94%A8%E2%80%9C%E9%A2%84%E6%B7%B7%E6%B6%B2%E2%80%9D"><span class="toc-number">5.3.</span> <span class="toc-text">3. 未使用“预混液”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%BC%95%E5%85%A5%E4%BA%A4%E5%8F%89%E6%B1%A1%E6%9F%93"><span class="toc-number">5.4.</span> <span class="toc-text">4. 引入交叉污染</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E6%9C%AA%E4%BD%BF%E7%94%A8%E2%80%9C%E2%80%93-RT%E2%80%9D%E5%AF%B9%E7%85%A7"><span class="toc-number">5.5.</span> <span class="toc-text">5. 未使用“– RT”对照</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E4%BD%BF%E7%94%A8%E4%BA%86%E4%B8%8D%E9%80%82%E5%BD%93%E7%9A%84%E5%9D%87%E4%B8%80%E5%8C%96%E5%AF%B9%E7%85%A7"><span class="toc-number">5.6.</span> <span class="toc-text">6. 使用了不适当的均一化对照</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E4%BD%BF%E7%94%A8SYBR-Green%E6%97%B6%E6%9C%AA%E8%BF%9B%E8%A1%8C%E7%86%94%E8%A7%A3%E6%9B%B2%E7%BA%BF%E5%88%86%E6%9E%90"><span class="toc-number">5.7.</span> <span class="toc-text">7. 使用SYBR Green时未进行熔解曲线分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E6%B2%A1%E6%9C%89%E6%AD%A3%E7%A1%AE%E5%9C%B0%E8%AE%BE%E7%BD%AE%E5%9F%BA%E7%BA%BF%E5%92%8C%E9%98%88%E5%80%BC%E7%BA%BF"><span class="toc-number">5.8.</span> <span class="toc-text">8. 没有正确地设置基线和阈值线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E6%89%A9%E5%A2%9E%E6%95%88%E7%8E%87%E4%BD%8E"><span class="toc-number">5.9.</span> <span class="toc-text">9. 扩增效率低</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E4%BD%BF%E7%94%A8%E4%B8%8D%E6%AD%A3%E7%A1%AE%E7%9A%84%E8%8C%83%E5%9B%B4%E6%9D%A5%E5%88%B6%E4%BD%9C%E6%A0%87%E5%87%86%E6%9B%B2%E7%BA%BF"><span class="toc-number">5.10.</span> <span class="toc-text">10. 使用不正确的范围来制作标准曲线</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/28628.html" title="毕业、国奖"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/10/06/633e46e90b832.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="毕业、国奖"/></a><div class="content"><a class="title" href="/posts/28628.html" title="毕业、国奖">毕业、国奖</a><time datetime="2022-10-10T02:11:12.000Z" title="发表于 2022-10-10 10:11:12">2022-10-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/22425.html" title="六年"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/10/07/633fdfc1d4936.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="六年"/></a><div class="content"><a class="title" href="/posts/22425.html" title="六年">六年</a><time datetime="2022-10-07T08:16:23.000Z" title="发表于 2022-10-07 16:16:23">2022-10-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/60696.html" title="梦"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/10/07/633fdfc2c722b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="梦"/></a><div class="content"><a class="title" href="/posts/60696.html" title="梦">梦</a><time datetime="2022-10-07T08:16:15.000Z" title="发表于 2022-10-07 16:16:15">2022-10-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/5664.html" title="黑名单"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/10/07/633fdfc1d3fb4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="黑名单"/></a><div class="content"><a class="title" href="/posts/5664.html" title="黑名单">黑名单</a><time datetime="2022-10-07T08:16:06.000Z" title="发表于 2022-10-07 16:16:06">2022-10-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/59313.html" title="我与我"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/10/06/633ed59127114.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我与我"/></a><div class="content"><a class="title" href="/posts/59313.html" title="我与我">我与我</a><time datetime="2022-10-06T13:19:08.000Z" title="发表于 2022-10-06 21:19:08">2022-10-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="ah-footer"><div class="footer-group"><h3 class="footer-title">文章</h3><div class="footer-links"><a class="footer-item" href="/archives/" data-pjax-state="">全部文章</a><a class="footer-item" href="/tags/" data-pjax-state="">文章标签</a><a class="footer-item" href="/categories/" data-pjax-state="">文章分类</a></div></div><div class="footer-group"><h3 class="footer-title">科研</h3><div class="footer-links"><a class="footer-item" href="/bio/" data-pjax-state="">生信工具</a><a class="footer-item" href="/categories/Python/" data-pjax-state="">生物信息</a><a class="footer-item" href="/categories/植物学试验/" data-pjax-state="">植物学试验</a></div></div><div class="footer-group"><h3 class="footer-title">网站</h3><div class="footer-links"><a class="footer-item" href="/messageboard/" data-pjax-state="">留言信箱</a><a class="footer-item" href="/charts/" data-pjax-state="">博客统计</a><a class="footer-item" href="/update/" data-pjax-state="">更新日志</a></div></div><div class="footer-group"><h3 class="footer-title">导航</h3><div class="footer-links"><a class="footer-item" href="/bb/" data-pjax-state="">自言自语</a><a class="footer-item" href="/link/" data-pjax-state="">友情链接</a><a class="footer-item" href="/fcircle/" data-pjax-state="">友链订阅</a></div></div><div class="footer-group"><h3 class="footer-title">协议</h3><div class="footer-links"><a class="footer-item" href="/privacy/" data-pjax-state="">隐私协议</a><a class="footer-item" href="/cc/" data-pjax-state="">版权协议</a><a class="footer-item" href="/cookies/" data-pjax-state="">Cookies政策</a><a class="footer-item" onclick="btf.scrollToDest(0, 500)"></a></div></div></div><div id="fotter-copyright" style="font-size:90%"><div class="copyrights"><span>Copyright © 2022 地球叛逃者. </span><span> All rights reserved.</span></div><div class="framework-info"><span>Powered by </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">&</span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo-api-xi.vercel.app',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.vemoji)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo-api-xi.vercel.app',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      document.getElementById('twikoo-count').innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script src="/js/custom.js"></script><script src="https://blog.zhheo.com/zhheo/random.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法制,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
