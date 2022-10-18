@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>R语言更新及迁移R包</title>
+      <link href="/posts/5190.html"/>
+      <url>/posts/5190.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>R语言的更新频率属实有点快了，可能一段时间没用R语言，再打开，就会发现又有新版本了，而一些常用的包，比如ggplot2包，一般都会要求使用较新版本的R语言<br>所以，经常更新R也是再所难免的<br>今天想分析一下蛋白互作，GO和KEGG,引入ggplot2包的时候报错了，很明显需要更新R了<br>其实更新R的代码很简单，但有段时间不更新就会忘了，所以记录一下吧</p><h1 id="R语言更新"><a href="#R语言更新" class="headerlink" title="R语言更新"></a>R语言更新</h1><p>在现有版本的R中安装installr包<br>引入installr包<br>更新R即可<br>代码如下<br>这种更新方式会直接下载最新版的R，然后重新装，缺点可能就是你的电脑上会有很多版本的R语言文件夹</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">install.packages(&quot;installr&quot;)</span><br><span class="line">library(installr)</span><br><span class="line">updateR()</span><br></pre></td></tr></table></figure><h1 id="Rstudio的更新"><a href="#Rstudio的更新" class="headerlink" title="Rstudio的更新"></a>Rstudio的更新</h1><p>理论上，Rstudio可以不用频繁更新，但是每次更新R后，可能需要更换一下R的路径，否则Rstudio打开后是空白页面<br>所以只需要按住ctrl，然后双击打开Rstudio，选择一下最新安装的R路径即可。<br><img src="https://bu.dusays.com/2022/10/18/634ebe46931ae.jpg"></p><h1 id="R包的迁移"><a href="#R包的迁移" class="headerlink" title="R包的迁移"></a>R包的迁移</h1><p>其实这一部分也很简单，就是找到旧版本的R包，并将其复制粘贴到新版本的文件夹中即可.<br>接下来我们只需要找到新版本的R包安装位置在哪里即可了，只需要打开RStudio,这时候应该会自动切换到新的版本。然后只需要输入以下代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.libPaths()</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> R语言 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> R语言 </tag>
+            
+            <tag> 生物信息学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>猫</title>
       <link href="/posts/18581.html"/>
       <url>/posts/18581.html</url>

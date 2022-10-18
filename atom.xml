@@ -6,7 +6,7 @@
   <link href="https://bio-w.cn/atom.xml" rel="self"/>
   
   <link href="https://bio-w.cn/"/>
-  <updated>2022-10-17T06:11:08.921Z</updated>
+  <updated>2022-10-18T14:58:59.679Z</updated>
   <id>https://bio-w.cn/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>R语言更新及迁移R包</title>
+    <link href="https://bio-w.cn/posts/5190.html"/>
+    <id>https://bio-w.cn/posts/5190.html</id>
+    <published>2022-10-18T09:23:10.000Z</published>
+    <updated>2022-10-18T14:58:59.679Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>R语言的更新频率属实有点快了，可能一段时间没用R语言，再打开，就会发现又有新版本了，而一些常用的包，比如ggplot2包，一般都会要求使用较新版本的R语言<br>所以，经常更新R也是再所难免的<br>今天想分析一下蛋白互作，GO和KEGG,引入ggplot2包的时候报错了，很明显需要更新R了<br>其实更新R的代码很简单，但有段时间不更新就会忘了，所以记录一下吧</p><h1 id="R语言更新"><a href="#R语言更新" class="headerlink" title="R语言更新"></a>R语言更新</h1><p>在现有版本的R中安装installr包<br>引入installr包<br>更新R即可<br>代码如下<br>这种更新方式会直接下载最新版的R，然后重新装，缺点可能就是你的电脑上会有很多版本的R语言文件夹</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">install.packages(&quot;installr&quot;)</span><br><span class="line">library(installr)</span><br><span class="line">updateR()</span><br></pre></td></tr></table></figure><h1 id="Rstudio的更新"><a href="#Rstudio的更新" class="headerlink" title="Rstudio的更新"></a>Rstudio的更新</h1><p>理论上，Rstudio可以不用频繁更新，但是每次更新R后，可能需要更换一下R的路径，否则Rstudio打开后是空白页面<br>所以只需要按住ctrl，然后双击打开Rstudio，选择一下最新安装的R路径即可。<br><img src="https://bu.dusays.com/2022/10/18/634ebe46931ae.jpg"></p><h1 id="R包的迁移"><a href="#R包的迁移" class="headerlink" title="R包的迁移"></a>R包的迁移</h1><p>其实这一部分也很简单，就是找到旧版本的R包，并将其复制粘贴到新版本的文件夹中即可.<br>接下来我们只需要找到新版本的R包安装位置在哪里即可了，只需要打开RStudio,这时候应该会自动切换到新的版本。然后只需要输入以下代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.libPaths()</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;R语言的更新频率属实有点快了，可能一段时间没用R语言，再打开，就会发现又有新版本了，而一些常用的包，比如ggplot2包，一般都会要求使用较</summary>
+      
+    
+    
+    
+    <category term="R语言" scheme="https://bio-w.cn/categories/R%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="R语言" scheme="https://bio-w.cn/tags/R%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="生物信息学" scheme="https://bio-w.cn/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>猫</title>
@@ -475,34 +501,6 @@
       
       
     <summary type="html">&lt;h1 id=&quot;一、基本资料&quot;&gt;&lt;a href=&quot;#一、基本资料&quot; class=&quot;headerlink&quot; title=&quot;一、基本资料&quot;&gt;&lt;/a&gt;一、基本资料&lt;/h1&gt;&lt;p style=&quot;text-indent:2em&quot;/&gt;实时荧光定量PCR （Quantitative Real-</summary>
-      
-    
-    
-    
-    <category term="植物学试验" scheme="https://bio-w.cn/categories/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/"/>
-    
-    
-    <category term="植物学试验" scheme="https://bio-w.cn/tags/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/"/>
-    
-    <category term="湿实验" scheme="https://bio-w.cn/tags/%E6%B9%BF%E5%AE%9E%E9%AA%8C/"/>
-    
-    <category term="PCR" scheme="https://bio-w.cn/tags/PCR/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>🧬湿实验之降落PCR</title>
-    <link href="https://bio-w.cn/posts/42687.html"/>
-    <id>https://bio-w.cn/posts/42687.html</id>
-    <published>2022-04-27T07:50:52.000Z</published>
-    <updated>2022-08-31T09:09:34.841Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="一、背景知识"><a href="#一、背景知识" class="headerlink" title="一、背景知识"></a>一、背景知识</h1><p style="text-indent:2em"/>降落PCR，设计多循环反应的程序，以使相连循环的退火温度越来越低。由于开始时的退火温度选择为高于估计的Tm值，随着循环的进行，退火温度逐渐降到Tm值，并最终低于这个水平，用于确保第一个引物—模板杂交事件发生在最互补的反应物之间，即那些产生目的扩增产物的反应物之间。<h1 id="二、原理"><a href="#二、原理" class="headerlink" title="二、原理"></a>二、原理</h1><p style="text-indent:2em"/>另一种提升PCR反应特异性的方法是调整PCR循环的参数。在降落PCR中，前几个循环的退火温度设定为比引物的最高退火温度（Tm）再高几度。较高的温度有助于避免产生引物二聚体及非特异性引物与模板形成的复合物，因此可以减少不希望出现的扩增。就这一点来说，较高的退火温度可减少非特异性PCR产物，在PCR起始阶段促进特异性的扩增。<p style="text-indent:2em"/>虽然较高的退火温度可阻止引物二聚体形成和非特异性引物结合，但同时较高的退火温度会加剧引物与目标序列的分离，导致PCR的产量降低。为了克服这个问题，在开始的几个循环中，退火温度通常设置为每个循环降低1℃，以获得足量的预期扩增子。当退火温度降低到最佳温度时（通常比最低的引物Tm低3-5℃），剩余的循环都维持此退火温度。通过这种方法，在PCR过程中，所期望的PCR产物得到有选择性的增加，而几乎不会出现非特异性的产物。<h1 id="三、实验步骤"><a href="#三、实验步骤" class="headerlink" title="三、实验步骤"></a>三、实验步骤</h1><h2 id="1-实验材料："><a href="#1-实验材料：" class="headerlink" title="1.实验材料："></a>1.实验材料：</h2><p>基因样品</p><h2 id="2-实验仪器："><a href="#2-实验仪器：" class="headerlink" title="2.实验仪器："></a>2.实验仪器：</h2><p>PCR仪</p><h2 id="3-实验步骤："><a href="#3-实验步骤：" class="headerlink" title="3.实验步骤："></a>3.实验步骤：</h2><ul><li>①反应体积为50 μl。</li><li>②人CD137胞膜外区基因的PCR扩增体系：CD137-pCDNA3质粒4 μl，P1，P2各0.5 μmol/L，MgCl2 2 mmol/L，dNTP 0.4 mmol/L，Taq 5 U。</li><li>③hIgG1Fc片段的PCR扩增体系：含人hIgG1Fc的PGEM-T质粒4 μl，P3、P4各0.4 μmol/L，MgCl2 2 mmol/L，dNTP 0.4 mmol/L，Taq 5 U。</li><li>④HBVDNA多聚酶基因的PCR扩增体系：<br>（1）第一轮：HBVDNA模板4 μl，P5、P6各0.25 μmol/L，MgCl2 1.5 mmol/L，dNTP 0.2 mmol/L，Taq 0.8 U.<br>（2）第二轮：取5倍稀释的第一轮PCR产物4μl为模板，P7、P8各0.25 μmol/L，MgCl2 1.5 mmol/L，dNTP 0.2 mmol/L，Taq 0.8 U。</li><li>⑤分别在各灭菌PCR管加入上述各反应成分，100℃煮沸5 min，立即冰浴5 min，加入TaqDNA聚合酶，混匀，离心，PCR程序如下：<br><img src="/img/jiangluo.jpg" alt="降落PCR"></li><li>⑥取10μl PCR扩增产物，在2%或3%琼脂糖凝胶上电泳，紫外灯下观察扩增产物。</li></ul><h1 id="四、注意事项"><a href="#四、注意事项" class="headerlink" title="四、注意事项"></a>四、注意事项</h1><p style="text-indent:2em"/>由于目标是在较早的循环中避免低Tm值配对，在TD—PCR中最好应用热启动技术。设计时，退火温度的范围应跨越15℃左右，从高于估计Tm值]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;一、背景知识&quot;&gt;&lt;a href=&quot;#一、背景知识&quot; class=&quot;headerlink&quot; title=&quot;一、背景知识&quot;&gt;&lt;/a&gt;一、背景知识&lt;/h1&gt;&lt;p style=&quot;text-indent:2em&quot;/&gt;降落PCR，设计多循环反应的程序，以使相连循环的退火温度越</summary>
       
     
     
