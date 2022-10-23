@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/j
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://twikoo-api-xi.vercel.app',
+      envId: 'https://twikoo.bio-w.cn',
       region: '',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.vemoji)'))
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/j
 
   const getCount = () => {
     twikoo.getCommentsCount({
-      envId: 'https://twikoo-api-xi.vercel.app',
+      envId: 'https://twikoo.bio-w.cn',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
