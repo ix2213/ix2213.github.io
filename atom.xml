@@ -6,7 +6,7 @@
   <link href="https://bio-w.cn/atom.xml" rel="self"/>
   
   <link href="https://bio-w.cn/"/>
-  <updated>2022-10-25T00:55:36.632Z</updated>
+  <updated>2022-10-27T15:10:36.144Z</updated>
   <id>https://bio-w.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如你所见</title>
+    <link href="https://bio-w.cn/posts/50301.html"/>
+    <id>https://bio-w.cn/posts/50301.html</id>
+    <published>2022-10-27T14:20:00.000Z</published>
+    <updated>2022-10-27T15:10:36.144Z</updated>
+    
+    <content type="html"><![CDATA[<p>如你所见，这路遥马急的人间。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;如你所见，这路遥马急的人间。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="所思所想与所见所悟" scheme="https://bio-w.cn/categories/%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3%E4%B8%8E%E6%89%80%E8%A7%81%E6%89%80%E6%82%9F/"/>
+    
+    
+    <category term="心情" scheme="https://bio-w.cn/tags/%E5%BF%83%E6%83%85/"/>
+    
+  </entry>
   
   <entry>
     <title>记 · 喃喃自语</title>
@@ -213,9 +238,9 @@
     <category term="发表论文" scheme="https://bio-w.cn/categories/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/"/>
     
     
-    <category term="植物学试验" scheme="https://bio-w.cn/tags/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/"/>
-    
     <category term="发表论文" scheme="https://bio-w.cn/tags/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/"/>
+    
+    <category term="植物学试验" scheme="https://bio-w.cn/tags/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/"/>
     
   </entry>
   
@@ -404,9 +429,9 @@
     <category term="发表论文" scheme="https://bio-w.cn/categories/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/"/>
     
     
-    <category term="植物学试验" scheme="https://bio-w.cn/tags/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/"/>
-    
     <category term="发表论文" scheme="https://bio-w.cn/tags/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/"/>
+    
+    <category term="植物学试验" scheme="https://bio-w.cn/tags/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/"/>
     
   </entry>
   
@@ -483,32 +508,6 @@
     <category term="植物学试验" scheme="https://bio-w.cn/tags/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/"/>
     
     <category term="石蜡切片" scheme="https://bio-w.cn/tags/%E7%9F%B3%E8%9C%A1%E5%88%87%E7%89%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>网站更换华为鸿蒙系统字体-HarmonyOS Sans</title>
-    <link href="https://bio-w.cn/posts/14307.html"/>
-    <id>https://bio-w.cn/posts/14307.html</id>
-    <published>2022-05-09T11:02:11.000Z</published>
-    <updated>2022-08-31T09:09:34.847Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>网站默认的字体很难看，一直想着换一下字体，先是从<a href="https://fonts.google.com/">Google Fonts</a> 网站用了Liu Jian Mao Cao这个字体，感觉博客名换成这个字体以后还是挺好看的<img src="/img/blog-ziti.jpg" alt="西瓜撞地球"> 但是这个字体对英文的显示效果好像不太好，导致个人名片那一块不太完美，不过也能接受，凑合用吧。<br>在闲来无事游走于各个大佬的博客时，发现 <a href="https://gahotx.cn/">Gahotx’s blog</a> 的字体很好看，翻了一下大佬的博客，发现用的是鸿蒙的字体，果断更换，效果甚是喜欢，本篇文章也主要是参考 <a href="https://gahotx.cn/posts/13a9d850.html">Gahotx’s blog</a> 的这篇文章。<br>本着面向CV魔改的原则，采用了最原始粗暴的修改方式，也怕哪一天链接突然挂了影响到网站，所以记录一下。主要也是因为网站暂时部署在Github上，本身加载速度就不理想，本地引入字体后可能会进一步影响加载速度，影响网站使用体验。</p><h1 id="修改方式"><a href="#修改方式" class="headerlink" title="修改方式"></a>修改方式</h1><ol><li>直接引入<a href="https://gahotx.cn/">Gahotx’s blog</a> 的css，建议下载<a href="https://github.com/Gahotx/cdn">Gahotx</a> 仓库里的harmony，regular，medium三个文件夹下载到本地保存备份。</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 白嫖b站 --&gt;</span><br><span class="line">&lt;link rel=&quot;preconnect&quot; href=&quot;https://s1.hdslb.com/&quot; /&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;//s1.hdslb.com/bfs/static/jinkela/long/font/regular.css&quot; media=&quot;all&quot; onload=&quot;this.media=&#x27;all&#x27;&quot; /&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;//s1.hdslb.com/bfs/static/jinkela/long/font/medium.css&quot; media=&quot;all&quot; onload=&quot;this.media=&#x27;all&#x27;&quot; /&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 自己引入 --&gt;</span><br><span class="line">&lt;link rel=&quot;preconnect&quot; href=&quot;https://npm.elemecdn.com/&quot; /&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://npm.elemecdn.com/gahotx-cdn@1.0.14/fonts/harmony/regular.min.css&quot; media=&quot;all&quot; onload=&quot;this.media=&#x27;all&#x27;&quot; /&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://npm.elemecdn.com/gahotx-cdn@1.0.14/fonts/harmony/medium.min.css&quot; media=&quot;all&quot; onload=&quot;this.media=&#x27;all&#x27;&quot; /&gt;</span><br></pre></td></tr></table></figure><ol start="2"><li><p>butterfly主题可以在主题配置文件中找到font-family和code-font-family中添加以下内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">font-family: &quot;HarmonyOS_Regular&quot; # medium 用户自己替换成&quot;HarmonyOS_Medium，下面都同理&quot;</span><br><span class="line"></span><br><span class="line"># 喜欢中英文统一字体的同学可以忽略下面</span><br><span class="line">code-font-family: Consolas,&quot;HarmonyOS_Regular&quot;,system-ui,-apple-system,BlinkMacSystemFont,serif</span><br></pre></td></tr></table></figure></li><li><p>引入css，在自己的css文件中添加以下内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  font-family: &quot;HarmonyOS_Regular&quot; !important;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>一键三连 hexo clean &amp; hexo g &amp; hexo d</p></li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;网站默认的字体很难看，一直想着换一下字体，先是从&lt;a href=&quot;https://fonts.google.com/&quot;&gt;Google Fon</summary>
-      
-    
-    
-    
-    <category term="魔改记录" scheme="https://bio-w.cn/categories/%E9%AD%94%E6%94%B9%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="hexo" scheme="https://bio-w.cn/tags/hexo/"/>
-    
-    <category term="Butterfly" scheme="https://bio-w.cn/tags/Butterfly/"/>
     
   </entry>
   
