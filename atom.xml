@@ -275,27 +275,6 @@
   </entry>
   
   <entry>
-    <title>更新关于页内容</title>
-    <link href="https://bio-w.cn/posts/29116.html"/>
-    <id>https://bio-w.cn/posts/29116.html</id>
-    <published>2022-09-04T07:38:47.000Z</published>
-    <updated>2022-10-11T07:00:19.567Z</updated>
-    
-    <content type="html"><![CDATA[<p>我们总以为来日方长，却忘了世事无常。是的，我把那个满眼都是我的女孩给弄丢了，我从来没有后悔遇见你，只是觉得有点遗憾，爱了你那么久，最后连个像样的交代都没有，没有不甘心，只是心很疼。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;我们总以为来日方长，却忘了世事无常。是的，我把那个满眼都是我的女孩给弄丢了，我从来没有后悔遇见你，只是觉得有点遗憾，爱了你那么久，最后连个像样的交代都没有，没有不甘心，只是心很疼。&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>CTAB法提取叶片基因组DNA</title>
     <link href="https://bio-w.cn/posts/21129.html"/>
     <id>https://bio-w.cn/posts/21129.html</id>
@@ -541,6 +520,31 @@
     <category term="基因家族" scheme="https://bio-w.cn/tags/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F/"/>
     
     <category term="生物信息学分析" scheme="https://bio-w.cn/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>欧李自交不亲和试验之文章结构</title>
+    <link href="https://bio-w.cn/posts/46859.html"/>
+    <id>https://bio-w.cn/posts/46859.html</id>
+    <published>2022-04-12T12:20:59.000Z</published>
+    <updated>2022-10-13T06:23:35.715Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-文献综述"><a href="#1-文献综述" class="headerlink" title="1. 文献综述"></a>1. 文献综述</h1><h1 id="2-田间试验"><a href="#2-田间试验" class="headerlink" title="2. 田间试验"></a>2. 田间试验</h1><h2 id="2-1-花粉败育性检测："><a href="#2-1-花粉败育性检测：" class="headerlink" title="2.1 花粉败育性检测："></a>2.1 花粉败育性检测：</h2><p>20个品种的花粉败育性检测，醋酸洋红染色观察</p><h2 id="2-2-花粉活力检测："><a href="#2-2-花粉活力检测：" class="headerlink" title="2.2 花粉活力检测："></a>2.2 花粉活力检测：</h2><p>不同温度不同烘干时间下花粉生活力检测。红墨水染色</p><h2 id="2-3-柱头可受性观察："><a href="#2-3-柱头可受性观察：" class="headerlink" title="2.3 柱头可受性观察："></a>2.3 柱头可受性观察：</h2><p>自交和杂交授粉情况下，花粉管的发育状态（苯胺蓝染色法）</p><h2 id="2-4-石蜡切片观察（暂定）"><a href="#2-4-石蜡切片观察（暂定）" class="headerlink" title="2.4 石蜡切片观察（暂定）"></a>2.4 石蜡切片观察（暂定）</h2><h2 id="2-5-76个品种的自交授粉结果分析"><a href="#2-5-76个品种的自交授粉结果分析" class="headerlink" title="2.5 76个品种的自交授粉结果分析"></a>2.5 76个品种的自交授粉结果分析</h2><h2 id="2-6-3组杂交品种的授粉结果分析（根据已鉴定出来的S基因）"><a href="#2-6-3组杂交品种的授粉结果分析（根据已鉴定出来的S基因）" class="headerlink" title="2.6 3组杂交品种的授粉结果分析（根据已鉴定出来的S基因）"></a>2.6 3组杂交品种的授粉结果分析（根据已鉴定出来的S基因）</h2><h1 id="3-S基因的鉴定"><a href="#3-S基因的鉴定" class="headerlink" title="3. S基因的鉴定"></a>3. S基因的鉴定</h1><h2 id="3-1-76个品种的DNA的提取"><a href="#3-1-76个品种的DNA的提取" class="headerlink" title="3.1 76个品种的DNA的提取"></a>3.1 76个品种的DNA的提取</h2><h2 id="3-2-S基因的表达分析（待定）"><a href="#3-2-S基因的表达分析（待定）" class="headerlink" title="3.2 S基因的表达分析（待定）"></a>3.2 S基因的表达分析（待定）</h2><h2 id="3-3-17组通用S基因引物在欧李上的鉴定效果分析（引物筛选）"><a href="#3-3-17组通用S基因引物在欧李上的鉴定效果分析（引物筛选）" class="headerlink" title="3.3 17组通用S基因引物在欧李上的鉴定效果分析（引物筛选）"></a>3.3 17组通用S基因引物在欧李上的鉴定效果分析（引物筛选）</h2><h2 id="3-4-76个品种的S基因的鉴定（PCR、克隆、测序）"><a href="#3-4-76个品种的S基因的鉴定（PCR、克隆、测序）" class="headerlink" title="3.4 76个品种的S基因的鉴定（PCR、克隆、测序）"></a>3.4 76个品种的S基因的鉴定（PCR、克隆、测序）</h2><h2 id="3-5-S基因的序列分析"><a href="#3-5-S基因的序列分析" class="headerlink" title="3.5 S基因的序列分析"></a>3.5 S基因的序列分析</h2><h2 id="3-6-根据测序序列，设计适合欧李物种的S基因引物"><a href="#3-6-根据测序序列，设计适合欧李物种的S基因引物" class="headerlink" title="3.6 根据测序序列，设计适合欧李物种的S基因引物"></a>3.6 根据测序序列，设计适合欧李物种的S基因引物</h2>]]></content>
+    
+    
+    <summary type="html">整理下自交不亲和试验的文章结构和思路</summary>
+    
+    
+    
+    <category term="植物学试验" scheme="https://bio-w.cn/categories/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/"/>
+    
+    
+    <category term="植物学试验" scheme="https://bio-w.cn/tags/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/"/>
+    
+    <category term="欧李" scheme="https://bio-w.cn/tags/%E6%AC%A7%E6%9D%8E/"/>
+    
+    <category term="自交不亲和" scheme="https://bio-w.cn/tags/%E8%87%AA%E4%BA%A4%E4%B8%8D%E4%BA%B2%E5%92%8C/"/>
     
   </entry>
   
