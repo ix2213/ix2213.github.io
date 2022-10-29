@@ -1153,3 +1153,8 @@ a.category_button:after {
   --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
   --anzhiyu-card-border: #42444a;
 }
+
+
+#web_bg ~ .page:has(.fcircle_page) {
+  background-color: #f7f9fe !important;
+}
