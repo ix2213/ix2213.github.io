@@ -6,7 +6,7 @@
   <link href="https://bio-w.cn/atom.xml" rel="self"/>
   
   <link href="https://bio-w.cn/"/>
-  <updated>2022-11-10T02:37:32.068Z</updated>
+  <updated>2022-11-10T14:32:59.384Z</updated>
   <id>https://bio-w.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>失败是成功之...</title>
+    <link href="https://bio-w.cn/posts/49281.html"/>
+    <id>https://bio-w.cn/posts/49281.html</id>
+    <published>2022-11-10T14:21:14.000Z</published>
+    <updated>2022-11-10T14:32:59.384Z</updated>
+    
+    <content type="html"><![CDATA[<p>失败是成功之<p style="font-size=60px;font-weight:lighter;">祖宗</p></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;失败是成功之&lt;p style=&quot;font-size=60px;font-weight:lighter;&quot;&gt;祖宗&lt;/p&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>朋友圈</title>
@@ -265,9 +286,9 @@
     <category term="发表论文" scheme="https://bio-w.cn/categories/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/"/>
     
     
-    <category term="发表论文" scheme="https://bio-w.cn/tags/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/"/>
-    
     <category term="植物学试验" scheme="https://bio-w.cn/tags/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/"/>
+    
+    <category term="发表论文" scheme="https://bio-w.cn/tags/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/"/>
     
   </entry>
   
@@ -343,9 +364,9 @@
     <category term="发表论文" scheme="https://bio-w.cn/categories/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/"/>
     
     
-    <category term="发表论文" scheme="https://bio-w.cn/tags/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/"/>
-    
     <category term="植物学试验" scheme="https://bio-w.cn/tags/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/"/>
+    
+    <category term="发表论文" scheme="https://bio-w.cn/tags/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/"/>
     
   </entry>
   
@@ -496,34 +517,6 @@
       
       
     <summary type="html">&lt;h1 id=&quot;一、背景知识&quot;&gt;&lt;a href=&quot;#一、背景知识&quot; class=&quot;headerlink&quot; title=&quot;一、背景知识&quot;&gt;&lt;/a&gt;一、背景知识&lt;/h1&gt;&lt;p&gt;&lt;p style=&quot;text-indent:2em&quot;/&gt;降落PCR，设计多循环反应的程序，以使相连循环的退火</summary>
-      
-    
-    
-    
-    <category term="植物学试验" scheme="https://bio-w.cn/categories/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/"/>
-    
-    
-    <category term="植物学试验" scheme="https://bio-w.cn/tags/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/"/>
-    
-    <category term="湿实验" scheme="https://bio-w.cn/tags/%E6%B9%BF%E5%AE%9E%E9%AA%8C/"/>
-    
-    <category term="PCR" scheme="https://bio-w.cn/tags/PCR/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>🧬湿实验之反转录PCR实验要点</title>
-    <link href="https://bio-w.cn/posts/32181.html"/>
-    <id>https://bio-w.cn/posts/32181.html</id>
-    <published>2022-04-25T06:08:30.000Z</published>
-    <updated>2022-08-31T09:09:34.838Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="一、基本资料"><a href="#一、基本资料" class="headerlink" title="一、基本资料"></a>一、基本资料</h1><p><p style="text-indent:2em"/>逆转录PCR（reverse transcription PCR）或者称反转录PCR（reverse transcription-PCR, RT-PCR），是聚合酶链式反应（PCR）的一种广泛应用的变形。在RT-PCR中，一条RNA链被逆转录成为互补DNA，再以此为模板通过PCR进行DNA扩增。DNA的另一条链通过脱氧核苷酸引物和依赖DNA的DNA聚合酶完成，随每个循环倍增，即通常的PCR。原先的RNA模板被RNA酶降解，留下互补DNA。</p><h1 id="二、原理"><a href="#二、原理" class="headerlink" title="二、原理"></a>二、原理</h1><p><p style="text-indent:2em"/>逆转录-聚合酶链反应是一项提取组织或细胞中的总RNA，以其中的mRNA作为模板，采用Oligo(dT)或随机引物利用逆转录酶反转录成cDNA；再以cDNA为模板进行PCR扩增，获得目的基因或检测基因表达的技术。</p><p><p style="text-indent:2em"/>该技术一般分为两步，第一步是在单引物的介导和反转录酶的催化下合成RNA的互补链cDNA; 第二步需要将加热后的cDNA与RNA链解离后，与另一引物退火，并由DNA 聚合酶催化引物延伸生成双链DNA，最后同常规PCR一样，扩增靶DNA。</p><p><p style="text-indent:2em"/>合成cDNA第一链所用的反转录酶是一类依赖于RNA的DNA聚合酶。目前常用的反转录酶主要有两种：源于禽成髓细胞性白血病病毒(avian myeloblastosis virus,AMV)的AMV 反转录酶和源于莫洛尼鼠白血病病毒(moloney murine leukemia virus,MoMLV) 的MOMLV反转录酶。</p><h1 id="三、主要步骤"><a href="#三、主要步骤" class="headerlink" title="三、主要步骤"></a>三、主要步骤</h1><h2 id="1-实验前的准备"><a href="#1-实验前的准备" class="headerlink" title="1.实验前的准备"></a>1.实验前的准备</h2><p><p style="text-indent:2em"/>用超净台，用之前开紫外照射，把RNAase free水，需要管，大中小枪头，镊子，和板子。放入超净台，不吹风，用镊子装枪头，摆EP管。</p><h2 id="2-RNA的提取（trizol法）"><a href="#2-RNA的提取（trizol法）" class="headerlink" title="2. RNA的提取（trizol法）"></a>2. RNA的提取（trizol法）</h2><ul><li><p>1）从液氮中取出组织后，快速的拿到超净台上，放入小皿中，加入trizol试剂，（100mg的组织放入1.2ml的trizol试剂），用注射器进行研磨，注意要熟练，快速研磨。（下面加的试剂按照1ml trizol的比例添加即可）。</p></li><li><p>2）细胞或组织加入Trizol研磨后，15~30℃孵育15min，使其充分裂解。(此时如果不接着做下面的实验可以冻存于-80℃低温冰箱)。</p></li><li><p>3）4℃，12000转，离心5min ,弃沉淀。（超净台准备好EP管，离心后，吸取上清至准备好的EP管中）按200ul氯仿/ml Trizol加入氯仿，剧烈振荡15s,（用手震荡即可）15~30℃孵育2~3min。注：禁用漩涡振荡器，以免基因组DNA断裂。（氯仿又叫三氯甲烷chloroform，一般储存在4℃冰箱中）。</p></li><li><p>4）4℃，12000转,离心15min。吸取上层水相，至另一离心管中。注：（1）吸取水相要小心，千万不要吸取中间界面。可采用小枪头少量多次吸取（2）若同时提取DNA和蛋白质，则保存下层有机相，存于4℃冰箱内备用，否则弃下层有机相。</p></li><li><p>5）按500ul异丙醇/ml Trizol 的比例加入异丙醇，用手震荡一下，15~30℃（室温即可）孵育10min。2~8℃，12000g,离心10min,弃上清，RNA沉于管底。按1ml 75％乙醇／ml Trizol加入75％乙醇，漩涡混匀，悬浮沉淀。（注：75％乙醇用DEPC水配制）</p></li><li><p>6）4℃，7500转离心5min，尽量弃尽上清（注：用完离心机关电源后，将离心机盖打开30分钟降温，再盖上）室温晾干或真空干燥5~10min。（注：不能用离心的方法使RNA干燥，RNA样品不要过于干燥，否则很难溶解。）</p></li><li><p>7）1×RNAsafe30 ul（或1‰DEPC水30ul）溶解RNA沉淀,60℃水浴20min（注：用蒸馏水配置1/100的DEPC水高压后才能用,20×RNAsafe 用DEPC水稀释）测OD值定量RNA浓度（用DU800紫外光度计测量）如果提取的RNA不进行逆转录可在-80℃保存</p></li></ul><h2 id="3-RT-PCR操作步骤"><a href="#3-RT-PCR操作步骤" class="headerlink" title="3. RT-PCR操作步骤"></a>3. RT-PCR操作步骤</h2><h3 id="1）RNA逆转录cDNA（反应体系要20ul）依次加入"><a href="#1）RNA逆转录cDNA（反应体系要20ul）依次加入" class="headerlink" title="1）RNA逆转录cDNA（反应体系要20ul）依次加入"></a>1）RNA逆转录cDNA（反应体系要20ul）依次加入</h3><ul><li><p>Oligo（dT）加入1ul。</p></li><li><p>RNA（体积即上一步骤计算出来的）</p></li><li><p>剩下的用无Rnase水补齐共12ul 65℃水浴（或者用PCR仪进行控温）5min。</p></li></ul><h3 id="2）加入逆转录试剂"><a href="#2）加入逆转录试剂" class="headerlink" title="2）加入逆转录试剂"></a>2）加入逆转录试剂</h3><ul><li><p>5×Reaction Buffer 4ul</p></li><li><p>Ribolock RNase Inhibiter 1ul</p></li><li><p>10mM Dntp mix 2ul</p></li><li><p>RevertAid m-mul URT 1ul</p></li></ul><h3 id="3）设置仪器，按照说明书设置"><a href="#3）设置仪器，按照说明书设置" class="headerlink" title="3）设置仪器，按照说明书设置"></a>3）设置仪器，按照说明书设置</h3><ul><li><p>oligodT：42℃ 60min</p></li><li><p>逆转录：70℃ 5min</p></li><li><p>终止：4℃</p></li></ul><p>附加：cDNA可以跑电泳看一下，取cDNA 1ul加load buffer（看这个是几乘的）混匀，跑电泳，marker用2000的取6ul左右胶板的制作，后面有说明。</p><h3 id="4）PCR-cDNA扩增目的基因（反应体系是20ul，不够用无菌水补齐）"><a href="#4）PCR-cDNA扩增目的基因（反应体系是20ul，不够用无菌水补齐）" class="headerlink" title="4）PCR cDNA扩增目的基因（反应体系是20ul，不够用无菌水补齐）"></a>4）PCR cDNA扩增目的基因（反应体系是20ul，不够用无菌水补齐）</h3><p>下面的实验用高压过的枪头和普通高压过的水即可。（所用以下配比物品都要在冰箱中冻存，使用之前离心，甩下来即可。量大的话可以先加样配比，即把所需要的试剂总量计算出后，取出放在ep管中。）</p><ul><li><p>加样：①Mix 10ul ②引物 1ul ③cDNA和水总计9ul</p></li><li><p>混匀：小离心机甩一下即可</p></li><li><p>放入PCR仪：PCR仪事先设定条件，反应条件根据mix说明书来设定</p></li><li><p>PCR产物保存：一般在4℃冰箱保存，长时间不用可-20℃冻存。</p></li></ul><h3 id="5）配胶和跑胶"><a href="#5）配胶和跑胶" class="headerlink" title="5）配胶和跑胶:"></a>5）配胶和跑胶:</h3><ul><li>配胶: （水平胶；琼脂糖凝胶）要带手套，TAE有毒。</li></ul><p>小胶板8孔的 TAE 25ml 琼脂糖 0.25～0.30g</p><p>中胶板25孔的 TAE 50ml 琼脂糖 0.50～0.55g</p><p>步骤：称取BIOWEST AGAROSE（琼脂糖）放入配胶专用烧瓶→用配胶专用量筒量1×TAE倒入烧瓶→酒精灯加热(以看到冒泡为准)→将沸腾的液体转移到EB污染区的烧瓶中→加入EB或EB替代（观察颜色不是很深即可，一般小胶板3滴左右）→插梳子→倒入电泳槽(倒胶从一个角倒入防止产生气泡)→待胶凝固30分钟左右拔出梳子进行跑胶(如不马上跑将胶放4℃冰箱保存,防止胶变干)。</p><ul><li>跑胶:</li></ul><p>a. 电泳缓冲液用1×TAE,一般跑5-8次胶后就要重新换电泳缓冲液。</p><p>b. 要让缓冲液没过胶。</p><p>c. Marker标记染色体上一个可以被识别的区域，我们用的是2000的（保存在4℃冰箱中）：3-6ul单格加入。</p><p>步骤：取PCR产物（cDNA）8ul，加入单格上，接通电源，跑胶。（注意：跑胶方向是从负极到正极）,当loading Buffer跑到2/3时停止跑胶（大约40分钟），带手套取胶放在照相台上。</p><h3 id="6-拍照"><a href="#6-拍照" class="headerlink" title="6)拍照"></a>6)拍照</h3><h1 id="四、注意事项"><a href="#四、注意事项" class="headerlink" title="四、注意事项"></a>四、注意事项</h1><ol><li><p>组织或细胞量过少，可酌情减少Trizol 用量</p></li><li><p>组织或细胞量过多，会引起DNA对RNA的污染</p></li><li><p>高蛋白、高脂肪或多糖类组织，肌肉组织或块状植物组织等，组织匀浆后须2-8℃，12000g离心5min去除不溶物，再进行下面操作，若上层有脂肪物，则也须去除。</p></li><li><p>匀浆时，组织块不宜过大，先用组织剪将组织剪碎，然后再充分匀浆。</p></li><li><p>对实验器具进行处理。主要有以下几点，(1) 研磨过程使用的研钵需要高温干燥处理后使用。(2) 实验中使用的EP管，枪头等塑料制品，需要用DEPC水浸泡24小时后，经高温灭菌干燥使用。(3) 为了防止Rnase的污染，用DEPC水替代三蒸水进行溶液的配制。(4) RNA操作中使用专用的器械，有条件的也可以设置专用实验室。</p></li><li><p>外源性的RNase会污染玻璃、塑料制品、实验器械、及各种实验试剂。操作过程中，手套是最容易污染样品的，因此手套要勤换。实验人员说话过程中所带的唾液会降解样品，故需带口罩操作。在RNA整个提取过程中，实验人员熟练快速的完成整个RNA的提取，减少实验所用的时间。</p></li><li><p>实验过程中必须戴口罩、手套，尽量避免其他人员干扰。</p></li><li><p>RT试剂盒从冰箱拿出，应该充分解冻，瞬离后，混匀，放于冰上，可在冰上加样。试剂可以用数字贴纸编号，避免漏加、错加试剂。</p></li><li><p>取用不同的试剂时，必须更换枪头，样本之间要避免交叉污染。</p></li><li><p>逆转录时，PCR仪可以先预热。</p></li><li><p>反应体系配好之后，应充分混匀，瞬离，并且弹去管内的气泡。</p></li><li><p>实验过程中应预防RNA酶污染，使用无酶枪头以及EP管，同时台面可以使用固相RNA酶去除剂清洁。</p></li><li><p>PCR时，管壁尽量避免写字。</p></li><li><p>管盖一定要盖严。</p></li><li><p>10μL逆转录反应体系建议加入不超过500ng的RNA。</p></li><li><p>如果目的基因表达量非常低,最多加入1μg Total RNA,否则加入RNA量过高,可能会超出后续PCR的线性范围。</p></li><li><p>反应体积可根据需要等比例放大。</p></li><li><p>试剂尽量不要反复冻融。</p></li><li><p>每个样品至少3个平行孔,所有成分加完后，离心去除气泡。</p></li><li><p>可将所有共同物质加入同一管中，混匀后分散入其他管中。</p></li></ol><h1 id="五、实验试剂及保存"><a href="#五、实验试剂及保存" class="headerlink" title="五、实验试剂及保存"></a>五、实验试剂及保存</h1><p><strong>实验试剂</strong></p><ol><li><p>trizol试剂</p></li><li><p>氯仿（三氯甲烷）</p></li><li><p>异丙醇</p></li><li><p>75%乙醇（DEPC水配制）</p></li><li><p>RNA酶灭活剂</p></li><li><p>逆转录试剂</p></li><li><p>DEPC水</p></li><li><p>无水乙醇</p></li><li><p>2000的marker</p></li><li><p>琼脂糖</p></li><li><p>EB替代</p></li><li><p>小镊子</p></li><li><p>大小EP管架</p></li><li><p>注射器</p></li><li><p>手套，口罩</p></li><li><p>移液枪</p></li><li><p>DEPC水泡过的枪头</p></li></ol><p><strong>试剂的保存</strong></p><ol><li><p>氯仿又叫三氯甲烷，一般储存在4℃冰箱中</p></li><li><p>trizol试剂，2到8℃保存</p></li><li><p>cDNA -80℃保存</p></li><li><p>RNAsafe -20℃保存</p></li><li><p>2X power Taq PCR MasterMix -20℃保存</p></li><li><p>逆转录试剂 -20℃保存</p></li><li><p>PCR产物保存：一般在4℃冰箱保存，长时间不用可-20℃冻存。</p></li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;一、基本资料&quot;&gt;&lt;a href=&quot;#一、基本资料&quot; class=&quot;headerlink&quot; title=&quot;一、基本资料&quot;&gt;&lt;/a&gt;一、基本资料&lt;/h1&gt;&lt;p&gt;&lt;p style=&quot;text-indent:2em&quot;/&gt;逆转录PCR（reverse transcripti</summary>
       
     
     

@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bio-w.cn/posts/49281.html</loc>
+    
+    <lastmod>2022-11-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://bio-w.cn/posts/28642.html</loc>
     
     <lastmod>2022-11-10</lastmod>
@@ -445,7 +454,7 @@
 
   <url>
     <loc>https://bio-w.cn/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -453,182 +462,182 @@
   
   <url>
     <loc>https://bio-w.cn/tags/Selenium/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/tags/Python/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/tags/%E5%85%83%E7%B4%A0%E5%AE%9A%E4%BD%8D/</loc>
-    <lastmod>2022-11-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2022-11-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/tags/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/</loc>
-    <lastmod>2022-11-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/%E6%B9%BF%E5%AE%9E%E9%AA%8C/</loc>
-    <lastmod>2022-11-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/PCR/</loc>
-    <lastmod>2022-11-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
-    <lastmod>2022-11-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/NCBI/</loc>
-    <lastmod>2022-11-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/%E6%AC%A7%E6%9D%8E/</loc>
-    <lastmod>2022-11-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/%E8%87%AA%E4%BA%A4%E4%B8%8D%E4%BA%B2%E5%92%8C/</loc>
-    <lastmod>2022-11-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/%E5%BF%83%E6%83%85/</loc>
-    <lastmod>2022-11-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/tags/%E7%9F%B3%E8%9C%A1%E5%88%87%E7%89%87/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2022-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/%E6%AC%A7%E6%9D%8E/</loc>
+    <lastmod>2022-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/%E8%87%AA%E4%BA%A4%E4%B8%8D%E4%BA%B2%E5%92%8C/</loc>
+    <lastmod>2022-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/</loc>
+    <lastmod>2022-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/%E6%B9%BF%E5%AE%9E%E9%AA%8C/</loc>
+    <lastmod>2022-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/PCR/</loc>
+    <lastmod>2022-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
+    <lastmod>2022-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/NCBI/</loc>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/tags/R%E8%AF%AD%E8%A8%80/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/%E5%BF%83%E6%83%85/</loc>
+    <lastmod>2022-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/tags/%E5%85%8B%E9%9A%86/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/tags/%E5%88%86%E5%AD%90%E6%A4%8D%E7%89%A9%E8%82%B2%E7%A7%8D/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/tags/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%88%86%E6%9E%90/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/tags/%F0%9F%94%92/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/tags/%E6%A0%91%E6%B4%9E/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/tags/%E7%BB%86%E8%83%9E%E5%AD%A6/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/tags/hexo/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/tags/Butterfly/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -636,57 +645,57 @@
 
   
   <url>
+    <loc>https://bio-w.cn/categories/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/</loc>
+    <lastmod>2022-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://bio-w.cn/categories/Python/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/categories/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/</loc>
-    <lastmod>2022-11-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/categories/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/</loc>
-    <lastmod>2022-11-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/categories/R%E8%AF%AD%E8%A8%80/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/categories/%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3%E4%B8%8E%E6%89%80%E8%A7%81%E6%89%80%E6%82%9F/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/categories/%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3%E4%B8%8E%E6%89%80%E6%84%9F%E6%89%80%E6%82%9F/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/categories/%E9%AD%94%E6%94%B9%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
