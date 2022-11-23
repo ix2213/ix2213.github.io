@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bio-w.cn/messageboard/index.html</loc>
+    
+    <lastmod>2022-11-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://bio-w.cn/posts/44370.html</loc>
     
     <lastmod>2022-11-22</lastmod>
@@ -86,15 +95,6 @@
     <loc>https://bio-w.cn/fcircle/index.html</loc>
     
     <lastmod>2022-11-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/messageboard/index.html</loc>
-    
-    <lastmod>2022-10-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -542,20 +542,6 @@
   </url>
   
   <url>
-    <loc>https://bio-w.cn/tags/%E6%AC%A7%E6%9D%8E/</loc>
-    <lastmod>2022-11-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/%E8%87%AA%E4%BA%A4%E4%B8%8D%E4%BA%B2%E5%92%8C/</loc>
-    <lastmod>2022-11-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://bio-w.cn/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
     <lastmod>2022-11-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -564,6 +550,20 @@
   
   <url>
     <loc>https://bio-w.cn/tags/NCBI/</loc>
+    <lastmod>2022-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/%E6%AC%A7%E6%9D%8E/</loc>
+    <lastmod>2022-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/%E8%87%AA%E4%BA%A4%E4%B8%8D%E4%BA%B2%E5%92%8C/</loc>
     <lastmod>2022-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
