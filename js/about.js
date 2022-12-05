@@ -38,3 +38,4 @@ fetch("https://v6-widget.51.la/v6/Jrr4Zf3cZBWx4Uvc/quote.js")
   document.addEventListener('pjax:send', function(){
   clearInterval(pursuitInterval);
 });
+
