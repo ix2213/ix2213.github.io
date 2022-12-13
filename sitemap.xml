@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bio-w.cn/charts/index.html</loc>
+    
+    <lastmod>2022-12-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://bio-w.cn/about/index.html</loc>
     
     <lastmod>2022-12-13</lastmod>
@@ -470,15 +479,6 @@
   </url>
   
   <url>
-    <loc>https://bio-w.cn/charts/index.html</loc>
-    
-    <lastmod>2022-08-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://bio-w.cn/cc/index.html</loc>
     
     <lastmod>2022-08-23</lastmod>
@@ -577,7 +577,7 @@
   </url>
   
   <url>
-    <loc>https://bio-w.cn/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://bio-w.cn/tags/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/</loc>
     <lastmod>2022-12-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -598,7 +598,28 @@
   </url>
   
   <url>
-    <loc>https://bio-w.cn/tags/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/</loc>
+    <loc>https://bio-w.cn/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
+    <lastmod>2022-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/NCBI/</loc>
+    <lastmod>2022-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2022-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2022-12-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -613,27 +634,6 @@
   
   <url>
     <loc>https://bio-w.cn/tags/PCR/</loc>
-    <lastmod>2022-12-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2022-12-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
-    <lastmod>2022-12-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/NCBI/</loc>
     <lastmod>2022-12-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -662,27 +662,6 @@
   
   <url>
     <loc>https://bio-w.cn/tags/%E5%85%8B%E9%9A%86/</loc>
-    <lastmod>2022-12-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/%E5%88%86%E5%AD%90%E6%A4%8D%E7%89%A9%E8%82%B2%E7%A7%8D/</loc>
-    <lastmod>2022-12-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F/</loc>
-    <lastmod>2022-12-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%88%86%E6%9E%90/</loc>
     <lastmod>2022-12-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -723,6 +702,27 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://bio-w.cn/tags/%E5%88%86%E5%AD%90%E6%A4%8D%E7%89%A9%E8%82%B2%E7%A7%8D/</loc>
+    <lastmod>2022-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/%E5%9F%BA%E5%9B%A0%E5%AE%B6%E6%97%8F/</loc>
+    <lastmod>2022-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2022-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -733,14 +733,14 @@
   </url>
   
   <url>
-    <loc>https://bio-w.cn/categories/Python/</loc>
+    <loc>https://bio-w.cn/categories/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/</loc>
     <lastmod>2022-12-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bio-w.cn/categories/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/</loc>
+    <loc>https://bio-w.cn/categories/Python/</loc>
     <lastmod>2022-12-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
