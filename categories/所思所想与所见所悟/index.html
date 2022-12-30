@@ -58,7 +58,7 @@
 
 
 <!-- Variable -->
-<script>window.ASYNC_CONFIG = {"hostname":"bio-w.cn","author":"地球叛逃者.","root":"/","typed_text":null,"favicon":{"logo":"/img/avater.png","icon16":"/img/avater.png","icon32":"/img/avater.png","appleTouchIcon":null,"webmanifest":null,"visibilitychange":false,"hidden":"/failure.ico","showText":"(/≧▽≦/)咦！又好了！","hideText":"(●—●)喔哟，崩溃啦！"},"theme_version":"1.1.1","theme":{"switch":true,"default":"style-light"},"search":{"enable":false,"type":"engine","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。"},"creative_commons":{"license":"by-nc-sa","language":"deed.zh","post":false,"clipboard":false},"swup":false};</script>
+<script>window.ASYNC_CONFIG = {"hostname":"bio-w.cn","author":"地球叛逃者.","root":"/","typed_text":null,"favicon":{"logo":"/img/avater.png","icon16":"/img/avater.png","icon32":"/img/avater.png","appleTouchIcon":null,"webmanifest":null,"visibilitychange":false,"hidden":"/failure.ico","showText":"(/≧▽≦/)咦！又好了！","hideText":"(●—●)喔哟，崩溃啦！"},"theme_version":"1.1.1","theme":{"switch":true,"default":"style-light"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。"},"creative_commons":{"license":"by-nc-sa","language":"deed.zh","post":false,"clipboard":false},"swup":false};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=1.1.1" id="trm-switch-style">
@@ -204,6 +204,12 @@
 			
 			<!-- mode switcher place end -->
 
+			
+				
+				<div id="trm-search-btn" class="trm-search-btn">
+					<i class="iconfont fas fa-search"></i>
+				</div>
+				 
 			 
 
 		</div>
@@ -399,6 +405,8 @@
                                         <li class="trm-accent-color">12/16</li>
                                         <li class="trm-accent-color">21:37</li>
                                         
+                                        <li>166</li>
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -425,6 +433,8 @@
                                         <li class="trm-accent-color">10/27</li>
                                         <li class="trm-accent-color">22:20</li>
                                         
+                                        <li>12</li>
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -450,6 +460,8 @@
                                     <ul class="trm-card-data trm-label ">
                                         <li class="trm-accent-color">10/10</li>
                                         <li class="trm-accent-color">10:11</li>
+                                        
+                                        <li>429</li>
                                         
                                     </ul>
                                 </div>
@@ -546,6 +558,20 @@
     <i class="iconfont fas fa-arrow-up"></i>
 </div>
   
+<div class="trm-search-popup">
+    <div class="trm-search-header">
+        <span class="trm-search-popup-btn-close">
+            <i class="iconfont fas fa-times"></i>
+        </span>
+    </div>
+    <div class="form trm-search-form">
+        <input class="trm-search-input" type="text" placeholder="搜索...">
+    </div>
+    <div class="trm-search-result-container">
+
+    </div>
+</div>
+
   <!-- Plugin -->
 
 
@@ -564,6 +590,11 @@
 
     
 
+    
+        
+<script src="//cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+
+        <script src="/js/plugins/local_search.js?v=1.1.1"></script>
     
 
     <!-- 数学公式 -->
