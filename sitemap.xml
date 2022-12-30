@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bio-w.cn/posts/58998.html</loc>
+    
+    <lastmod>2022-12-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://bio-w.cn/posts/51345.html</loc>
     
     <lastmod>2022-12-30</lastmod>
@@ -389,14 +398,7 @@
 
   
   <url>
-    <loc>https://bio-w.cn/tags/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/</loc>
-    <lastmod>2022-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/%E7%9F%B3%E8%9C%A1%E5%88%87%E7%89%87/</loc>
+    <loc>https://bio-w.cn/tags/Selenium/</loc>
     <lastmod>2022-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -410,6 +412,13 @@
   </url>
   
   <url>
+    <loc>https://bio-w.cn/tags/%E5%85%83%E7%B4%A0%E5%AE%9A%E4%BD%8D/</loc>
+    <lastmod>2022-12-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://bio-w.cn/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2022-12-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -417,14 +426,14 @@
   </url>
   
   <url>
-    <loc>https://bio-w.cn/tags/Selenium/</loc>
+    <loc>https://bio-w.cn/tags/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/</loc>
     <lastmod>2022-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bio-w.cn/tags/%E5%85%83%E7%B4%A0%E5%AE%9A%E4%BD%8D/</loc>
+    <loc>https://bio-w.cn/tags/%E7%9F%B3%E8%9C%A1%E5%88%87%E7%89%87/</loc>
     <lastmod>2022-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -573,14 +582,14 @@
 
   
   <url>
-    <loc>https://bio-w.cn/categories/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/</loc>
+    <loc>https://bio-w.cn/categories/Python/</loc>
     <lastmod>2022-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bio-w.cn/categories/Python/</loc>
+    <loc>https://bio-w.cn/categories/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/</loc>
     <lastmod>2022-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -601,14 +610,14 @@
   </url>
   
   <url>
-    <loc>https://bio-w.cn/categories/%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3%E4%B8%8E%E6%89%80%E6%84%9F%E6%89%80%E6%82%9F/</loc>
+    <loc>https://bio-w.cn/categories/%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3%E4%B8%8E%E6%89%80%E8%A7%81%E6%89%80%E6%82%9F/</loc>
     <lastmod>2022-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bio-w.cn/categories/%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3%E4%B8%8E%E6%89%80%E8%A7%81%E6%89%80%E6%82%9F/</loc>
+    <loc>https://bio-w.cn/categories/%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3%E4%B8%8E%E6%89%80%E6%84%9F%E6%89%80%E6%82%9F/</loc>
     <lastmod>2022-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
