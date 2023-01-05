@@ -416,14 +416,21 @@
 
   
   <url>
-    <loc>https://bio-w.cn/tags/Selenium/</loc>
+    <loc>https://bio-w.cn/tags/Python/</loc>
     <lastmod>2023-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bio-w.cn/tags/Python/</loc>
+    <loc>https://bio-w.cn/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/Selenium/</loc>
     <lastmod>2023-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -451,7 +458,21 @@
   </url>
   
   <url>
-    <loc>https://bio-w.cn/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://bio-w.cn/tags/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/%E6%B9%BF%E5%AE%9E%E9%AA%8C/</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bio-w.cn/tags/PCR/</loc>
     <lastmod>2023-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -472,13 +493,6 @@
   </url>
   
   <url>
-    <loc>https://bio-w.cn/tags/%E5%8F%91%E8%A1%A8%E8%AE%BA%E6%96%87/</loc>
-    <lastmod>2023-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://bio-w.cn/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
     <lastmod>2023-01-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -487,20 +501,6 @@
   
   <url>
     <loc>https://bio-w.cn/tags/NCBI/</loc>
-    <lastmod>2023-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/%E6%B9%BF%E5%AE%9E%E9%AA%8C/</loc>
-    <lastmod>2023-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bio-w.cn/tags/PCR/</loc>
     <lastmod>2023-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -600,14 +600,14 @@
 
   
   <url>
-    <loc>https://bio-w.cn/categories/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/</loc>
+    <loc>https://bio-w.cn/categories/Python/</loc>
     <lastmod>2023-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bio-w.cn/categories/Python/</loc>
+    <loc>https://bio-w.cn/categories/%E6%A4%8D%E7%89%A9%E5%AD%A6%E8%AF%95%E9%AA%8C/</loc>
     <lastmod>2023-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
