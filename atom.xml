@@ -6,7 +6,7 @@
   <link href="https://bio-w.cn/atom.xml" rel="self"/>
   
   <link href="https://bio-w.cn/"/>
-  <updated>2023-02-12T02:37:34.392Z</updated>
+  <updated>2023-02-12T02:38:34.127Z</updated>
   <id>https://bio-w.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://bio-w.cn/posts/35414.html"/>
     <id>https://bio-w.cn/posts/35414.html</id>
     <published>2023-02-12T02:33:39.000Z</published>
-    <updated>2023-02-12T02:37:34.392Z</updated>
+    <updated>2023-02-12T02:38:34.127Z</updated>
     
     <content type="html"><![CDATA[<p>有段时间没更新了，主要是放假在家虽然没啥事干，但是却不怎么碰电脑了，除了每天晚上追一会狂飙，其他时间基本不看电脑，所以也就没更新。<br>最近回学校了，又开始忙起来了，要改论文，又要做实验。找导师看过一次论文了，说我写的比较啰嗦，但是实验结果可靠(有点小高兴)，目前实验室的三个老师都劝我说让我考博士，虽然我没有特别想读博士了，但可能还是会报名考一下，考上了不见得就一定是好事，考不上可能也不是什么坏事，随缘吧。主要是不太想在这个学校读了。<br>说实话，在学校待了这几天又被学校恶心到了，这个学校真的是凭一己之力寒了无数学子的心，标榜百年名校，我看你充其量就是个百年学校！真搞不懂现在为什么还要封校，本来学校餐厅就没开，没地方吃饭就只能出去吃，结果通知也不提前说一声，门卫保安就说学校不让出了，真tm服了呀，好在学生们在微信，微博等平台集体抗议，好歹是让出校了，不过又发通知说开学后封闭一周，一周后视情况恢复出入校。不知道是不是在玩文字游戏，之前听说的是学校跟餐厅签订了三年不解封协议，现在还有一年半，诸位LD们为了自己的钱袋子真是无所不用其极，实在佩服！<br>实验室有学生给省长信箱写信举报，结果第二天就收到学校的电话呵斥，很好，有问题不解决问题，反而解决学生。嗯，符合这个学校的一贯做派。<br>地狱空荡荡，恶魔在人间。散会！！！</p><p>最后，hexo只能用电脑更新文章，所以真的有点不太方便~</p>]]></content>
     
@@ -43,10 +43,19 @@
     <link href="https://bio-w.cn/posts/11784.html"/>
     <id>https://bio-w.cn/posts/11784.html</id>
     <published>2023-02-11T11:00:54.000Z</published>
-    <updated>2023-02-12T02:38:22.226Z</updated>
+    <updated>2023-02-12T03:09:13.172Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>最近学院里还是有很多人需要做生物信息学的基因家族分析，好多博士硕士一上来可能就要筛选转录组差异基因，分析某些基因的生物学功能等等，这就或多或少的接触一些家族基因的内容，我们实验室作为学院里分析家族基因比较早的实验室，相关流程掌握的更多一些（虽然没啥用，这在生信里边连皮毛都不算，但不过好像有时候也确实比较有用），或多或少的会有一些人来请教一些问题，而且最近我们实验室的一个老师给我打电话说学院里一些老师问他基因共线性的图怎么做，让我研究一下教一下他，我想着之前发过一篇文章就做了物种间的共线性分析，当时做的时候比较麻烦，虽然如此，但是再学习一下还是能捡起来的，就欣然答应了。</p><h1 id="Tbtools简介"><a href="#Tbtools简介" class="headerlink" title="Tbtools简介"></a>Tbtools简介</h1><p>tbtools作为搞植物生信必然会接触到的一款软件，真的是很良心，绝对算是生产力工具了，以前需要用Python和R分析和处理的各种数据，现在基本可以在tbtools完成，可视化作图更是这款软件的重中之重，确实非常方便，而且容易上手。tbtools作者是华南农业大学陈程杰老师，现已毕业留校任教。陈程杰简介<a href="https://xialab.scau.edu.cn/2019/1128/c8834a207789/page.htm">陈程杰</a></p><h1 id="准备文件"><a href="#准备文件" class="headerlink" title="准备文件"></a>准备文件</h1><p>提前下载好三个物种的基因组文件，主要包括全基因组文件和gff注释文件，相关物种的全基因组下载一般可以在NCBI和EMBL等网站。</p><p><br/></p><h1 id="MCScanX"><a href="#MCScanX" class="headerlink" title="MCScanX"></a>MCScanX</h1><p>打开Tbtools - One Step MCScanX-Super Fast</p><p>分别放入相关基因组文件（fa和gff格式），这里以桃-欧李-杏为例，分别做两次MCScanX，注意prefix这边最好自己给一个前缀，比如先做桃和欧李的MCScan，prefix就分别填相关简称或其他标记符，第二次做欧李和杏的时候也要标记。</p><p>这一步如果弹出tbtools的debug窗口，默认不用管，等程序运行结束后点一下debug窗口的close就行，这种情况是因为基因组中个别基因找不到。</p><p><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2023/02/12/63e857b13bebb.png' width="500" height=auto loading="lazy"></p><h1 id="合并文件"><a href="#合并文件" class="headerlink" title="合并文件"></a>合并文件</h1><p>多个物种间的共线性需要做一次merge过程，把上一步生成的文件做一下合并，这一步是必需的。</p><p>打开tbtools - File Merge For MCScanX，分别合并两两物种的genelinks文件，gff文件和Chrlayout文件，合并完成后生成三个文件，分别时genelink.xls，gene.gff和chr.xls，文件名是自己命名的，可以自己随意命名。</p><p><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2023/02/12/63e857b13943a.png' width="500" height=auto loading="lazy"></p><p><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2023/02/12/63e857b13c184.png' width="500" height=auto loading="lazy"></p><p><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2023/02/12/63e857b139211.png' width="500" height=auto loading="lazy"></p><h1 id="作图"><a href="#作图" class="headerlink" title="作图"></a>作图</h1><p>打开tbtools - Multiple Synteny Plot，分别放入上一步生成的chr.xls，gene.gff和genelink.xls文件，最后一个输入框放入需要高亮显示的基因名（非必需），然后点击star就可以生成多物种间的共线性图</p><p><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2023/02/12/63e857b13e9e4.png' width="500" height=auto loading="lazy"></p><h1 id="成图展示"><a href="#成图展示" class="headerlink" title="成图展示"></a>成图展示</h1><p><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2023/02/12/63e857b1486e9.png' width="500" height=auto loading="lazy"></p><p><br/></p><h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>第一次做的时候，生成的共线性图可能会受基因组碎片的影响，显示很多染色体碎片，这里就需要对染色体进行过滤，去除掉不需要的染色体碎片，这个tbtools也可以完成，具体使用的是Genome Length Filter功能，同时需要去除gff注释文件中的注释碎片，这一步可以直接用notepad++打开注释文件手动去除就行。</p><p>保存的图片最好是svg格式，后期方便用AI修图。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h1&gt;&lt;p&gt;最近学院里还是有很多人需要做生物信息学的基因家族分析，好多博士硕士一上来可能就要筛选转录组差异基因，分析某些基因的生物学功能等等，这就或多或</summary>
+      
     
     
     
+    <category term="术业专攻" scheme="https://bio-w.cn/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
     
     
   </entry>
