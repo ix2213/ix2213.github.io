@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bio-w.cn/posts/7041.html</loc>
+    
+    <lastmod>2023-03-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://bio-w.cn/posts/34521.html</loc>
     
     <lastmod>2023-03-04</lastmod>
@@ -490,7 +499,7 @@
 
   <url>
     <loc>https://bio-w.cn/</loc>
-    <lastmod>2023-03-04</lastmod>
+    <lastmod>2023-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -500,14 +509,14 @@
   
   <url>
     <loc>https://bio-w.cn/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/</loc>
-    <lastmod>2023-03-04</lastmod>
+    <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bio-w.cn/categories/%E4%BA%BA%E9%97%B4%E7%83%9F%E7%81%AB/</loc>
-    <lastmod>2023-03-04</lastmod>
+    <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
