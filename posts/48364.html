@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="description" content="Selenium常用定位方式总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Selenium元素定位的30种方式">
+<meta property="og:url" content="https://bio-w.cn/posts/48364.html">
+<meta property="og:site_name" content="西瓜撞地球">
+<meta property="og:description" content="Selenium常用定位方式总结">
+<meta property="og:locale">
+<meta property="article:published_time" content="2022-04-03T08:10:06.000Z">
+<meta property="article:modified_time" content="2023-01-10T15:30:34.895Z">
+<meta property="article:author" content="地球叛逃者.">
+<meta name="twitter:card" content="summary">
+
+
+<title >Selenium元素定位的30种方式</title>
+
+<!-- Favicon -->
+
+    <link href='/img/avater.png?v=1.1.1' rel='icon' type='image/png' sizes='16x16' ></link>
+
+
+    <link href='/img/avater.png?v=1.1.1' rel='icon' type='image/png' sizes='32x32' ></link>
+
+
+
+
+<!-- Plugin -->
+
+
+
+
+    
+<link rel="stylesheet" href="/css/plugins/bootstrap.row.css">
+
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+
+
+    
+
+    
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+
+
+
+
+<!-- Variable -->
+<script>window.ASYNC_CONFIG = {"hostname":"bio-w.cn","author":"地球叛逃者.","root":"/","typed_text":null,"favicon":{"logo":"/img/avater.png","icon16":"/img/avater.png","icon32":"/img/avater.png","appleTouchIcon":null,"webmanifest":null,"visibilitychange":false,"hidden":"/failure.ico","showText":"(/≧▽≦/)咦！又好了！","hideText":"(●—●)喔哟，崩溃啦！"},"theme_version":"1.1.1","theme":{"switch":true,"default":"style-light"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。"},"creative_commons":{"license":"by-nc-sa","language":"deed.zh","post":true,"clipboard":false},"swup":false};</script>
+
+<!-- Theme mode css -->
+<link data-swup-theme rel="stylesheet" href="/css/index.css?v=1.1.1" id="trm-switch-style">
+<script>
+    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+    let type = catchMode === 'style-dark' ? 'add' : 'remove';
+    document.documentElement.classList[type]('dark')
+</script>
+
+<!-- CDN -->
+
+
+    
+
+    
+
+
+
+<!-- Site Analytics -->
+ 
+<!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="西瓜撞地球" type="application/atom+xml">
+</head>
+
+<body>
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="iconfont far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="iconfont far fa-moon"></i></i>
+    </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" data-scroll-container style="opacity: 0">
+          <div data-scroll-section id="content" class="trm-scroll-section">
+
+            <div class="locomotive-scroll__sticky-target" style=" position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none;"></div>
+
+            <!-- top bar -->
+            <header class="trm-top-bar" data-scroll data-scroll-sticky data-scroll-target=".locomotive-scroll__sticky-target" data-scroll-offset="-10">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+			<a href="/" class="trm-logo-frame trm-anima-link">
+				
+					<img class="trm-light-icon" src="/img/avater.png" alt="logo">
+					<img class="trm-dark-icon" src="/img/avater.png" alt="logo">
+				
+				
+					<div class="trm-logo-text">
+						西瓜<span>撞地球</span>
+					</div>
+				
+			</a>
+			<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+
+			<!-- menu -->
+			<div class="trm-menu">
+				<nav>
+					<ul>
+						
+						<li class="menu-item-has-children ">
+							<a  href="/" target="">
+								首页
+							</a>
+							
+						</li>
+						
+						<li class="menu-item-has-children ">
+							<a  href="/archives/" target="">
+								归档
+							</a>
+							
+						</li>
+						
+						<li class="menu-item-has-children ">
+							<a  href="/links/" target="">
+								友链
+							</a>
+							
+						</li>
+						
+						<li class="menu-item-has-children ">
+							<a  href="/about/" target="">
+								关于
+							</a>
+							
+						</li>
+						
+						<li class="menu-item-has-children ">
+							<a  href="https://www.travellings.cn/go.html" target="">
+								开往
+							</a>
+							
+						</li>
+						
+						<li class="menu-item-has-children ">
+							<a  href="https://foreverblog.cn/go.html" target="">
+								虫洞
+							</a>
+							
+						</li>
+						
+					</ul>
+				</nav>
+			</div>
+			<!-- menu end -->
+			
+			<!-- mode switcher place -->
+			
+			<div class="trm-mode-switcher-place">
+				<!-- <div class="trm-hidden-switcher"> -->
+					<div class="trm-mode-switcher">
+					  <i class="iconfont far fa-sun"></i>
+					  <input class="tgl tgl-light" id="trm-swich" type="checkbox">
+					  <label class="trm-swich" for="trm-swich"></label>
+					  <i class="iconfont far fa-moon"></i>
+					</div>
+				  <!-- </div> -->
+			</div>
+			
+			<!-- mode switcher place end -->
+
+			
+				
+				<div id="trm-search-btn" class="trm-search-btn">
+					<i class="iconfont fas fa-search"></i>
+				</div>
+				 
+			 
+
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
+</header>
+            <!-- top bar end -->
+
+            <!-- body -->
+            
+<div class="trm-content-start">
+    <!-- banner -->
+    <div class="trm-banner" data-scroll data-scroll-direction="vertical">
+    
+    <!-- banner video cover -->
+    <video autoplay="autoplay" loop muted playsinline webkit-playinginline class="trm-banner-cover" data-scroll data-scroll-direction="vertical" data-scroll-speed="-3">
+        <source src="/img/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        Your browser does not support HTML5 video.
+    </video>
+    <!-- banner video cover end -->
+    
+
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container" data-scroll data-scroll-direction="vertical" data-scroll-speed="0">
+            <div class="row">
+                
+                <div class="col-lg-4"></div>
+                
+                <div class="col-lg-8">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text ">
+                        <div class="trm-label trm-mb-20">
+                            NEWS LETTER
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            Selenium元素定位的30种方式
+                        </h1>
+
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        posts
+                                    </span
+                                ></li>
+                            </ul>
+                        
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <a href="#about-triger" data-scroll-to="#about-triger" data-scroll-offset="-130" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </a>
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+    <div class="container">
+        <div class="row">
+            
+                <div class="col-lg-4 hidden-sm">
+                    <!-- main card -->
+                    
+
+<div class="trm-main-card-frame trm-sidebar">
+    <div class="trm-main-card" data-scroll data-scroll-repeat data-scroll-sticky data-scroll-target=".locomotive-scroll__sticky-target" data-scroll-offset="60"> 
+    
+        <!-- card header -->
+<div class="trm-mc-header">
+    <div class="trm-avatar-frame trm-mb-20">
+        <img class="trm-avatar trm-light-icon" src="https://bu.dusays.com/2022/10/17/634d313602a1e.png" alt="Avatar">
+        <img class="trm-avatar trm-dark-icon" src="https://bu.dusays.com/2022/10/17/634d313602a1e.png" alt="Avatar">
+    </div>
+    <h5 class="trm-name trm-mb-15">
+        西瓜撞地球
+    </h5>
+    
+</div>
+<!-- card header end -->
+
+<!-- sidebar social -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+
+<div class="trm-social">
+    
+        <a href="https://github.com/ix2213" title="Github" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-github"></i>
+        </a>
+    
+        <a href="https://t.me/iiaaec" title="Telegram" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-telegram"></i>
+        </a>
+    
+        <a href="https://www.bio-w.cn/atom.xml" title="RSS" rel="nofollow" target="_blank">
+            <i class="iconfont fab fas fa-rss"></i>
+        </a>
+    
+</div>
+
+<!-- sidebar social end -->
+
+<!-- info -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<ul class="trm-table trm-mb-20">
+    
+        <li>
+            <div class="trm-label">
+                Residence:
+            </div>
+            <div class="trm-label trm-label-light">
+                JinZhong
+            </div>
+        </li>
+    
+</ul>
+
+<!-- info end -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<!-- action button -->
+<div class="text-center">
+    <a href="mailto:gxw1606@163.com" class="trm-btn">
+        联系我
+        <i class="iconfont far fa-envelope"></i>
+    </a>
+</div>
+<!-- action button end -->
+
+    
+    </div>
+</div>
+                    <!-- main card end -->
+                </div>
+            
+            <div class="col-lg-8">
+                <div class="trm-content" id="trm-content">
+                    <div data-scroll data-scroll-repeat data-scroll-offset="500" id="about-triger"></div>
+
+                    <div class="row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            04/03
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            16:10
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            地球叛逃者.
+        </div>
+    </div>
+</div>
+<div class="trm-card ">
+    <article class="trm-publication">
+    <p> Selenium对网页的控制是基于各种前端元素的，在使用过程中，对于元素的定位是基础，只有准去抓取到对应元素才能进行后续的自动化控制，我在这里将对各种元素定位方式进行总结归纳一下。</p>
+<p>这里将统一使用<a href="www.baidu.com">百度首页</a>进行示例，f12可以查看具体前端代码。<br>WebDriver8种基本元素定位方式<br>find_element_by_id()</p>
+<p>采用id属性进行定位。例如在百度页面中输入关键字 Selenium 进行搜索。百度部分关键源码如下：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;span class=&quot;bg s_ipt_wr quickdelete-wrap&quot;&gt;</span><br><span class="line">    &lt;span class=&quot;soutu-btn&quot;&gt;&lt;/span&gt;</span><br><span class="line">    &lt;input id=&quot;kw&quot; class=&quot;s_ipt&quot; autocomplete=&quot;off&quot; maxlength=&quot;255&quot; value=&quot;&quot; name=&quot;wd&quot;&gt;</span><br><span class="line">    &lt;a id=&quot;quickdelete&quot; class=&quot;quickdelete&quot; href=&quot;javascript:;&quot; title=&quot;清空&quot; style=&quot;top: 0px; right: 0px; display: none;&quot;&gt;&lt;/a&gt;</span><br><span class="line">&lt;/span&gt;</span><br><span class="line">&lt;span class=&quot;bg s_btn_wr&quot;&gt;</span><br><span class="line">    &lt;input id=&quot;su&quot; class=&quot;bg s_btn&quot; type=&quot;submit&quot; value=&quot;百度一下&quot;&gt;</span><br><span class="line">&lt;/span&gt;</span><br></pre></td></tr></table></figure><br>可以看到输入框和百度一下的按钮都有id，那么定位代码如下：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">#coding=utf-8</span><br><span class="line">from selenium import webdriver</span><br><span class="line">import time</span><br><span class="line">from selenium.webdriver.common.by import By</span><br><span class="line"> </span><br><span class="line">driver = webdriver.Chrome()</span><br><span class="line">driver.implicitly_wait(10)</span><br><span class="line">driver.get(&quot;http://www.baidu.com&quot;)</span><br><span class="line"> </span><br><span class="line">driver.find_element_by_id(&quot;kw&quot;).send_keys(&quot;Selenium&quot;)</span><br><span class="line">driver.find_element_by_id(&quot;su&quot;).click()</span><br><span class="line"> </span><br><span class="line">time.sleep(2)</span><br><span class="line">driver.quit()</span><br><span class="line">find_element_by_name() </span><br><span class="line">find_element_by_class_name() </span><br></pre></td></tr></table></figure><br>根据name元素和class的名字进行定位，这两种定位方式和id定位相似，在前端代码中，id、name和class一般都至少会有其中的一种，比如百度的搜索框具有name属性，我们可以用name定位搜索款，class定位百度一下的按钮：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">driver.find_element_by_name(&quot;wd&quot;).send_keys(&quot;Python&quot;)</span><br><span class="line">driver.find_element_by_class_name(&quot;s_btn&quot;).click()</span><br><span class="line">find_element_by_xpath() </span><br></pre></td></tr></table></figure><br>xpath是XML路径语言，它可以用来确定xml文档中的元素位置，通过元素的路径来完成对元素的查找。HTML就是XML的一种实现方式，所以xpath是一种非常强大的定位方式。<br>xpath也分几种不同类型的定位方法。</p>
+<p>一种是绝对路径定位。这种定位方式是利用html标签名的层级关系来定位元素的绝对路径，一般从<html>标签开始依次往下进行查找。<br>如百度搜索框的绝对路径xpath定位可以是这样的：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find_element_by_xpath(&quot;/html/body/div[1]/div[1]/div/div[1]/div/form/span[1]/input&quot;)</span><br></pre></td></tr></table></figure></p>
+<p>还有一种是利用元素属性来进行xpath定位，搜索框还可以利用id和name属性去定位：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">find_element_by_xpath(&quot;//input[@id=&#x27;kw&#x27;]&quot;)</span><br><span class="line"></span><br><span class="line">find_element_by_xpath(&quot;//*[@name=&#x27;wd&#x27;]&quot;)</span><br></pre></td></tr></table></figure></p>
+<p>其中的标签名input也可以用*来代替，而且只要是在该标签内，任意属性都可以，比如搜索框的maxlength属性：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find_element_by_xpath(&quot;//input[@maxlength=&#x27;255&#x27;]&quot;)</span><br></pre></td></tr></table></figure></p>
+<p>有的时候我们会发现绝对路径定位路径太长，而且光凭路径完全不可以猜测到其指向的具体页面元素，如果只有单纯的元素属性不一定可以每次查找的元素都可以又唯一的属性去方便定位，这个时候我们可以将这两种定位方式结合起来使用。</p>
+<p>比如查找搜索框的时候发现其上级元素form又唯一的id方便定位，就可以先查找到form元素然后依次往下写路径：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find_element_by_xpath(&quot;//form[@id=&#x27;form&#x27;]/span/input&quot;)</span><br></pre></td></tr></table></figure><br>这种定位方式的使用过程中，如果元素的单个属性无法确定其唯一性，可以用and连接多个属性去确定。<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find_element_by_css_selector()</span><br></pre></td></tr></table></figure><br>CSS属性定位可以比较灵活地选择控件的任意属性，定位方式也会比xpath快。<br>同样是那个百度搜索的例子，可以试一下：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">driver.find_element_by_css_selector(&quot;.s_ipt&quot;).send_keys(&quot;selenium&quot;)</span><br><span class="line">driver.find_element_by_css_selector(&quot;#su&quot;).click()</span><br></pre></td></tr></table></figure><br>如果有css基础的话就应该可以看懂，一般class是用.标记，id是用#标记，标签名直接写具体标签名就好了。</p>
+<p>css定位里面也可以通过属性或者组合方式定位：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">driver.find_element_by_css_selector(&quot;input[autocomplete=&#x27;off&#x27;]&quot;).send_keys(&quot;Python&quot;)</span><br><span class="line">driver.find_element_by_css_selector(&quot;span.bg.s_btn_wr&gt;input#su&quot;).click()</span><br></pre></td></tr></table></figure><br>具体说一下百度一下那个按钮的组合定位方式，这样写的定位顺序是这样的，先定位到一个class名为bg s_btn_wr的span标签，在这个标签下面有一个id为su的input标签，这样就定位到了。</p>
+<p>值得注意的是，在css里面下级标签元素用&gt;连接，如果class里面有空格，空格用.进行连接。<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find_element_by_tag_name ()</span><br></pre></td></tr></table></figure><br>通过标签名去定位的方式一般是这样的： find_element_by_tag_name(“input”)<br>可见仅仅通过标签名去定位时，一般一种标签在一个页面里面会出现不止一次甚至大量出现，这种定位方式的作用不是很大，所以用的也就比较少。<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">find_element_by_link_text()</span><br><span class="line">find_element_by_partial_link_text()</span><br></pre></td></tr></table></figure><br>这两种定位方式是专门用于定位超链接的，也就是对应html页面中的<a>标签，括号里传的值就是a标签中的超链接文字，两者的区别在于一个是完整的超链接文字，一个是可以只写部分超链接文字。<br>比如点击百度首页中右上角的新闻超链接，可以这样去定位：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">driver.find_element_by_link_text(&quot;新闻&quot;).click()</span><br><span class="line">driver.find_element_by_partial_link_text(&quot;闻&quot;).click()</span><br></pre></td></tr></table></figure><br>By定位<br>通过对上面8种基本元素定位方式的学习，在使用过程种可以根据实际的情况去选择对应的的定位方式，我们可以用By来设置定位策略，具体语法如下：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">find_element(By.ID,&quot;kw&quot;)</span><br><span class="line">find_element(By.NAME,&quot;wd&quot;)</span><br><span class="line">find_element(By.CLASS_NAME,&quot;s_ipt&quot;)</span><br><span class="line">find_element(By.TAG_NAME,&quot;input&quot;)</span><br><span class="line">find_element(By.LINK_TEXT,u&quot; 新闻 &quot;)</span><br><span class="line">find_element(By.PARTIAL_LINK_TEXT,u&quot; 新 &quot;)</span><br><span class="line">find_element(By.XPATH,&quot;//*[@class=&#x27;bg s_btn&#x27;]&quot;)</span><br><span class="line">find_element(By.CSS_SELECTOR,&quot;span.bg s_btn_wr&gt;input#su&quot;) </span><br></pre></td></tr></table></figure><br>上面这些使用的前提是需要导入By类：from selenium.webdriver.common.by import By</p>
+<p>最简单粗暴却失传已久的8种定位<br>据说这种定位方式在江湖上都快要失传了，实在想不通为什么，明明写起来最简单粗暴啊~<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">driver.find_element(&quot;name&quot;,&quot;wd&quot;).send_keys(&quot;Selenium2&quot;)</span><br><span class="line">driver.find_element(&quot;id&quot;,&quot;su&quot;).click()</span><br></pre></td></tr></table></figure><br>相信通过上面的两只栗子，大家一定会和我一样觉得这种方式的定位实在是太省事了~只要写find_element就好啦，下面我们来总结一下这8种写法与基本定位方法类比过来该怎么写：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">by_id -&gt; find_element(&quot;id&quot;,&quot;&quot;)</span><br><span class="line"></span><br><span class="line">by_xpath -&gt; find_element(&quot;xpath&quot;,&quot;&quot;)</span><br><span class="line"></span><br><span class="line">by_link_text -&gt; find_element(&quot;link text&quot;,&quot;&quot;)</span><br><span class="line"></span><br><span class="line">by_partial_text -&gt; find_element(&quot;partial link text&quot;,&quot;&quot;)</span><br><span class="line"></span><br><span class="line">by_name -&gt; find_element(&quot;name&quot;,&quot;&quot;)</span><br><span class="line"></span><br><span class="line">by_tag_name -&gt; find_element(&quot;tag name&quot;,&quot;&quot;)</span><br><span class="line"></span><br><span class="line">by_class_name -&gt; find_element(&quot;class name&quot;,&quot;&quot;)</span><br><span class="line"></span><br><span class="line">by_css_selector -&gt; find_element(&quot;css selector&quot;,&quot;&quot;)</span><br></pre></td></tr></table></figure></p>
+<p>elements复数定位<br>在上面的例举的八中基本定位方式种，都有对应的复数形式，分别是下面这些：</p>
+<p>id复数定位find_elements_by_id()<br>name复数定位find_elements_by_name()<br>class复数定位find_elements_by_class_name()<br>tag复数定位find_elements_by_tag_name()<br>link复数定位find_elements_by_link_text()<br>partial_link复数定位find_elements_by_partial_link_text()<br>xpath复数定位find_elements_by_xpath()<br>css复数定位find_elements_by_css_selector()<br>这些复数定位方式每次取到的都是具有相同类型属性的一组元素，所以返回的是一个list队列，我们也可以利用这个去定位单个的元素。比如百度首页种，右上角有新闻、视频、地图、贴吧等一些链接，我们通过f12查看源码可以发现，这些链接都有共同的class， class=”mnav”。</p>
+<p>举个例子，比如定位排在第六个的学术，可以这样定位：driver.find_elements_by_class_name(“mnav”)[5].click()</p>
+<p>还可以通过css的复数定位写法：driver.find_elements(“css selector”,”.mnav”)[6].click()</p>
+<p>当然，也可以借助pop()函数，一般pop()或pop(-1)表示获取元素种的最后一个，pop(2)表示第三个：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.find_elements(&quot;css selector&quot;,&quot;.mnav&quot;).pop().click()</span><br></pre></td></tr></table></figure></p>
+<p>JS的5种定位方式总结<br>其实看到这里，上面的定位方式应该就基本够用了，但是有的时候就是会出现一些诡异的定位失效或者定位到了点击失效的问题，这个时候如果用js进行直接执行该事件，往往就可以解决那些诡异的事情~</p>
+<p>id定位：document.getElementById()<br>name定位：document.getElementsByName()<br>tag定位：document.getElementsByTagName()<br>class定位：document.getElementsByClassName()<br>css定位：document.querySelectorAll()<br>其中只有id对象用的是Element返回是单个对象，其他都是Elements返回的是一个list这点千万要注意，具体用法和上面的webdriver基础定位一样。先写好对应的js语句，可以先赋值给一个变量，然后后调用execute_script进行执行一下js就好了，下面还是结合那个百度搜索的栗子，我写的脚本，可以对应学习实验一下：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">search_js = &quot;document.getElementsByName(&#x27;wd&#x27;)[0].value=&#x27;selenium&#x27;;&quot;</span><br><span class="line">search_js2 = &quot;document.querySelectorAll(&#x27;.s_ipt&#x27;)[0].value=&#x27;selenium&#x27;;&quot;</span><br><span class="line">button_js = &quot;document.getElementById(&#x27;su&#x27;).click();&quot;</span><br><span class="line">button_js2 = &quot;document.getElementsByClassName(&#x27;s_btn&#x27;)[0].click()&quot;</span><br><span class="line">driver.execute_script(search_js2)</span><br><span class="line">driver.execute_script(button_js2)</span><br></pre></td></tr></table></figure><br>以上分别结合常用的四种js定位方式写了四条js语句，然后要执行的就execute_script一下就好啦~</p>
+<p>超神的jQuery定位<br>据说会jQuery定位的在定位的路上就是披襟斩棘，所向披靡~如此超神的定位，还是可以了解一下的~</p>
+<p>jQuery语法是为HTML元素的选取编制的，可以对元素执行一些具体的操作</p>
+<p>基础语法是$(selector).action()</p>
+<p>$符号定义jQuery，selector选择器用来查询具体的HTML元素，通过action()来执行对元素的具体操作。</p>
+<p>其中我们经常用到的action()在jq中有这么几种：</p>
+<p>$(selector).val(‘input_value’) 其中input_value表示要输入的文本的值</p>
+<p>$(selector).val(‘’) 如果为空，则执行后是清空的意思</p>
+<p>$(selector).click() 行为也是肯定有的</p>
+<p>让我们结合百度的栗子看一下，用jQuery的写法和js有一点点的类似，但明显简洁多了：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">search_jq = &quot;$(&#x27;#kw&#x27;).val(&#x27;selenium&#x27;)&quot;</span><br><span class="line">button_jq = &quot;$(&#x27;.s_btn&#x27;).click()&quot;</span><br><span class="line">driver.execute_script(search_jq)</span><br><span class="line">driver.execute_script(button_jq)</span><br></pre></td></tr></table></figure></p>
+<p>以上就是对webdriver的一些基本定位方式总结，我们再来回顾一下：</p>
+<p>分别是……</p>
+<p>8种webdriver的基本地位方式，还有对应的8种复数定位，js有5中定位方式，还有超神的jQuery定位，当然，不要忘了快要失传的那8种定位，一共是30种，在实际应用中，总有一种适合你(●ˇ∀ˇ●)</p>
+
+</article>
+    
+    
+
+<ul class="trm-post-copyright">
+    <li class="trm-post-copyright-author">
+        <strong>本文作者：</strong>
+        地球叛逃者.
+    </li>
+    <li class="trm-post-copyright-link">
+        <strong>本文链接：</strong>
+        <a id="original-link" href="https://bio-w.cn/posts/48364.html" title="Selenium元素定位的30种方式">https://bio-w.cn/posts/48364.html</a>
+    </li>
+    <li class="trm-post-copyright-license">
+        <strong>版权声明：</strong>
+        本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 ">CC BY-NC-SA 4.0</a> 许可协议。
+    </li>
+</ul>
+
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-title-with-divider">
+            其他文章
+            <span data-number="02"></span>
+        </h5>
+    </div>
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation" data-scroll data-scroll-offset="40">
+        <a href="/posts/35474.html" class="trm-cover-frame trm-anima-link">
+            
+            
+                <img src="https://bu.dusays.com/2022/10/13/6347af7703660.webp" alt="cover">
+            
+        </a>
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/">
+                    术业专攻
+                </a>
+            </div>
+            <h5>
+                <a href="/posts/35474.html" class="trm-anima-link">
+                    近期的Python学习笔记
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>22/04/04</li>
+                <li>20:06</li>
+                
+                    <li>102</li>
+                
+                
+                    <li>1</li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation" data-scroll data-scroll-offset="40">
+        <a href="/posts/57342.html" class="trm-cover-frame trm-anima-link">
+            
+            
+                <img src="/img/tucao.webp" alt="cover">
+            
+        </a>
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E4%BA%BA%E9%97%B4%E7%83%9F%E7%81%AB/">
+                    人间烟火
+                </a>
+            </div>
+            <h5>
+                <a href="/posts/57342.html" class="trm-anima-link">
+                    🔒树洞
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>22/04/01</li>
+                <li>17:26</li>
+                
+                    <li>0</li>
+                
+                
+                    <li>1</li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+    
+
+    <div class="trm-card trm-scroll-animation comment-container" data-scroll data-scroll-offset="50">
+    <div id="tcomment"></div>
+</div>
+
+
+
+                    <div class="trm-divider footer-divider"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-scroll-animation" data-scroll data-scroll-offset="50">
+
+    
+        <div class="trm-footer-item">
+            <a rel="noopener" href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备2022039155号</a>
+        </div>
+    
+
+    
+
+    
+        <div class="trm-footer-item">
+            <span>
+                由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v5.4.2
+            </span>
+            <span class="footer-separator"> | </span>
+            <span> 
+                主题 - 
+                <a rel="noopener" href='https://github.com/MaLuns/hexo-theme-async' target='_blank'>Async</a>
+                v1.1.1
+            </span>
+        </div>
+      
+
+    
+        <div class="trm-footer-item">
+            本站已运行 <span id="since" class="trm-accent-color"></span> 天
+        </div>
+     
+
+     
+</footer>
+
+<script>
+    function show_date_time () {
+        BirthDay = new Date("03/29/2022 17:00:00");
+        today = new Date();
+        timeold = (today.getTime() - BirthDay.getTime());
+        msPerDay = 24 * 60 * 60 * 1000
+        day = Math.floor(timeold / msPerDay)
+        since.innerHTML = day
+    }
+    show_date_time()
+</script>
+ 
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id: "Jrr4Zf3cZBWx4Uvc",ck: "Jrr4Zf3cZBWx4Uvc"})</script>
+                    <!-- footer end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- body end -->
+          </div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+
+  </div>
+  <!-- app wrapper end -->
+
+  <div id="trm-back-top" class="trm-back-top">
+    <i class="iconfont fas fa-arrow-up"></i>
+</div>
+  
+<div class="trm-search-popup">
+    <div class="trm-search-header">
+        <span class="trm-search-popup-btn-close">
+            <i class="iconfont fas fa-times"></i>
+        </span>
+    </div>
+    <div class="form trm-search-form">
+        <input class="trm-search-input" type="text" placeholder="搜索...">
+    </div>
+    <div class="trm-search-result-container">
+
+    </div>
+</div>
+
+  <!-- Plugin -->
+
+
+
+    
+    
+
+    
+<script src="//cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+    
+<script src="//cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+
+    
+
+    
+
+    
+        
+<script src="//cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+
+        <script src="/js/plugins/local_search.js?v=1.1.1"></script>
+    
+
+    <!-- 数学公式 -->
+    
+
+
+    <!-- 评论插件 -->
+    
+        
+        
+            
+<script src="//cdn.jsdelivr.net/npm/twikoo@1.6.7/dist/twikoo.all.min.js" data-swup-reload-script></script>
+
+            <script data-swup-reload-script>
+                const twikooConfig = {"enable":true,"envId":"https://twikoo.bio-w.cn"};
+                twikooConfig.el = '#tcomment';
+                twikoo.init(twikooConfig);
+            </script>
+        
+    
+
+
+
+<!-- 评论插件 -->
+
+
+<!-- CDN -->
+
+
+    
+
+    
+
+    
+
+
+
+
+    <!-- Service Worker -->
+    
+    <!-- baidu push -->
+    
+
+
+<script id="async-script" src="/js/main.js?v=1.1.1"></script>
+
+<!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body>
+
+</html>

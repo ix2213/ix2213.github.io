@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="description" content="NCBI简介NCBI是National Center for Biotechnology Information的缩写，指美国国家生物技术信息中心，建立于1988年。NCBI的初衷是为了给分子生物学家提供一个信息储存和处理的系统，除了建有GenBank核酸序列数据库（该数据库的数据资源来自全球几大DNA数据库，其中包括日本DNA数据库DDBJ、欧洲分子生物学实验室数据库EMBL以及其它几个知名科研">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NCBI上传基因测序序列">
+<meta property="og:url" content="https://bio-w.cn/posts/51345.html">
+<meta property="og:site_name" content="西瓜撞地球">
+<meta property="og:description" content="NCBI简介NCBI是National Center for Biotechnology Information的缩写，指美国国家生物技术信息中心，建立于1988年。NCBI的初衷是为了给分子生物学家提供一个信息储存和处理的系统，除了建有GenBank核酸序列数据库（该数据库的数据资源来自全球几大DNA数据库，其中包括日本DNA数据库DDBJ、欧洲分子生物学实验室数据库EMBL以及其它几个知名科研">
+<meta property="og:locale">
+<meta property="og:image" content="https://bu.dusays.com/2022/12/23/63a570f808dda.png">
+<meta property="og:image" content="https://bu.dusays.com/2022/12/23/63a570f908701.png">
+<meta property="og:image" content="https://bu.dusays.com/2022/12/23/63a570f8b7290.png">
+<meta property="og:image" content="https://bu.dusays.com/2022/12/23/63a570f803904.png">
+<meta property="og:image" content="https://bu.dusays.com/2022/12/23/63a570f8ceaf6.png">
+<meta property="og:image" content="https://bu.dusays.com/2022/12/23/63a570f7eb4cc.png">
+<meta property="og:image" content="https://bu.dusays.com/2022/12/23/63a570f7ec04a.png">
+<meta property="og:image" content="https://bu.dusays.com/2022/12/23/63a570f7ee2ea.png">
+<meta property="og:image" content="https://bu.dusays.com/2022/12/23/63a570f7f3ddd.png">
+<meta property="og:image" content="https://bu.dusays.com/2022/12/23/63a570f7eee21.png">
+<meta property="og:image" content="https://bu.dusays.com/2022/12/23/63a570f7f1336.png">
+<meta property="og:image" content="https://bu.dusays.com/2022/12/23/63a570f800cf4.png">
+<meta property="article:published_time" content="2022-12-23T08:33:22.000Z">
+<meta property="article:modified_time" content="2023-01-10T15:36:43.683Z">
+<meta property="article:author" content="地球叛逃者.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bu.dusays.com/2022/12/23/63a570f808dda.png">
+
+
+<title >NCBI上传基因测序序列</title>
+
+<!-- Favicon -->
+
+    <link href='/img/avater.png?v=1.1.1' rel='icon' type='image/png' sizes='16x16' ></link>
+
+
+    <link href='/img/avater.png?v=1.1.1' rel='icon' type='image/png' sizes='32x32' ></link>
+
+
+
+
+<!-- Plugin -->
+
+
+
+
+    
+<link rel="stylesheet" href="/css/plugins/bootstrap.row.css">
+
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+
+
+    
+
+    
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+
+
+
+
+<!-- Variable -->
+<script>window.ASYNC_CONFIG = {"hostname":"bio-w.cn","author":"地球叛逃者.","root":"/","typed_text":null,"favicon":{"logo":"/img/avater.png","icon16":"/img/avater.png","icon32":"/img/avater.png","appleTouchIcon":null,"webmanifest":null,"visibilitychange":false,"hidden":"/failure.ico","showText":"(/≧▽≦/)咦！又好了！","hideText":"(●—●)喔哟，崩溃啦！"},"theme_version":"1.1.1","theme":{"switch":true,"default":"style-light"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。"},"creative_commons":{"license":"by-nc-sa","language":"deed.zh","post":true,"clipboard":false},"swup":false};</script>
+
+<!-- Theme mode css -->
+<link data-swup-theme rel="stylesheet" href="/css/index.css?v=1.1.1" id="trm-switch-style">
+<script>
+    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+    let type = catchMode === 'style-dark' ? 'add' : 'remove';
+    document.documentElement.classList[type]('dark')
+</script>
+
+<!-- CDN -->
+
+
+    
+
+    
+
+
+
+<!-- Site Analytics -->
+ 
+<!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="西瓜撞地球" type="application/atom+xml">
+</head>
+
+<body>
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="iconfont far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="iconfont far fa-moon"></i></i>
+    </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" data-scroll-container style="opacity: 0">
+          <div data-scroll-section id="content" class="trm-scroll-section">
+
+            <div class="locomotive-scroll__sticky-target" style=" position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none;"></div>
+
+            <!-- top bar -->
+            <header class="trm-top-bar" data-scroll data-scroll-sticky data-scroll-target=".locomotive-scroll__sticky-target" data-scroll-offset="-10">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+			<a href="/" class="trm-logo-frame trm-anima-link">
+				
+					<img class="trm-light-icon" src="/img/avater.png" alt="logo">
+					<img class="trm-dark-icon" src="/img/avater.png" alt="logo">
+				
+				
+					<div class="trm-logo-text">
+						西瓜<span>撞地球</span>
+					</div>
+				
+			</a>
+			<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+
+			<!-- menu -->
+			<div class="trm-menu">
+				<nav>
+					<ul>
+						
+						<li class="menu-item-has-children ">
+							<a  href="/" target="">
+								首页
+							</a>
+							
+						</li>
+						
+						<li class="menu-item-has-children ">
+							<a  href="/archives/" target="">
+								归档
+							</a>
+							
+						</li>
+						
+						<li class="menu-item-has-children ">
+							<a  href="/links/" target="">
+								友链
+							</a>
+							
+						</li>
+						
+						<li class="menu-item-has-children ">
+							<a  href="/about/" target="">
+								关于
+							</a>
+							
+						</li>
+						
+						<li class="menu-item-has-children ">
+							<a  href="https://www.travellings.cn/go.html" target="">
+								开往
+							</a>
+							
+						</li>
+						
+						<li class="menu-item-has-children ">
+							<a  href="https://foreverblog.cn/go.html" target="">
+								虫洞
+							</a>
+							
+						</li>
+						
+					</ul>
+				</nav>
+			</div>
+			<!-- menu end -->
+			
+			<!-- mode switcher place -->
+			
+			<div class="trm-mode-switcher-place">
+				<!-- <div class="trm-hidden-switcher"> -->
+					<div class="trm-mode-switcher">
+					  <i class="iconfont far fa-sun"></i>
+					  <input class="tgl tgl-light" id="trm-swich" type="checkbox">
+					  <label class="trm-swich" for="trm-swich"></label>
+					  <i class="iconfont far fa-moon"></i>
+					</div>
+				  <!-- </div> -->
+			</div>
+			
+			<!-- mode switcher place end -->
+
+			
+				
+				<div id="trm-search-btn" class="trm-search-btn">
+					<i class="iconfont fas fa-search"></i>
+				</div>
+				 
+			 
+
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
+</header>
+            <!-- top bar end -->
+
+            <!-- body -->
+            
+<div class="trm-content-start">
+    <!-- banner -->
+    <div class="trm-banner" data-scroll data-scroll-direction="vertical">
+    
+    <!-- banner video cover -->
+    <video autoplay="autoplay" loop muted playsinline webkit-playinginline class="trm-banner-cover" data-scroll data-scroll-direction="vertical" data-scroll-speed="-3">
+        <source src="/img/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        Your browser does not support HTML5 video.
+    </video>
+    <!-- banner video cover end -->
+    
+
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container" data-scroll data-scroll-direction="vertical" data-scroll-speed="0">
+            <div class="row">
+                
+                <div class="col-lg-12">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text trm-text-center ">
+                        <div class="trm-label trm-mb-20">
+                            NEWS LETTER
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            NCBI上传基因测序序列
+                        </h1>
+
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        posts
+                                    </span
+                                ></li>
+                            </ul>
+                        
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <a href="#about-triger" data-scroll-to="#about-triger" data-scroll-offset="-130" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </a>
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-lg-12">
+                <div class="trm-content" id="trm-content">
+                    <div data-scroll data-scroll-repeat data-scroll-offset="500" id="about-triger"></div>
+
+                    <div class="row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            12/23
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            16:33
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            地球叛逃者.
+        </div>
+    </div>
+</div>
+<div class="trm-card ">
+    <article class="trm-publication">
+    <h1 id="NCBI简介"><a href="#NCBI简介" class="headerlink" title="NCBI简介"></a>NCBI简介</h1><p>NCBI是National Center for Biotechnology Information的缩写，指美国国家生物技术信息中心，建立于1988年。NCBI的初衷是为了给分子生物学家提供一个信息储存和处理的系统，除了建有GenBank核酸序列数据库（该数据库的数据资源来自全球几大DNA数据库，其中包括日本DNA数据库DDBJ、欧洲分子生物学实验室数据库EMBL以及其它几个知名科研机构）之外，NCBI还可以提供众多功能强大的数据检索与分析工具。</p>
+<p>NCBI可以说是生信狗最常用的数据库，基本每天都需要跟NCBI的各种数据打交道。</p>
+<p>很不巧的是，我的实验需要测大量的基因序列，基本都是我这个物种的新基因，因此需要将测序序列上传到NCBI数据库，以供他人查询使用。</p>
+<p><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2022/12/23/63a570f808dda.png' width="500" height=auto loading="lazy"></p>
+<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>在上个月很长很长一段时间里，我每天的工作就是克隆基因，仿佛是一个无情的克隆机器，每天要送大量的样品去测序公司测序（在这里心疼一下我老师的钱，哈哈哈，一天就得接近2000块钱  ），这段时间里邮箱每天收到的不是vercel的邮件就是测序公司给我发的测序邮件，克隆的时候很痛苦，然而等数据回来后，也很痛苦，太多太多的序列了，整理都超级费劲，又变成了一个无情的整理数据的机器。。。。。。生物狗太难了。用了大概半个月时间，整理好测序序列，接下来我需要上传到NCBI数据库了，不管怎么说这都是我自己克隆出来的</p>
+<p><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2022/12/23/63a570f908701.png' width="500" height=auto loading="lazy"><br><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2022/12/23/63a570f8b7290.png' width="500" height=auto loading="lazy"></p>
+<h1 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h1><ol>
+<li>打开NCBI首页，点击submit</li>
+<li>这里我测的是基因组DNA，因此要选择BankIt<br><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2022/12/23/63a570f803904.png' width="500" height=auto loading="lazy"></li>
+<li>登录NCBI可以选择谷歌账户登录或者微软账号，这里方便起见，我们用谷歌登录</li>
+<li>点击start new submit后，选择最后一个，然后就可以填写具体信息了<br><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2022/12/23/63a570f8ceaf6.png' width="500" height=auto loading="lazy"></li>
+<li>首先需要填写提交者的具体信息，包括姓名、单位、城市、邮编等，这里email不能填写163或者qq之类的，因此我这里用的是谷歌邮箱，alternative email可以填写163等邮箱<br><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2022/12/23/63a570f7eb4cc.png' width="500" height=auto loading="lazy"></li>
+<li>reference这里，要填写共同作者，一般就是导师或者通讯作者之类的，发表状态这边，我是没有发表，所以选择unpublished，reference authors选择第一个<br><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2022/12/23/63a570f7ec04a.png' width="500" height=auto loading="lazy"></li>
+<li>sequence technology这里，一般是一代测序，也就是sanger测序，这个根据实际情况选，有的可能是二代的illumina，然后选择组装的序列<br><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2022/12/23/63a570f7ee2ea.png' width="500" height=auto loading="lazy"></li>
+<li>上传核酸序列这里，发表日期一般选择即时发表，molecule type这里，我的是基因组DNA,因此选择genomic DNA，一般是线性DNA，如果是环形的需要选择circular，上传序列按照标准fasta格式，要在后边注明基因名和物种信息，一般要加上一些简要的description<br><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2022/12/23/63a570f7f3ddd.png' width="500" height=auto loading="lazy"></li>
+<li>submission category这里，选择第一个，也就是原始上传<br><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2022/12/23/63a570f7eee21.png' width="500" height=auto loading="lazy"></li>
+<li>source modifiers这里，organelle可以不用选，source modifier至少需要填写3个，我这里写的是克隆、城市、感受态和组织，分别对应大肠杆菌、中国、DH5alpha和leaves<br><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2022/12/23/63a570f7f1336.png' width="500" height=auto loading="lazy"></li>
+<li>features这里要填写他的基因信息和氨基酸序列，氨基酸序列也要按照标准fasta格式上传，只不过首行可以不用填写description，只需要基因名就好。直接上传氨基酸序列，系统会自动识别他的翻译位置，如果提示错误，一般就是核苷酸序列和氨基酸序列不对应。如果基因不是完整的基因，要对应选择缺少5或者3`端。<br><img style='-moz-border-radius:20px;-webkit-border-radius:20px;' src='https://bu.dusays.com/2022/12/23/63a570f800cf4.png' width="500" height=auto loading="lazy"></li>
+<li>所有信息填写完成后，最后一步就是审查了，如果没有问题的话就可以提交，两日之内会把基因登录号发到邮箱，后续需要更改序列信息可以直接给NCBI发邮件更改。</li>
+<li>至此，完成。</li>
+</ol>
+
+</article>
+    
+    
+
+<ul class="trm-post-copyright">
+    <li class="trm-post-copyright-author">
+        <strong>本文作者：</strong>
+        地球叛逃者.
+    </li>
+    <li class="trm-post-copyright-link">
+        <strong>本文链接：</strong>
+        <a id="original-link" href="https://bio-w.cn/posts/51345.html" title="NCBI上传基因测序序列">https://bio-w.cn/posts/51345.html</a>
+    </li>
+    <li class="trm-post-copyright-license">
+        <strong>版权声明：</strong>
+        本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 ">CC BY-NC-SA 4.0</a> 许可协议。
+    </li>
+</ul>
+
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-title-with-divider">
+            其他文章
+            <span data-number="02"></span>
+        </h5>
+    </div>
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation" data-scroll data-scroll-offset="40">
+        <a href="/posts/58998.html" class="trm-cover-frame trm-anima-link">
+            
+            
+                <img src="https://bu.dusays.com/2022/12/30/63aee53cb7233.jpg" alt="cover">
+            
+        </a>
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E4%BA%BA%E9%97%B4%E7%83%9F%E7%81%AB/">
+                    人间烟火
+                </a>
+            </div>
+            <h5>
+                <a href="/posts/58998.html" class="trm-anima-link">
+                    小时候
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>22/12/30</li>
+                <li>21:19</li>
+                
+                    <li>308</li>
+                
+                
+                    <li>1</li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation" data-scroll data-scroll-offset="40">
+        <a href="/posts/10781.html" class="trm-cover-frame trm-anima-link">
+            
+            
+                <img src="https://bu.dusays.com/2022/12/16/639c754fdbd59.jpg" alt="cover">
+            
+        </a>
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E4%BA%BA%E9%97%B4%E7%83%9F%E7%81%AB/">
+                    人间烟火
+                </a>
+            </div>
+            <h5>
+                <a href="/posts/10781.html" class="trm-anima-link">
+                    我曾经七次鄙视自己的灵魂
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>22/12/16</li>
+                <li>21:37</li>
+                
+                    <li>166</li>
+                
+                
+                    <li>1</li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+    
+
+    <div class="trm-card trm-scroll-animation comment-container" data-scroll data-scroll-offset="50">
+    <div id="tcomment"></div>
+</div>
+
+
+
+                    <div class="trm-divider footer-divider"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-scroll-animation" data-scroll data-scroll-offset="50">
+
+    
+        <div class="trm-footer-item">
+            <a rel="noopener" href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备2022039155号</a>
+        </div>
+    
+
+    
+
+    
+        <div class="trm-footer-item">
+            <span>
+                由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v5.4.2
+            </span>
+            <span class="footer-separator"> | </span>
+            <span> 
+                主题 - 
+                <a rel="noopener" href='https://github.com/MaLuns/hexo-theme-async' target='_blank'>Async</a>
+                v1.1.1
+            </span>
+        </div>
+      
+
+    
+        <div class="trm-footer-item">
+            本站已运行 <span id="since" class="trm-accent-color"></span> 天
+        </div>
+     
+
+     
+</footer>
+
+<script>
+    function show_date_time () {
+        BirthDay = new Date("03/29/2022 17:00:00");
+        today = new Date();
+        timeold = (today.getTime() - BirthDay.getTime());
+        msPerDay = 24 * 60 * 60 * 1000
+        day = Math.floor(timeold / msPerDay)
+        since.innerHTML = day
+    }
+    show_date_time()
+</script>
+ 
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id: "Jrr4Zf3cZBWx4Uvc",ck: "Jrr4Zf3cZBWx4Uvc"})</script>
+                    <!-- footer end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- body end -->
+          </div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+
+  </div>
+  <!-- app wrapper end -->
+
+  <div id="trm-back-top" class="trm-back-top">
+    <i class="iconfont fas fa-arrow-up"></i>
+</div>
+  
+<div class="trm-search-popup">
+    <div class="trm-search-header">
+        <span class="trm-search-popup-btn-close">
+            <i class="iconfont fas fa-times"></i>
+        </span>
+    </div>
+    <div class="form trm-search-form">
+        <input class="trm-search-input" type="text" placeholder="搜索...">
+    </div>
+    <div class="trm-search-result-container">
+
+    </div>
+</div>
+
+  <!-- Plugin -->
+
+
+
+    
+    
+
+    
+<script src="//cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+    
+<script src="//cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+
+    
+
+    
+
+    
+        
+<script src="//cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+
+        <script src="/js/plugins/local_search.js?v=1.1.1"></script>
+    
+
+    <!-- 数学公式 -->
+    
+
+
+    <!-- 评论插件 -->
+    
+        
+        
+            
+<script src="//cdn.jsdelivr.net/npm/twikoo@1.6.7/dist/twikoo.all.min.js" data-swup-reload-script></script>
+
+            <script data-swup-reload-script>
+                const twikooConfig = {"enable":true,"envId":"https://twikoo.bio-w.cn"};
+                twikooConfig.el = '#tcomment';
+                twikoo.init(twikooConfig);
+            </script>
+        
+    
+
+
+
+<!-- 评论插件 -->
+
+
+<!-- CDN -->
+
+
+    
+
+    
+
+    
+
+
+
+
+    <!-- Service Worker -->
+    
+    <!-- baidu push -->
+    
+
+
+<script id="async-script" src="/js/main.js?v=1.1.1"></script>
+
+<!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body>
+
+</html>
