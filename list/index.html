@@ -24,6 +24,10 @@
  
          <!--注意：首页既不是post也不是page-->
         
+            
+<link rel="stylesheet" href="/css/waline.css">
+
+        
         
         
 <link rel="stylesheet" href="/css/ui.css">
@@ -81,6 +85,12 @@
 
 
 
+
+    <style>
+        .archive-main a:hover {
+            text-decoration: none; 
+        }
+    </style>
 
     
     
@@ -219,6 +229,31 @@
 
       <!--rough-notation风格效果-->
       
+        <script src="/js/roughNotation.js" defer></script>
+        <script>
+          // 浏览器严格模式
+          if (typeof window !== 'undefined') {
+            window.themeConfig = {"menu":{"😆首页":"/","🥰文章":"/list/","💖关于":"/about/","🤪标签":"/tags/","😛分类":"/categories/"},"showInMenu":["🥰文章","💖关于","🤪标签","😛分类"],"index":{"header":["人生海海，山山而川"],"hitokoto":false,"footer":"Email:gxw1606@163.com","titlePosition":"left","width":"small"},"footerLink":{"info":"© 2022-2025 China","友链":"/friends/","联系":"/contact/","支持":"/support/"},"post":{"footer":"🌊看过大海的人不会忘记海的广阔🌊","themeInfo":true,"width":"middle","titlePosition":"center"},"favicon":"/img/1.jpg","isRoundedAvatar":true,"isAvatarRotating":false,"tool":{"darkMode":true,"returnToTop":true,"returnToLast":true,"topToc":true,"leftToc":true,"recentUpdatePost":false},"indexInfo":{"allWordCount":true,"allViewCount":true},"postInfo":{"updateDate":true,"wordCount":true,"readTime":true,"viewCount":true,"prevAndNextLink":{"status":true,"prevInfo":"上一篇","nextInfo":"下一篇"},"endContent":"以上"},"listInfo":{"enable":true,"hoverStyle":"circle","hoverColor":"#4f7dde","animationDuration":800},"cdn":{"enable":false,"choose":"zzko"},"color":{"enable":false,"font":"#9e5345","background":"#e8e0c9","indexBackGround":"#efeae2","postBackGround":"#efeae2","codeBackGround":"#e8e0c9","codeFont":"#2e5041","linkBeforeClick":"#2e5041","linkAfterClick":"#9c9caf"},"imageShow":{"enable":true,"background":"/img/2.jpg"},"font":{"enable":false,"LXGWWenKai":true},"lightgallery":{"thumbnail":true,"zoom":true,"rotate":true,"autoplay":true,"fullScreen":true,"pager":false},"comment":{"enable":true,"use":"waline","waline":{"serverUrl":"https://waline-biow-jexstuvfk-ix2213s-projects.vercel.app/","lang":"zh-CN","placeholder":"留下你的评论吧。"},"twikoo":{"envId":null,"region":null,"lang":null},"artalk":{"server":null}},"inject":{"css":"css/custom.css"},"version":"v1.9.8"};
+          }
+          document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.archive-title').forEach(el => {
+              const annotation = RoughNotation.annotate(el, {
+                type: themeConfig?.tool?.hoverStyle || 'underline', // 效果,默认为'underline'
+                color: themeConfig?.tool?.hoverColor || '#4f7dde', // 自定义效果颜色
+                animationDuration: themeConfig?.tool?.animationDuration || 800, // 动画持续时间ms
+              });
+              el.addEventListener('mouseenter', () => {
+                if(annotation){
+                annotation.show();
+            }});
+              el.addEventListener('mouseleave', () => {
+                if(annotation){
+                annotation.hide();
+            }});
+            });
+          });
+        </script>
+        
 
       <!--文章先按照时间排好序-->
       
