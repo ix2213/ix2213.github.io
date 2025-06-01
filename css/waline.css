@@ -7,7 +7,7 @@
     --waline-active-color   : #2ecc71;
     --waline-color          : #444;
     --waline-bgcolor        : rgba(0, 0, 0, 0);
-    --waline-bgcolor-light  : #f8f8f8;
+    --waline-bgcolor-light  : rgba(0, 0, 0, 0);
     --waline-bgcolor-hover  : #f0f0f0;
     --waline-border-color   : #000000;
     --waline-disable-bgcolor: rgba(0, 0, 0, 0);
@@ -298,7 +298,7 @@
     width     : 0;
     padding   : .5em;
     background: rgba(0, 0, 0, 0);
-    font-size : .625em;
+    font-size : .900em;
     resize    : none
 }
 
