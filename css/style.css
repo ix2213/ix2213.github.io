@@ -50,7 +50,7 @@ a
     background: #fff;
     /*border-radius: 24px;*/
     border-radius: 15px;
-    background: #ffffff;
+    background: rgba(245, 245, 245, 0.2);
     box-shadow:  0px 5px 13px #616161, -5px -5px 13px #ffffff;
 }
 .index-main
@@ -60,7 +60,7 @@ a
     margin: 0 auto;
     padding: 36px 4.5vw 0px;
     border-radius: 15px;
-    background: #ffffff;
+    background: rgba(0, 0, 0, 0);
     /* box-shadow:  0px 5px 13px #616161, -5px -5px 13px #ffffff; */
 }
 
@@ -474,11 +474,11 @@ a
 }
 .archive li:nth-child(odd)
 {
-    background: #fafafa;
+    background: rgba(0, 0, 0, 0);
 }
 .archive li:nth-child(even)
 {
-    background: #fff;
+    background: rgba(0, 0, 0, 0);
 }
 .archive li span
 {

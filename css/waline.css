@@ -6,7 +6,7 @@
     --waline-theme-color    : #000000;
     --waline-active-color   : #2ecc71;
     --waline-color          : #444;
-    --waline-bgcolor        : #fff;
+    --waline-bgcolor        : rgba(0, 0, 0, 0);
     --waline-bgcolor-light  : #f8f8f8;
     --waline-bgcolor-hover  : #f0f0f0;
     --waline-border-color   : #000000;

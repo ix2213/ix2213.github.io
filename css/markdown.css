@@ -144,13 +144,13 @@
 {
     padding: 12px 0;
     border-bottom: 1px solid var(--line-1);
-    background: #fafafa;
+    background: rgba(0, 0, 0, 0);
 }
 .post-md table tr:nth-child(even) td
 {
     padding: 12px 0;
     border-bottom: 1px solid var(--line-1);
-    background: #fff;
+    background: rgba(0, 0, 0, 0);
 }
 
 .post-md code
