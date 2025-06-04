@@ -196,7 +196,36 @@
        
        
             <div class="post-md">
-                <div class=".article-gallery"><p>如果你来访我，我不在，<br>请和我门外的花坐一会儿。<br>它们很温暖，我注视它们很多很多日子了。<br>它们开得不茂盛，想起来什么说什么，<br>没有话说时，尽管长着碧叶。</p>
+                <div class=".article-gallery"><!-- 在 Markdown 文件顶部添加 -->
+<style>
+@font-face {
+  font-family: 'HandwritingFont';
+  src: url('/fonts/ziti.woff') format('woff');
+       url('/fonts/ziti.woff2') format('woff2');
+  font-display: swap;
+  unicode-range: U+4E00-9FFF, U+FF00-FFEF; /* 中日文字符 */
+}
+
+.handwriting {
+  font-family: 'HandwritingFont', 
+               "Segoe UI Emoji", 
+               "Apple Color Emoji", 
+               sans-serif;
+  line-height: 1.8;
+  font-size: 1.3em;
+}
+</style>
+
+<!-- 使用示例 -->
+<div class="handwriting">
+  <p>如果你来访我，我不在，
+请和我门外的花坐一会儿。
+它们很温暖，我注视它们很多很多日子了。
+它们开得不茂盛，想起来什么说什么，
+没有话说时，尽管长着碧叶。</p>
+</div>
+
+
 <p><a href="/img/9.png" title="bg" class="gallery-item" style="box-shadow: none;"> <img src="/img/9.png" alt="bg"></a></p>
 </div>
             </div>
