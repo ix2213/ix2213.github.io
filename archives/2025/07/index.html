@@ -4,7 +4,7 @@
     <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
-    <meta name="description" content="list" />
+    <meta name="description" content="" />
     <meta name="hexo-theme-A4" content="v1.9.8" />
     <link rel="alternate icon" type="image/webp" href="/img/avatar.jpg">
     <title>西瓜撞地球</title>
@@ -23,10 +23,6 @@
 <link rel="stylesheet" href="/css/fonts.css">
  
          <!--注意：首页既不是post也不是page-->
-        
-            
-<link rel="stylesheet" href="/css/waline.css">
-
         
         
         
@@ -143,8 +139,8 @@
             
             
             
-                <div class="shadow-drop-2-top paper-main">
-                     
+                <div class="shadow-drop-2-bottom paper-main">
+                    
 
 
 <div class="header">
@@ -191,11 +187,7 @@
             
         
             
-                <li><i>
-                    
-                        <a style="color: #4e7dde;" href="/list/">🏕️文章</a>
-                    
-                </i></li>
+                <li><a href="/list/">🏕️文章</a></li>
             
         
             
@@ -212,211 +204,112 @@
         
     </ul>
 </div> 
-                     <div class="archive-list">
-  <ul class="archive">
-      
+        
+                    
+                    
 
-      <!--文章先按照时间排好序-->
-      
+                    
+                    
+                    
+                    <!--说明是文章post页面-->
+                    
+                        <div class="post-main">
+    
 
+    
 
-      
-      
+    
 
-      
+    <div class="post-md">
+        
+            
+        
+        
+    </div>
 
-      
-      
-      
+    <div class="post-meta">
+        <i>
+        
+        </i>
+    </div>
+    <br>
+    
+    
+        
+            
+    
+            <div class="post-footer-pre-next">
+                
+                    <span>上一篇：<a href='/'></a></span>
+                
 
-      <!--循环遍历文章数组-->
-      
+                
+                    <span class="post-footer-pre-next-last-span-right">下一篇：<a href="/"></a>
+                    </span>
+                
+            </div>
+    
+        
+    
 
-      <!--排序 置顶 文章-->
-      
+    
+        
+    <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+         
+    </div>
+    
+        
 
-      <!--先放 置顶 文章-->
-      
+    <div id="waline"></div>
+    <script type="module"  >
+        import { init } from 'https://npm.elemecdn.com/hexo-theme-a4@latest/source/js/waline.mjs'; 
+        function loadWaline() {
+            init({
+                el: '#waline',
+                serverURL: 'https://waline.bio-w.cn/',
+                lang: 'zh-CN',
+                dark: 'body[class~="dark-mode"]',
+                requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
+                search: false, // 禁止表情包搜索
+                reaction: false, // 对文章打分
+                pageview: false, // 浏览量统计
+                comment: false, // 评论数统计
+				emoji: [
+					'//unpkg.com/@waline/emojis@1.2.0/weibo',
+					'//unpkg.com/@waline/emojis@1.2.0/bmoji',
+					'//unpkg.com/@waline/emojis@1.2.0/alus',
+					'//unpkg.com/@waline/emojis@1.2.0/bilibili',
+				],
 
-      <!--rough-notation风格效果-->
-      
-        <script src="/js/roughNotation.js" defer></script>
-        <script>
-          // 浏览器严格模式
-          if (typeof window !== 'undefined') {
-            window.themeConfig = {"menu":{"🏔️首页":"/","🏕️文章":"/list/","🏖️关于":"/about/","🥂友链":"/friends/","🏝️标签":"/tags/"},"showInMenu":["🏕️文章","🏖️关于","🥂友链","🏝️标签"],"index":{"header":["人生海海，山山而川"],"hitokoto":false,"footer":"鲁ICP备2022039155号-1","titlePosition":"left","width":"small"},"footerLink":{"info":"© 2022-2025 China","联系":"/contact/","支持":"/support/"},"post":{"footer":"🌊看过大海的人不会忘记海的广阔🌊","themeInfo":true,"width":"middle","titlePosition":"center"},"favicon":"/img/avatar.jpg","isRoundedAvatar":true,"isAvatarRotating":true,"tool":{"darkMode":true,"returnToTop":true,"returnToLast":true,"topToc":true,"leftToc":true,"recentUpdatePost":false},"indexInfo":{"allWordCount":true,"allViewCount":true},"postInfo":{"updateDate":true,"wordCount":true,"readTime":true,"viewCount":true,"prevAndNextLink":{"status":true,"prevInfo":"上一篇","nextInfo":"下一篇"},"endContent":"以上"},"listInfo":{"enable":true,"hoverStyle":"circle","hoverColor":"#4f7dde","animationDuration":800},"cdn":{"enable":false,"choose":"zzko"},"color":{"enable":false,"font":"#9e5345","background":"#e8e0c9","indexBackGround":"#efeae2","postBackGround":"#efeae2","codeBackGround":"#e8e0c9","codeFont":"#2e5041","linkBeforeClick":"#2e5041","linkAfterClick":"#9c9caf"},"imageShow":{"enable":true,"background":"/img/4.jpg"},"font":{"enable":false,"LXGWWenKai":true},"lightgallery":{"thumbnail":true,"zoom":true,"rotate":true,"autoplay":true,"fullScreen":true,"pager":false},"comment":{"enable":true,"use":"waline","waline":{"serverUrl":"https://waline.bio-w.cn/","lang":"zh-CN","placeholder":"留下你的评论吧。"},"twikoo":{"envId":null,"region":null,"lang":null},"artalk":{"server":null}},"inject":{"css":"css/custom.css"},"version":"v1.9.8"};
-          }
-          document.addEventListener('DOMContentLoaded', () => {
-            document.querySelectorAll('.archive-title').forEach(el => {
-              const annotation = RoughNotation.annotate(el, {
-                type: themeConfig?.tool?.hoverStyle || 'underline', // 效果,默认为'underline'
-                color: themeConfig?.tool?.hoverColor || '#4f7dde', // 自定义效果颜色
-                animationDuration: themeConfig?.tool?.animationDuration || 800, // 动画持续时间ms
-              });
-              el.addEventListener('mouseenter', () => {
-                if(annotation){
-                annotation.show();
-            }});
-              el.addEventListener('mouseleave', () => {
-                if(annotation){
-                annotation.hide();
-            }});
+                locale: {
+                    placeholder: '留下你的评论吧。', 
+                    sofa: ''
+                },
             });
-          });
-        </script>
-        
+            
+        }
+        window.addEventListener('DOMContentLoaded', loadWaline);
+    </script>
 
-      <!--文章先按照时间排好序-->
-      
-      
-      <!--再放 最近更新 文章-->
-      
 
-      <!--后放 其他 文章-->
-      
-        
-        <li>
-          <span class="year-font-color">2025[13]
-             <span class="darkmode-ignore">🍃</span> 
-          </span>
-        </li>
-        
-        
-          
-          <li>
-            <span class="archive-date">&nbsp;&nbsp;&nbsp;07/14 
-            </span>
-            <div class="archive-main">
-              
-                <a class="archive-title" href="/2025/07/14/20250714/">毕业团聚、新家入住与周末生活小记</a>
-            </div>
-          </li>
-        
-          
-          <li>
-            <span class="archive-date">&nbsp;&nbsp;&nbsp;06/22 
-            </span>
-            <div class="archive-main">
-              
-                <a class="archive-title" href="/2025/06/22/20250622/">徒步线路-五峰山中国版图</a>
-            </div>
-          </li>
-        
-          
-          <li>
-            <span class="archive-date">&nbsp;&nbsp;&nbsp;06/15 
-            </span>
-            <div class="archive-main">
-              
-                <a class="archive-title" href="/2025/06/15/20250615/">两低一高？问题不大🤔</a>
-            </div>
-          </li>
-        
-          
-          <li>
-            <span class="archive-date">&nbsp;&nbsp;&nbsp;06/13 
-            </span>
-            <div class="archive-main">
-              
-                <a class="archive-title" href="/2025/06/13/20250613/">今日份晚霞🌇</a>
-            </div>
-          </li>
-        
-          
-          <li>
-            <span class="archive-date">&nbsp;&nbsp;&nbsp;06/09 
-            </span>
-            <div class="archive-main">
-              
-                <a class="archive-title" href="/2025/06/09/20250609/">梅雨这玩意，谁研究的呢🤨</a>
-            </div>
-          </li>
-        
-          
-          <li>
-            <span class="archive-date">&nbsp;&nbsp;&nbsp;06/08 
-            </span>
-            <div class="archive-main">
-              
-                <a class="archive-title" href="/2025/06/08/20250608/">生信常用网站</a>
-            </div>
-          </li>
-        
-          
-          <li>
-            <span class="archive-date">&nbsp;&nbsp;&nbsp;06/04 
-            </span>
-            <div class="archive-main">
-              
-                <a class="archive-title" href="/2025/06/04/20250604/">收获两个新皮肤</a>
-            </div>
-          </li>
-        
-          
-          <li>
-            <span class="archive-date">&nbsp;&nbsp;&nbsp;05/31 
-            </span>
-            <div class="archive-main">
-              
-                <a class="archive-title" href="/2025/05/31/20250531/">惠山古镇漫游记</a>
-            </div>
-          </li>
-        
-          
-          <li>
-            <span class="archive-date">&nbsp;&nbsp;&nbsp;05/30 
-            </span>
-            <div class="archive-main">
-              
-                <a class="archive-title" href="/2025/05/30/20250530/">从工具侠到屎山建筑师的奇幻漂流</a>
-            </div>
-          </li>
-        
-          
-          <li>
-            <span class="archive-date">&nbsp;&nbsp;&nbsp;05/17 
-            </span>
-            <div class="archive-main">
-              
-                <a class="archive-title" href="/2025/05/17/250517/">眼镜一带，世俗看淡</a>
-            </div>
-          </li>
-        
-          
-          <li>
-            <span class="archive-date">&nbsp;&nbsp;&nbsp;05/13 
-            </span>
-            <div class="archive-main">
-              
-                <a class="archive-title" href="/2025/05/13/250513/">🌄苏州绝望坡徒步攻略</a>
-            </div>
-          </li>
-        
-          
-          <li>
-            <span class="archive-date">&nbsp;&nbsp;&nbsp;05/11 
-            </span>
-            <div class="archive-main">
-              
-                <a class="archive-title" href="/2025/05/11/250511/">博客搬家记</a>
-            </div>
-          </li>
-        
-          
-          <li>
-            <span class="archive-date">&nbsp;&nbsp;&nbsp;04/04 
-            </span>
-            <div class="archive-main">
-              
-                <a class="archive-title" href="/2025/04/04/hello-world/">博客转到hexo，数据迁移中</a>
-            </div>
-          </li>
-        
-      
-  </ul>
+
+    
+    
+    
+    </div>
+
+
+     
 </div>
-<!--  --> 
-                     <div class="footer">
+
+
+
+                                      
+                    
+                    
+                    <div class="footer">
     
         <span> 
             © 2022-2025 China 
