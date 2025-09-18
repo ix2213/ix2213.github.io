@@ -139,99 +139,209 @@
             
             
             
-                <div class="shadow-drop-2-bottom index-main">
-                    <!-- 这个header就是特指index的头部 -->
+                <div class="shadow-drop-2-bottom paper-main">
+                    
 
 
-    <div class="index-header-line" >
-        
-            <div id="hiddenHeaderContentArray" style="display: none;">
-                
-                
-                
-                    <span>人生海海，山山而川</span>
-                
-            </div>
-            <span id="targetSpan"></span>
-        
-    </div>
-
-
-    <div style="text-align: left;">
-
-        <a class="index-logo" href="/">西瓜撞地球</a>
-        <div style="margin-bottom: 12px;"> 
+<div class="header">
+    <div class="header-container">
+        <style>
+            .header-img {
+                width: 56px;
+                height: auto;
+                object-fit: cover; /* 保持图片比例 */
+                transition: transform 0.3s ease-in-out; 
+                border-radius: 50%; 
+            }
             
-                
-                    🏔️首页
-                
+            .header-img:hover {
+                animation: rotateAnimation 2s linear infinite; /* 悬停旋转动画 */
+            }
+            @keyframes rotateAnimation {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
             
-                
-                    &nbsp / &nbsp<a href="/list/">🏕️文章</a>
-                
-            
-                
-                    &nbsp / &nbsp<a href="/about/">🏖️关于</a>
-                
-            
-                
-                    &nbsp / &nbsp<a href="/friends/">🥂友链</a>
-                
-            
-                
-                    &nbsp / &nbsp<a href="/tags/">🏝️标签</a>
-                
-            
+        </style>
+        <img 
+            alt="^-^" 
+            cache-control="max-age=86400" 
+            class="header-img" 
+            src="/img/avatar.jpg" 
+        />
+        <div class="header-content">
+            <a class="logo" href="/">西瓜撞地球</a> 
+            <span class="description"></span> 
         </div>
     </div>
+    
+   
+    <ul class="nav">
+        
+            
+                <li><a href="/">🏔️首页</a></li>
+            
+        
+            
+                <li><a href="/list/">🏕️文章</a></li>
+            
+        
+            
+                <li><a href="/about/">🏖️关于</a></li>
+            
+        
+            
+                <li><a href="/friends/">🥂友链</a></li>
+            
+        
+            
+                <li><a href="/tags/">🏝️标签</a></li>
+            
+        
+    </ul>
+</div> 
+        
+                    
+                    
 
-                    <div class="post-main">
+                    
+                    
+                    
+                    <!--说明是文章post页面-->
+                    
+                        <div class="post-main">
     
-    
-       
-       
-       
-       
-       
-       
-       
-            <div class="post-md">
-                <div class=".article-gallery"><p>如果你来访我，我不在，</br><br>请和我门外的花坐一会儿。</br><br>它们很温暖，我注视它们很多很多日子了。</br><br>它们开得不茂盛，想起来什么说什么，</br><br>没有话说时，尽管长着碧叶。</p>
-<p><a href="/img/9.png" title="bg" class="gallery-item" style="box-shadow: none;"> <img src="/img/9.png" alt="bg"></a></p>
-</div>
-            </div>
-    
-</div>
- 
-                    <div class="footer">
-    
-</div>
 
+    
 
-    <div class="footer-last-without-line">
+    
+
+    <div class="post-md">
         
-        <span>本站总字数：5.1k</span>
+            
         
-        
-            <div class="footer-last-span-right">
-        
-        
-                <span id="busuanzi_container_site_pv" class="">
-                    本站总访问：<span id="busuanzi_value_site_pv"></span>次
-                </span>
-            </div>
         
     </div>
+
+    <div class="post-meta">
+        <i>
+        
+        </i>
+    </div>
+    <br>
+    
+    
+        
+            
+    
+            <div class="post-footer-pre-next">
+                
+                    <span>上一篇：<a href='/'></a></span>
+                
+
+                
+                    <span class="post-footer-pre-next-last-span-right">下一篇：<a href="/"></a>
+                    </span>
+                
+            </div>
+    
+        
+    
+
+    
+        
+    <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+         
+    </div>
+    
+        
+
+    <div id="waline"></div>
+    <script type="module"  >
+        import { init } from 'https://npm.elemecdn.com/hexo-theme-a4@latest/source/js/waline.mjs'; 
+        function loadWaline() {
+            init({
+                el: '#waline',
+                serverURL: 'https://waline.bio-w.cn/',
+                lang: 'zh-CN',
+                dark: 'body[class~="dark-mode"]',
+                requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
+                search: false, // 禁止表情包搜索
+                reaction: false, // 对文章打分
+                pageview: false, // 浏览量统计
+                comment: false, // 评论数统计
+				emoji: [
+					'//unpkg.com/@waline/emojis@1.2.0/weibo',
+					'//unpkg.com/@waline/emojis@1.2.0/bmoji',
+					'//unpkg.com/@waline/emojis@1.2.0/alus',
+					'//unpkg.com/@waline/emojis@1.2.0/bilibili',
+				],
+
+                locale: {
+                    placeholder: '留下你的评论吧。', 
+                    sofa: ''
+                },
+            });
+            
+        }
+        window.addEventListener('DOMContentLoaded', loadWaline);
+    </script>
+
+
+
+    
+    
+    
+    </div>
+
+
+     
+</div>
+
+
+
+                                      
+                    
+                    
+                    <div class="footer">
+    
+        <span> 
+            © 2022-2025 China 
+
+            
+                
+
+            
+                
+                    / <a href="/contact/"> 联系 </a>
+                
+
+            
+                
+                    / <a href="/support/"> 支持 </a>
+                
+
+            
+        </span>
+       
+    
+</div>
+
 
 
 <!--这是指一条线往下的内容-->
 <div class="footer-last">
     
-         
+            <span>🌊看过大海的人不会忘记海的广阔🌊</span>
             
-                <span class="index-footer-last-span">鲁ICP备2022039155号-1</span>
+                <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
             
-        
     
 </div>
 
